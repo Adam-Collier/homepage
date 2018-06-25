@@ -1,8 +1,8 @@
 #homeSlider {
   position: relative;
 }
-
-.row.fullwidth {
+.row {
+  position: relative;
   max-width: 3000px;
   width: 100%;
   overflow: hidden;
@@ -245,7 +245,7 @@
   .banner_content {
     left: 0;
     height: auto;
-    background: #fef5f0;
+    background: transparent;
     transform: none;
     transform: translate(0, 0);
     padding: 1em 2em;

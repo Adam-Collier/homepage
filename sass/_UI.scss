@@ -9,6 +9,7 @@ button.button {
     background: #323232;
     color: #ffffff;
   }
+
   &.alt {
     background: #323232;
     border: 2px solid #323232;
@@ -20,12 +21,27 @@ button.button {
       color: #323232;
     }
   }
+  &.alt2 {
+    background: white;
+    border: 2px solid white;
+    color: #323232;
+
+    &:hover {
+      background: #323232;
+      border: 2px solid #323232;
+      color: #fff;
+    }
+  }
 }
 
 .more-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.code {
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 768px) {
