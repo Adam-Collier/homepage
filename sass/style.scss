@@ -1,10 +1,10 @@
 $background: #fef5f0;
 $ease: all ease 300ms;
-
 body {
   background: $background;
   font-size: 12px;
 }
+
 @import "reset.scss";
 @import "slick.scss";
 @import "breakOut.scss";
