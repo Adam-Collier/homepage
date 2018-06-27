@@ -1,3 +1,5 @@
+<!-- on the live version, I have added the minified style.css code from this project. -->
+<!-- and removed the stylesheet link within the XML -->
 <style>
     .row-sale {
         position: relative;
@@ -50,6 +52,10 @@
         max-width: 200px
     }
 
+    .categories-carousel-a {
+        background: transparent !important;
+    }
+
     @media (min-width: 768px) {
         .row-sale {
             background: url("https://media.missguided.co.uk/image/upload/w_1920,q_70/v1530094552/SALE_desktop_pvsm4z.jpg") center / cover no-repeat;
@@ -62,7 +68,7 @@
         .row-sale .subtitle1 {
             text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
         }
-        .categories-carousel {
+        .categories-carousel-a {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -77,7 +83,7 @@
             padding: 40px 20px;
         }
         .category-tile {
-            padding: 0 5px;
+            padding: 0 15px;
         }
     }
 
@@ -113,7 +119,7 @@
     }
 
     @media (max-width: 768px) {
-        .categories-carousel {
+        .categories-carousel-a {
             width: 100%;
             padding: 20px 0;
         }
@@ -132,8 +138,8 @@
                 <path d="m1.15 61.94a27 27 0 0 0 3.65 9.52 32.81 32.81 0 0 0 13.69 12 49.27 49.27 0 0 0 39.64 0 32.81 32.81 0 0 0 13.69-12 27 27 0 0 0 3.73-9.64 74.92 74.92 0 0 0 1.17-14.65v-45.29h-30v45.51q0 7.76-1.94 10.84t-6.44 3.08q-4.56 0-6.45-3t-1.89-10.92v-45.51h-30v45.28a77.89 77.89 0 0 0 1.15 14.78zm123.53 23.44v-24.64h9.42q17.1 0 25-6.82t7.9-21.58q0-15.86-8.76-23.16t-27.74-7.3h-35.87v83.5zm4.8-60.29a10.21 10.21 0 0 1 6.52 1.91 6.19 6.19 0 0 1 2.33 5.16 6.1 6.1 0 0 1 -2.28 5.1c-1.52 1.2-3.7 1.8-6.56 1.8h-4.69v-13.97zm133.33 60.29v-56.18h16.71v-27.32h-63.42v27.32h16.71v56.18zm60.19-30.15q-3.89-4.3-3.88-11.43t3.88-11.52a14.05 14.05 0 0 1 19.87-.54l.52.51q3.84 4.36 3.85 11.55t-3.85 11.43a14.22 14.22 0 0 1 -20.11.28 3.7 3.7 0 0 1 -.28-.28zm51.64-28.6a41.82 41.82 0 0 0 -9.38-14 43.62 43.62 0 0 0 -14.49-9.38 49.55 49.55 0 0 0 -35.13 0 43 43 0 0 0 -14.43 9.38 40.36 40.36 0 0 0 -9.41 14 47.87 47.87 0 0 0 0 34.39 40.46 40.46 0 0 0 9.41 13.91 43.36 43.36 0 0 0 14.49 9.47 48.48 48.48 0 0 0 34.93 0 43.83 43.83 0 0 0 14.5-9.4 42.63 42.63 0 0 0 9.52-14.12 44.42 44.42 0 0 0 3.25-17.08 45.06 45.06 0 0 0 -3.22-17.17zm93.61 58.75 41.85-82.7h-74.88v25.61h29l-29.69 57.08h33.76zm76.41-54.38q1.61-4.11 5.13-4.11t5.08 4.11q1.59 4.17 1.6 13.24t-1.6 13.26q-1.61 4.13-5.08 4.13t-5.11-4.19q-1.62-4.2-1.62-13.2 0-9.19 1.6-13.29zm-21.16 45q9.64 11.63 26.29 11.63 16.83 0 26.35-11.52t9.52-31.82q0-20.31-9.52-31.77t-26.35-11.52q-16.71 0-26.32 11.55t-9.61 31.69q0 20.07 9.64 31.71zm89.44-43.22c-.73-1.73-1.1-4.61-1.1-8.62s.37-7 1.1-8.75a3.67 3.67 0 0 1 3.52-2.66 3.58 3.58 0 0 1 3.46 2.61q1.05 2.61 1.05 8.8t-1.05 8.68a3.56 3.56 0 0 1 -3.46 2.55 3.68 3.68 0 0 1 -3.52-2.61zm19.15-25.51q-5.82-6.27-15.69-6.27t-15.68 6.27q-5.82 6.24-5.82 16.8t5.82 16.77q5.82 6.21 15.68 6.21t15.66-6.24q5.85-6.26 5.84-16.74t-5.81-16.8zm38.8 66c-.74-1.77-1.1-4.69-1.1-8.74s.36-6.89 1.1-8.63a3.68 3.68 0 0 1 3.52-2.6 3.56 3.56 0 0 1 3.46 2.55c.7 1.7 1 4.59 1 8.68s-.36 7.06-1.07 8.8a3.61 3.61 0 0 1 -3.44 2.61 3.68 3.68 0 0 1 -3.47-2.7zm19.16-25.46q-5.81-6.21-15.64-6.2t-15.73 6.2q-5.83 6.19-5.83 16.69t5.83 16.84q5.84 6.25 15.73 6.26t15.59-6.26q5.84-6.25 5.83-16.84t-5.83-16.72zm-63 39.82 48.48-86.63h-12l-48.2 86.6zm154.63-32.4q-3.88-4.3-3.88-11.43t3.88-11.52a14.06 14.06 0 0 1 19.88-.54l.51.51q3.85 4.36 3.85 11.55t-3.85 11.43a14.22 14.22 0 0 1 -20.11.28zm51.64-28.6a41.58 41.58 0 0 0 -9.38-14 43.58 43.58 0 0 0 -14.48-9.38 49.58 49.58 0 0 0 -35.14 0 43.27 43.27 0 0 0 -14.43 9.38 40.36 40.36 0 0 0 -9.41 14 47.87 47.87 0 0 0 0 34.39 40.46 40.46 0 0 0 9.41 13.91 43.26 43.26 0 0 0 14.49 9.47 48.48 48.48 0 0 0 34.93 0 43.52 43.52 0 0 0 14.46-9.4 42.8 42.8 0 0 0 9.53-14.12 44.6 44.6 0 0 0 3.25-17.08 45.26 45.26 0 0 0 -3.23-17.17zm48.22 58.75v-29.78h23.33v-21.38h-23.33v-9.7h25.78v-22.64h-55.83v83.5zm68.44 0v-29.78h23.33v-21.38h-23.31v-9.7h25.78v-22.64h-55.86v83.5zm89.59-.12a59.68 59.68 0 0 0 16.43 2.34q16 0 26-8.78t10-22.64a22 22 0 0 0 -5-14.49 23.84 23.84 0 0 0 -13.57-7.93c-.73-.15-1.75-.38-3.08-.68q-12.5-2.68-12.49-6.22a3.3 3.3 0 0 1 1.71-2.94 9.29 9.29 0 0 1 4.85-1.05 23.36 23.36 0 0 1 8.46 1.68 37.41 37.41 0 0 1 8.7 4.88l9.13-21.85a65.77 65.77 0 0 0 -14-5.7 54.08 54.08 0 0 0 -14.1-1.88q-15.61 0-25.26 8.44t-9.64 21.9a21.55 21.55 0 0 0 5 14.49q5 5.82 14.32 8.1l4.45 1q8.83 1.82 8.84 5.3a3.62 3.62 0 0 1 -1.77 3.16 8.69 8.69 0 0 1 -4.85 1.17 25 25 0 0 1 -9.44-2.08 61.73 61.73 0 0 1 -11.49-6.59l-9.58 23.39a74.64 74.64 0 0 0 16.42 7zm96.16-39.69q1.88-7.18 2.56-11.07a61.59 61.59 0 0 0 .86-7.3h.51a57.68 57.68 0 0 0 .86 7.3q.68 3.89 2.56 11.07l2.57 9.47h-12.49zm-10.15 39.81 2.56-10.5h22.64l2.68 10.5h32.28l-29.2-83.5h-33.42l-29.77 83.5zm126.38 0v-27.09h-29.2v-56.4h-30.06v83.5h59.3zm68 0v-22.65h-27.06v-8.73h24v-21.44h-24v-8h26.41v-22.68h-55.84v83.5z"
                     fill="#0f5" />
             </svg>
-            <div class="categories-container">
-                <div class="categories-carousel">
+            <div class="categories-container-a">
+                <div class="categories-carousel-a">
 
                     <div>
                         <a class="category-tile__link" href="https://www.missguided.co.uk/sale#price_gbp=2.00%3C15.99&p_low=2&p_high=5">
@@ -185,7 +191,10 @@
                 </div>
             </div>
             <div class="more-buttons">
-                <button class="button">shop summer sale</button>
+                <a href="/sale">
+                    <button class="button">shop summer sale</button>
+                </a>
+
             </div>
         </div>
 
@@ -394,14 +403,14 @@
             if (isMobile.matches) {
                 initSale();
             } else {
-                if ($('.categories-carousel').hasClass('slick-initialized')) {
-                    $('.categories-carousel').slick('unslick');
+                if ($('.categories-carousel-a').hasClass('slick-initialized')) {
+                    $('.categories-carousel-a').slick('unslick');
                 }
             }
         }
 
         function initSale() {
-            $('.categories-carousel').slick({
+            $('.categories-carousel-a').slick({
                 infinite: false,
                 dots: false,
                 arrows: false,
@@ -442,3 +451,81 @@
 
     })(jQuery);
 </script>
+
+<!-- this is the old unminified slick script -->
+<!-- as this code is now within the code base -->
+<!-- i have removed it from my live code,  -->
+<!-- add it back in the see full preview of page -->
+<!-- <script type="text/javascript">
+	(function ($) {
+		$(document).ready(function () {
+			$('#homeSlider').slick({
+				infinite: true,
+				adaptiveHeight: true,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				pauseOnHover: false,
+				dots: true,
+				slide: '.fullwidth',
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				responsive: [{
+						breakpoint: 1000,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: "unslick"
+					}
+				]
+			});
+		});
+
+		$(window).on('resize orientationchange', function () {
+			$('#homeSlider').slick('resize');
+		});
+
+		$(document).ready(function () {
+			$('.slick-three').slick({
+				infinite: true,
+				adaptiveHeight: false,
+				slide: ':not(.blocker)',
+				dots: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				arrows: true,
+				centerMode: true,
+				centerPadding: '0',
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					},
+					centerMode: true,
+					centerPadding: '50',
+					variableWidth: true,
+				}]
+			});
+		});
+
+		$(window).on('resize orientationchange', function () {
+			$('.slick-three').slick('resize');
+		});
+
+		$(window).scroll(_.debounce(function () {
+			var wScroll = $(this).scrollTop();
+			console.log(wScroll);
+			if (wScroll > $('.slick-three').offset().top - 400) {
+				$('.slick-slide').css('animation', 'swipe 1200ms ease-in-out forwards');
+				setTimeout(function () {
+					$('.blocker').css('display', 'none');
+				}, 1600);
+			}
+		}, 100));
+	})(jQuery);
+
+</script> -->
