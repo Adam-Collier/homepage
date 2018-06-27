@@ -29,7 +29,7 @@ img,
 video {
   -webkit-user-drag: none;
   user-select: none;
-  width: 100%;
+  max-width: 100%;
 }
 video::-webkit-media-controls {
   display: none !important;
