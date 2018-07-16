@@ -9,12 +9,10 @@ button.button {
     background: #323232;
     color: #ffffff;
   }
-
   &.alt {
     background: #323232;
     border: 2px solid #323232;
     color: #fff;
-
     &:hover {
       background: white;
       border: 2px solid white;
@@ -25,7 +23,6 @@ button.button {
     background: white;
     border: 2px solid white;
     color: #323232;
-
     &:hover {
       background: #323232;
       border: 2px solid #323232;

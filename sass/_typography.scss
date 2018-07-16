@@ -6,36 +6,44 @@ h5,
 h6 {
   user-select: none;
 }
+
 .capz {
   text-transform: uppercase;
 }
+
 .longword {
   word-wrap: break-word;
 }
+
 .title1 {
   font-size: 48px;
   font-size: 3em;
 }
+
 .subtitle1,
 .subtitle2 {
   font-size: 1.45em;
   font-size: 16px;
   line-height: 1.45em;
 }
+
 .title2 {
   font-size: 35px;
   font-size: 2.1875em;
 }
+
 .title3 {
   // font-size: 24px;
   font-size: 1.75em;
   text-transform: lowercase;
 }
+
 .subtitle3 {
   font-size: 1em;
   font-size: 12px;
   line-height: 1.2em;
 }
+
 .subtitle1,
 .subtitle2,
 .subtitle3,
@@ -79,10 +87,8 @@ h6 {
   .title3 {
     // font-size: 24px;
     font-size: 1.75em;
-    line-height: 1.3em;
-    // text-transform: lowercase;
+    line-height: 1.3em; // text-transform: lowercase;
   }
-
   .subtitle1,
   .subtitle2,
   .subtitle3 {
@@ -90,7 +96,6 @@ h6 {
     font-size: 14px;
     line-height: 1.5em;
   }
-
   .title3,
   .subtitle3 {
     max-width: 90%;
