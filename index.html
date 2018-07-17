@@ -665,21 +665,24 @@
 
 		<div class="topCat">
 			<div class="flex">
-				<div class="catz sale">
-					<!-- /sale /new-in -->
-					<!-- <a href="/sale"> -->
-					<h5>sale</h5>
-					<!-- </a> -->
-				</div>
+				<!-- <div class="catz sale">
+
+				<h5>sale</h5>
+			</div> -->
+
+
+
 				<div class="catz">
 					<a href="/new-in">
 						<h5 style="width:48px;">new in</h5>
 					</a>
+
 				</div>
 				<div class="catz">
 					<a href="/dresses">
 						<h5>dresses</h5>
 					</a>
+
 				</div>
 				<div class="catz">
 					<a href="/clothing/tops">
@@ -718,7 +721,112 @@
 					</a>
 				</div>
 			</div>
+			<div class="dropdown-container">
+				<div class="drop">
+					<ul>
+						<li>
+							<a href="/">view all new in</a>
+						</li>
+						<li>
+							<a href="/">accessories</a>
+						</li>
+						<li>
+							<a href="/">clothing</a>
+						</li>
+						<li>
+							<a href="/">dresses</a>
+						</li>
+						<li>
+							<a href="/">shoes</a>
+						</li>
+					</ul>
+					<img src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1530781701/swimwearguidelower_rzhgj9.gif" alt="">
+				</div>
+				<div class="drop">
+					<ul>
+						<li>
+							<a href="/">blazers</a>
+						</li>
+						<li>
+							<a href="/">bodysuits</a>
+						</li>
+						<li>
+							<a href="/">coats &amp; jackets</a>
+						</li>
+						<li>
+							<a href="/">dresses</a>
+						</li>
+						<li>
+							<a href="/">jeans</a>
+						</li>
+						<li>
+							<a href="/">jumpsuits</a>
+						</li>
+						<li>
+							<a href="/">leggings</a>
+						</li>
+						<li>
+							<a href="/">lingerie</a>
+						</li>
+						<li>
+							<a href="/">playsuits</a>
+						</li>
+						<li>
+							<a href="/">shorts</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="/">skirts</a>
+						</li>
+						<li>
+							<a href="/">tops</a>
+						</li>
+						<li>
+							<a href="/">trousers</a>
+						</li>
+					</ul>
+				</div>
+				<div class="drop">
+					<h5>3</h5>
+				</div>
+				<div class="drop">
+					<h5>4</h5>
+				</div>
+				<div class="drop">
+					<h5>5</h5>
+				</div>
+			</div>
+
 		</div>
+
+		<script>
+			jQuery(document).ready(function () {
+
+				jQuery(".topCat").mouseenter(function () {
+					jQuery('.dropdown-container').stop(true, true).slideDown('medium');
+				}).mouseleave(function () {
+					jQuery('.dropdown-container').stop(true, true).slideUp('medium');
+				});
+
+				jQuery(".catz:nth-child(1)").hover(function () {
+					jQuery(".drop.active, .catz").removeClass("active");
+					jQuery(".drop:nth-child(1)").addClass("active");
+					jQuery(this).addClass("active");
+				});
+
+				jQuery(".catz:nth-child(2)").hover(function () {
+					jQuery(".drop.active, .catz").removeClass("active");
+					jQuery(".drop:nth-child(2)").addClass("active");
+					jQuery(this).addClass("active");
+				});
+
+
+
+				// close 'em
+
+			});
+		</script>
 
 		<nav id="nav" role="navigation" class="primary-nav  js-menu--catalog">
 			<button type="button" data-cy="menu-button-mobile" class="primary-nav__handle  [ primary-nav-handle  primary-nav-handle--close ]  js-menu-handle-close"
