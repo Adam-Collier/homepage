@@ -798,7 +798,7 @@
 			</div>
 
 		</div>
-		<script src="http://benalman.com/code/projects/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
+
 		<script>
 			jQuery(document).ready(function () {
 
@@ -813,40 +813,16 @@
 				});
 
 
-				// jQuery(".catz").hover(function () {
-				// 	var id = jQuery(this).attr("data-id");
-				// 	console.log("open " + id)
-				// 	var openMe = "." + id;
-				// 	jQuery(".drop").removeClass("active");
-
-
-
-				// // 	toggleTimer = setInterval(toggleDrop(openMe), 12000)
-				// // }, function () {
-				// // 	clearInterval(toggleTimer)
-				// });
-
-
-				// 
-				// 				jQuery(".catz").hover(jQuery.debounce(function () {
-				// 					// Will only execute 300ms after the last keypress.
-				// 					var id = jQuery(this).attr("data-id");
-				// 					console.log("open " + id)
-				// 					var openMe = "." + id;
-				// 					jQuery(".drop").removeClass("active");
-				// 					toggleDrop(openMe)
-
-				// 				}, 300));
-
-				jQuery(".catz").hover(jQuery.debounce(250, true, function () {
-
+				jQuery(".catz").hover(function () {
 					var id = jQuery(this).attr("data-id");
 					console.log("open " + id)
 					var openMe = "." + id;
 					jQuery(".drop").removeClass("active");
-					toggleDrop(openMe)
 
-				}));
+					toggleTimer = setInterval(toggleDrop(openMe), 12000)
+				}, function () {
+					clearInterval(toggleTimer)
+				});
 
 
 				function toggleDrop(openMe) {
