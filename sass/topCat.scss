@@ -61,11 +61,11 @@ ul.promos.promos--global.promos--thirds {
     left: 100px;
     padding: 2em 1em;
     transition: all ease 300ms;
-    // &.active {
-    opacity: 1;
-    display: flex;
-    justify-content: flex-start;
-    // }
+    &.active {
+      opacity: 1;
+      display: flex;
+      justify-content: flex-start;
+    }
     ul {
       position: relative;
       list-style: none;

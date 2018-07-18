@@ -798,13 +798,13 @@
 			</div>
 
 		</div>
-
+		<script src="http://benalman.com/code/projects/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
 		<script>
 			jQuery(document).ready(function () {
 
 				var toggleTimer;
 				var id;
-				var hreko;
+				var openMe;
 
 				jQuery(".topCat").mouseenter(function () {
 					jQuery('.dropdown-container').stop(true, true).slideDown('medium');
@@ -813,58 +813,45 @@
 				});
 
 
-				jQuery(".catz").hover(function () {
+				// jQuery(".catz").hover(function () {
+				// 	var id = jQuery(this).attr("data-id");
+				// 	console.log("open " + id)
+				// 	var openMe = "." + id;
+				// 	jQuery(".drop").removeClass("active");
+
+
+
+				// // 	toggleTimer = setInterval(toggleDrop(openMe), 12000)
+				// // }, function () {
+				// // 	clearInterval(toggleTimer)
+				// });
+
+
+				// 
+				// 				jQuery(".catz").hover(jQuery.debounce(function () {
+				// 					// Will only execute 300ms after the last keypress.
+				// 					var id = jQuery(this).attr("data-id");
+				// 					console.log("open " + id)
+				// 					var openMe = "." + id;
+				// 					jQuery(".drop").removeClass("active");
+				// 					toggleDrop(openMe)
+
+				// 				}, 300));
+
+				jQuery(".catz").hover(jQuery.debounce(250, true, function () {
+
 					var id = jQuery(this).attr("data-id");
-					// var $open = jQuery(".drop").hasClass(id);
-					var hreko = jQuery(".drop").hasClass(id);
+					console.log("open " + id)
+					var openMe = "." + id;
+					jQuery(".drop").removeClass("active");
+					toggleDrop(openMe)
 
-					// console.log(id);
-					// toggleDrop(id);
-					// toggleTimer = setInterval(toggleDrop($open), 500)
-					// }, function () {
-					// clearInterval(toggleTimer)
+				}));
 
 
-				});
-				// jQuery(".drop").hasClass(id).addClass("active");
-				// });
-
-				// function toggleDrop($open) {
-				// 	console.log("open " + $open)
-				// 	// jQuery(".drop").find(id).stop(true, true).slideDown('medium');
-				// 	$open.addClass("active");
-				// }
-
-
-
-				// jQuery(".catz:nth-child(1)").hover(function () {
-				// 	jQuery(".drop.active, .catz").removeClass("active");
-				// 	jQuery(".drop:nth-child(1)").addClass("active");
-				// 	jQuery(this).addClass("active");
-				// });
-
-				// jQuery(".catz:nth-child(1)").hover(function () {
-				// 	toggleTimer = setInterval(toggleImage, 1000)
-				// }, function () {
-				// 	clearInterval(toggleTimer)
-				// });
-
-				// jQuery(".catz:nth-child(2)").hover(function () {
-				// 	jQuery(".drop.active, .catz").removeClass("active");
-				// 	jQuery(".drop:nth-child(2)").addClass("active");
-				// 	jQuery(this).addClass("active");
-				// });
-
-
-				// $('.fader').hover(function () {
-				// 	toggleTimer = setInterval(toggleImage, 1000)
-				// }, function () {
-				// 	clearInterval(toggleTimer)
-				// });
-
-				// function toggleImage() {
-				// 	$('.fader').find("img").fadeToggle(1000);
-				// }
+				function toggleDrop(openMe) {
+					jQuery(openMe).addClass("active");
+				}
 
 
 			});
