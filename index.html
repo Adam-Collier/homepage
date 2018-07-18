@@ -803,28 +803,39 @@
 			jQuery(document).ready(function () {
 
 				var toggleTimer;
+				var timeoutId;
 				var id;
 				var openMe;
 
-				jQuery(".topCat").mouseenter(function () {
-					jQuery('.dropdown-container').stop(true, true).slideDown('medium');
-				}).mouseleave(function () {
-					jQuery('.dropdown-container').stop(true, true).slideUp('medium');
-				});
+				jQuery(".dropdown-container").hide();
 
+				jQuery(".topCat").hover(function () {
+					if (!timeoutId) {
+						timeoutId = window.setTimeout(function () {
+							timeoutId = null;
+							jQuery(".dropdown-container").slideDown('slow');
+						}, 500);
+					}
+				},
+					function () {
+						if (timeoutId) {
+							window.clearTimeout(timeoutId);
+							timeoutId = null;
+						}
+						else {
+							jQuery(".dropdown-container").slideUp('slow');
+						}
+					});
 
 				jQuery(".catz").hover(function () {
 					var id = jQuery(this).attr("data-id");
 					console.log("open " + id)
 					var openMe = "." + id;
-					jQuery(".drop").removeClass("active");
-
+					jQuery(".drop.active").removeClass("active");
 					toggleTimer = setInterval(toggleDrop(openMe), 500)
 				}, function () {
 					clearInterval(toggleTimer)
 				});
-
-
 				function toggleDrop(openMe) {
 					jQuery(openMe).addClass("active");
 				}
