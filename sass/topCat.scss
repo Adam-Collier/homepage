@@ -92,14 +92,16 @@ ul.promos.promos--global.promos--thirds {
     ul {
       position: relative;
       list-style: none;
+
       margin: 0 3em 0 0;
       &:not(:first-of-type) {
         border-left: 1px solid #e1e1e1;
       }
       li {
         margin-bottom: 1em;
-        text-transform: capitalize;
+        text-decoration: lowercase;
         a {
+          text-decoration: lowercase;
           &:hover {
             border-bottom: 1px solid grey;
           }
