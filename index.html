@@ -1059,12 +1059,13 @@
 			</div>
 
 		</div>
-		<script src="https://raw.githubusercontent.com/cowboy/jquery-throttle-debounce/v1.1/jquery.ba-throttle-debounce.js"></script>
-		<script>
-			jQuery(document).ready(function () {
 
+		<script>
+			// jQuery(document).ready(function () {
+			jQuery(function () {
 				var toggleTimer,
 					timeoutId,
+					timeoutId2,
 					id,
 					openMe,
 					uline = jQuery(".catz:first-of-type").position(),
@@ -1081,7 +1082,7 @@
 							timeoutId = null;
 							dropdown.slideDown('fast');
 							jQuery(".underline").css("opacity", "1");
-						}, 800);
+						}, 1000);
 					}
 				}, function () {
 					if (timeoutId) {
@@ -1094,31 +1095,40 @@
 				});
 
 				jQuery(".catz").hover(function () {
-
 					if (jQuery(this).attr("data-id")) {
 
 						var id = jQuery(this).attr("data-id");
 						var openMe = "." + id;
-						jQuery(".drop").removeClass("active");
-
 						var uline = jQuery(this).position();
 						var uwidth = jQuery(this).outerWidth() + 24;
-						moveUline(uline, uwidth);
 
-						toggleTimer = setInterval(toggleDrop(openMe), 2000)
+						if (!timeoutId2) {
+							timeoutId2 = window.setTimeout(function () {
+								timeoutId2 = null;
+								jQuery(".drop").removeClass("active");
+
+								toggleDrop(openMe)
+								moveUline(uline, uwidth)
+							}, 500);
+						}
+					} else {
+						var uline = jQuery(this).position();
+						var uwidth = jQuery(this).outerWidth() + 24;
+						moveUline(uline, uwidth)
 					}
-				},
-					function () {
-						// on mouseout
-						// console.log("moose out")
-						clearInterval(toggleTimer);
-					});
+
+
+				}, function () {
+					if (timeoutId2) {
+						window.clearTimeout(timeoutId2);
+						timeoutId2 = null;
+					}
+				});
 
 				function toggleDrop(openMe) {
 					console.log("open " + openMe)
 					// dropdown.height(jQuery(openMe).outerHeight());
 					jQuery(openMe).addClass("active");
-
 				}
 
 
@@ -1126,15 +1136,10 @@
 					jQuery(".underline").animate({
 						left: uline.left,
 						width: uwidth
-					}, 300, function () { // Animation complete. 
+					}, 300, function () {
 						console.log("animated underline")
-
 					});
 				}
-
-
-
-
 
 			});
 		</script>
