@@ -28,7 +28,7 @@ gulp.task("default", function() {
     }
   });
   gulp.watch("./js/**/*.js").on("change", browserSync.reload);
-  gulp.watch("./sass/**/*.scss", ["sass"]);
+  gulp.watch("**/*.scss", ["sass"]);
   gulp.watch("./css/**/*.css").on("change", browserSync.reload);
   gulp.watch("**/*.html").on("change", browserSync.reload);
 });
