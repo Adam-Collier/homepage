@@ -1,0 +1,47 @@
+.imgContainer{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .slick-three .slick-slide {
+    padding: 0 10px;
+  }
+
+  .slick-three {
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .imgContainer {
+    margin-bottom: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slick-three {
+  padding: 0 0 $mobileSpacing 0;
+  img {
+    width: 100%;
+    }
+  }
+  .slick-three {
+    img {
+      align-self: flex-start;
+      max-width: 80%;
+      margin: 0 auto 1em;
+    }
+  }
+
+  .slick-three .slick-slide a {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .title-below {
+    max-width: 1000px;
+    transform: none;
+  }
+}
