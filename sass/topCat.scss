@@ -33,6 +33,9 @@ ul.promos.promos--global.promos--thirds {
     a {
       width: 100%;
       height: 100%;
+      &:hover {
+        text-decoration: none;
+      }
     }
     h5 {
       text-transform: lowercase; // color: #474747;
@@ -75,7 +78,7 @@ ul.promos.promos--global.promos--thirds {
     width: 100%;
     height: auto;
     min-height: 365px;
-    max-width: 750px;
+    max-width: 730px;
     left: 50%;
     transform: translateX(-50%);
     padding: 2.5em 0;
@@ -103,10 +106,10 @@ ul.promos.promos--global.promos--thirds {
       li {
         margin-bottom: 1em;
         text-transform: lowercase;
-        a {
-          &:hover {
-            border-bottom: 1px solid grey;
-          }
+        &:hover {
+
+            text-decoration: underline;
+          
         }
       }
     }
