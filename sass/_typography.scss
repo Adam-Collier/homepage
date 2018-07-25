@@ -1,3 +1,8 @@
+.container {
+  line-height: 1.45;
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -6,59 +11,96 @@ h5,
 h6 {
   user-select: none;
 }
+
 .capz {
   text-transform: uppercase;
 }
+
 .longword {
   word-wrap: break-word;
 }
+
 .title1 {
   font-size: 48px;
-  font-size: 3em;
-}
-.subtitle1,
-.subtitle2 {
-  font-size: 1.45em;
-  font-size: 16px;
-  line-height: 1.45em;
-}
-.title2 {
-  font-size: 35px;
-  font-size: 2.1875em;
-}
-.title3 {
-  // font-size: 24px;
-  font-size: 1.75em;
-  text-transform: lowercase;
-}
-.subtitle3 {
-  font-size: 1em;
-  font-size: 12px;
-  line-height: 1.2em;
-  text-transform: none;
-}
-.subtitle1,
-.subtitle2,
-.subtitle3,
-.title1,
-.title2,
-.title3 {
-  text-align: center;
+  font-size: 2em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .subtitle3 {
-    font-size: 1em;
+.title2 {
+  font-size: 35px;
+  font-size: 1.44em;
+}
+
+.title3 {
+  font-size: 24px;
+  font-size: 1.8em;
+  margin-bottom: 0.6em;
+}
+
+.subtitle1 {
+  font-size: 16px;
+  display: block;
+  margin: 2% auto 0;
+  max-width: 700px;
+}
+
+.subtitle2 {
+  font-size: 14px;
+}
+
+.subtitle3 {
+  font-size: 1.2em;
+  margin: 0 0 0 0
+}
+
+button.button {
+  background: transparent;
+  border: #323232 2px solid;
+  color: #323232;
+  transition: all ease 300ms;
+  display: block;
+  margin: $buttonSpacingDesktop;
+  &:hover {
+    background: #323232;
+    border: 2px solid #323232;
+    color: #ffffff;
   }
+
+  &.alt {
+    background: #323232;
+    border: 2px solid #323232;
+    color: #fff;
+
+    &:hover {
+      background: white;
+      border: 2px solid white;
+      color: #323232;
+    }
+  }
+
+  &.alt2 {
+    background: white;
+    border: 2px solid white;
+    color: #323232;
+
+    &:hover {
+      background: #323232;
+      border: 2px solid #323232;
+      color: #fff;
+    }
+  }
+}
+
+.more-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 768px) {
   .white {
     color: white;
   }
-  .subtitle3 {
-    padding: 0 20px;
-  }
+
   .hide-on-desk,
   .show-on-mob {
     display: none;
@@ -69,43 +111,55 @@ h6 {
   // mobile font sizing
   .title1 {
     // font-size: 48px;
-    font-size: 2em;
+    font-size: 1.9em;
     line-height: 1.5em;
+    margin: 0;
   }
+
   .title2 {
     // font-size: 48px;
-    font-size: 1.8em;
+    font-size: 1.4em;
     line-height: 1.4em;
   }
+
   .title3 {
     // font-size: 24px;
-    font-size: 1.75em;
+    font-size: 1.8em;
     line-height: 1.3em;
-    // text-transform: lowercase;
   }
 
-  .subtitle1,
-  .subtitle2,
-  .subtitle3 {
-    font-size: 1.16666667em;
-    font-size: 14px;
-    line-height: 1.5em;
-  }
+  // .subtitle1,
+  // .subtitle2,
+  // .subtitle3 {
+  //   font-size: 1.16666667em;
+  //   font-size: 14px;
+  //   line-height: 1.5em;
+  // }
 
   .title3,
+  .subtitle1,
   .subtitle3 {
     max-width: 90%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
-  h3.black {
-    font-size: 2.75vw !important;
-  }
+
   .hide-on-desk,
   .show-on-mob {
     display: block;
   }
+
   .hide-on-mob,
   .show-on-desk {
     display: none;
+  }
+
+  button.button {
+    margin: $buttonSpacingMobile;
+  }
+
+  .more-buttons {
+    flex-wrap: nowrap;
   }
 }
