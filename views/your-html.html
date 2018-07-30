@@ -1,8 +1,106 @@
-
 <div class="cyber">
-<p> Guess who’s back, back again, Black Friday is back, tell a friend. This yearly showdown follows the day after Thanksgiving
-where retailers offer time-limited deals and heavy discounts straight to you (cheers, America!). In the lead up to Christmas,
-save big on gifting, party dresses and practically all your Missguided wishlist. If you can’t wait until Black Friday, check
-out our fire sale right here! We’re going harder than previous years so expect big Black Friday deals. Get your wishlist
-at the ready and sign up or the latest Black Friday offers and discounts!</p>
-</div>
+    <h1 class="title termina">CYBER MONDAY 2018</h1>
+    <div class="timer">
+        <h1 class="clock" id="clock"></h1>
+
+    </div>
+    <div class="copy">
+        <p> Guess who’s back, back again, Black Friday is back, tell a friend.</p>
+        <p> This yearly showdown follows the day after Thanksgiving where retailers offer time-limited deals and heavy discounts
+            straight to you (cheers, America!). In the lead up to Christmas, save big on gifting, party dresses and practically
+            all your Missguided wishlist. </p>
+        <p>If you can’t wait until Black Friday, check out our fire sale
+            <a href="/sale">right here!</a>
+        </p>
+        <p>We’re going harder than previous years so expect big Black Friday deals.</p>
+    </div>
+
+    <div class="wrap">
+        <h3>Get your wishlist at the ready and sign up or the latest Black Friday offers and discounts!</h3>
+        <h1 class="termina">email</h1>
+        <div class="email">
+            <!-- <h1>email</h1> -->
+            <div id="promo_signup">
+                <form action="https://www.missguided.co.uk/newsletter/subscriber/new/" method="post" class="form js-newsletter-validate"
+                    id="newsletter-validate-detail" novalidate="">
+                    <fieldset>
+                        <ul class="form__list form__inline">
+                            <li class="form__field">
+                                <div class="form__input">
+                                    <button title="Go" class="newsletter-button button--nostyle right button--newsletter-lightbox-content js-newsletter-button">
+                                        <svg viewBox="0 0 9.1 15.7" id="icon-arrow-right" width="100%" height="100%">
+                                            <path d="M9.1,7.8l-7.6,7.6c-0.3,0.3-0.9,0.3-1.2,0s-0.3-0.9,0-1.2l6.4-6.4L0.3,1.5c-0.3-0.3-0.3-0.9,0-1.2s0.9-0.3,1.2,0L9.1,7.8z"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="left">
+                                        <input type="hidden" name="area_of_site" id="area_of_site_footer" value="EVENT_PROMO">
+                                        <input type="hidden" name="territory" id="territory" value="UK">
+                                        <input type="email" name="newsletter" placeholder="your email address" value="" title="Your email address" class="newsletter-input input-text required-entry validate-email js-newsletter-input">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <div class="js-newsletter-result validation-advice" id="newsletter-signup-result" style="display: none;"></div>
+            </div>
+        </div>
+
+        <h5 class="tc">You can unsubscribe at any time you want. Read more about how and why we ask for this data</h5>
+
+        <h3 class="or termina">or</h3>
+        <h1 class="termina">whatsapp</h1>
+        <ul>
+            <li>
+                <h3>Step 1</h3>
+                <h5>Tap the green button below</h5>
+            </li>
+            <li>
+                <h3>Step 2</h3>
+                <h5>Save our phone number to your contacts</h5>
+            </li>
+            <li>
+                <h3>Step 3</h3>
+                <h5 class="last">Send us a message with the word HOLLA to join</h5>
+            </li>
+
+        </ul>
+        <div class="whatsapp">
+            <div style="width: 390px; height: 345px;">
+                <iframe style="border: none; height: 100%; width: 100%;" src="https://wb.whatsbroadcast.com/?widget_hash=d847777adc20067d7a5a0324c78f1647&amp;lang=en&amp;wn=2"></iframe>
+                <a style="margin-top: -10px; padding-top: 6px	; text-decoration: none; text-align: right; display: block; font-size: 11px; padding-right: 8px; color: rgba(8, 0, 0, 0.54); font-family: 'Roboto',sans-serif;"
+                    href="https://www.whatsbroadcast.com/de/" target="_blank" rel="noopener">© WhatsBroadcast</a>
+            </div>
+            <a href="https://blog.missguided.co.uk/our-world/missguided-whatsapp-group">read all about the whatsapp group here.</a>
+
+        </div>
+    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 28, 2018 00:00:01").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("clock").innerHTML = "<div>" + days + "<span>days</span></div>" + "<div>" + hours + "<span>hours</span></div>" + "<div>" + minutes + "<span>mins</span></div>" + "<div>" + seconds + "<span>secs</span></div>";
+
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("clock").innerHTML = "";
+            }
+        }, 1000);
+    </script>
