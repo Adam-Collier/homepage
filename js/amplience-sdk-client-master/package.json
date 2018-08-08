@@ -1,0 +1,47 @@
+{
+  "name": "amplience-sdk-client",
+  "version": "0.1.0",
+  "description": "Amplience SDK Client",
+  "main": "src/amp/SDK.js",
+  "dependencies": {
+    "grunt-replace": "~0.8.0"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-cssmin":"1.0.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-includes": "~0.3.6",
+    "grunt-karma": "latest",
+    "grunt-strip-code": "latest",
+    "jasmine-jquery": "latest",
+    "karma": "latest",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-coverage": "~0.1.4",
+    "karma-ie-launcher": "~0.1.1",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1",
+    "karma-teamcity-reporter": "~0.1.1"
+  },
+  "scripts": {
+    "test": "grunt karma:test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:amplience/sdk-client.git"
+  },
+  "keywords": [
+    "AMP",
+    "Amplience",
+    "SDK",
+    "UI"
+  ],
+  "author": "Amplience",
+  "license": "BSD",
+  "gitHead": "05fe93620b8eaa16c40185475cd11a4bdea7a2b4"
+}

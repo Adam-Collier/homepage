@@ -1,0 +1,16 @@
+!.gitkeep
+*.orig
+/.sass-cache/
+/node_modules
+/bower_components
+/build
+/lib
+/test/amp/
+/test/amp.ui/
+/test/amp/*
+/test/amp.ui/*
+/coverage/*
+/*.iws
+/tmp/*
+nbproject
+.idea
