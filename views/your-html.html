@@ -124,38 +124,10 @@
 </div>
 
 
-<style>
-    ul#carousel {
-        list-style: none;
-        margin: 1em auto;
-        padding: 0;
-    }
 
-    .amp-carousel {
-        min-height: 600px;
-        max-width: 450px;
-        max-height: 700px;
-        height: 100%;
-        /* width: 350px; */
-        position: relative;
-        border: 2px solid black;
-        overflow: hidden;
-    }
 
-    .amp-slide {
-        /* width: 100%;
-        height: 100%; */
-        top: 0;
-        position: absolute;
-        /* padding: 1em; */
-    }
 
-    .amp-slide picture {
-        position: relative;
-        max-height: 100%;
-    }
-</style>
-<div id="contents"></div>
+
 
 
 
@@ -163,37 +135,48 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js" async=""></script><script type="text/javascript">!function(e){e(document).ready(function(){e("#homeSlider").slick({infinite:!0,adaptiveHeight:!0,autoplay:!0,autoplaySpeed:5e3,pauseOnHover:!1,dots:!0,slide:".fullwidth",slidesToShow:1,slidesToScroll:1,responsive:[{breakpoint:1e3,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:768,settings:"unslick"}]}),e(".slick-three").slick({infinite:!0,adaptiveHeight:!1,slide:":not(.blocker)",dots:!1,slidesToShow:3,slidesToScroll:1,arrows:!0,centerMode:!0,centerPadding:"0",responsive:[{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1},centerMode:!0,centerPadding:"50",variableWidth:!0}]})}),e(window).on("resize orientationchange",function(){e("#homeSlider").slick("resize"),e(".slick-three").slick("resize")}),e(window).scroll(_.debounce(function(){if(e(window).width()<767){var i=e(this).scrollTop();console.log(i),i>e(".slick-three").offset().top-400&&(e(".slick-three .slick-slide").css("animation","swipe 1200ms ease-in-out forwards"),setTimeout(function(){e(".blocker").css("display","none")},1600))}},100))}(jQuery);</script>
 <!-- amp -->
-<script id="carousel-template" type="text/x-handlebars-template">
-    <div id="carousel-container">
-        <div class="previousThumbnail"></div>
-        <ul id="carousel">
-            {{#items}}
-            <li>
-                <!-- <img src='{{src}}?w=300' alt='{{ name }}' class="amp-main-img" /> -->
+<!-- http://hub.amplience.com/display/DEV/Content+Authoring+Developer+Documentation#ContentAuthoringDeveloperDocumentation-ContentAuthoringDevelopmentDemonstrations -->
+<!-- Handlebars Template to render content -->
+<script id="promo_template" type="text/x-handlebars-template">
 
-<picture>
-    <source srcset="{{src}}?w=319, {{src}}?w=638 2x" media="(max-width: 320px)">
-    <source srcset="{{src}}?w=767, {{src}}?w=1534 2x" media="(min-width: 321px) and (max-width: 768px)">
-    <source srcset="{{src}}?w=1024, {{src}}?w=2048 2x" media="(min-width: 769px) and (max-width: 1024px)">
-    <source srcset="{{src}}?w=1440, {{src}}?w=2880 2x" media="(min-width: 1025px) and (max-width: 1440px)">
-    <source srcset="{{src}}?w=1920, {{src}}?w=3840 2x" media="(min-width: 1441px) and (max-width: 1920px)">
-    <source srcset="{{src}}?w=2560, {{src}}?w=5120 2x" media="(min-width: 1921px) and (max-width: 2560px)">
-    <source srcset="{{src}}?w=4000" media="(min-width: 2561px)">
-    <img src="{{src}}?w=319" srcset="{{src}}?w=319, {{src}}?w=638 2x" alt="">
-</picture>
+<style>
+    .promo-container {
+        min-height: 100px;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    .promo-container h3 {
+        font-size: 30px;
+    }
+    .promo-container p {
+        font-size: 18px;
+    }
+</style>
+<a href="{{url}}">
+<div class="promo-container" style="background: #{{bg-hex}};">
+    <h3 class="title">{{title}}</h3>
+    <p class="subtitle">{{subtitle}}</p>
+<!-- <button class="button">{{btn-txt}}</button> -->
+<button class="button">{{btn-txt}}</button>
 
-            </li>
-            {{/items}}
-        </ul>
-        <div class="nextThumbnail"></div>
-    </div>
+</div>
+</a>
+
+
 </script>
 <script>
     (function ($) {
- 
-    //   Load data, inline attributes and render via template
-      
-            $.ajax({url: "https://c1.adis.ws/cms/content/query?fullBodyObject=true&query=%7B%22sys.iri%22%3A%22http%3A%2F%2Fcontent.cms.amplience.com%2Fc01d4913-d6ed-4f7c-9229-fb972d668854%22%7D&scope=tree&store=missguided", success: function(data){
+      $(window).load(function () {
+            // Get template
+            var source = $("#promo_template").html();
+            var template = Handlebars.compile(source); 
+            
+            //   Load data, inline attributes and render via template
+            $.ajax({url: "https://c1.adis.ws/cms/content/query?fullBodyObject=true&query=%7B%22sys.iri%22%3A%22http%3A%2F%2Fcontent.cms.amplience.com%2F5e37bb18-7bf3-4cb0-a57d-dd95885c3cfb%22%7D&scope=tree&store=missguided", success: function(data){
                      
                     // Log out the result
                     console.log("This is the result in JSON-LD:");
@@ -215,9 +198,14 @@
                         console.log(inlineResult[0].title);
                         console.log(inlineResult[0].subtitle);
                         console.log("---");
+
+                        //  $('#text-holder').text(inlineResult[0].title);
+                        var html = template(inlineResult[0]);
+                        $('.container').append(html);
                     }
             }});
 
-
+      });
     })(jQuery);
 </script>
+
