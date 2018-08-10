@@ -190,36 +190,34 @@
 </script>
 <script>
     (function ($) {
-        $(document).ready(function () {
+ 
+    //   Load data, inline attributes and render via template
+      
+            $.ajax({url: "https://c1.adis.ws/cms/content/query?fullBodyObject=true&query=%7B%22sys.iri%22%3A%22http%3A%2F%2Fcontent.cms.amplience.com%2Fc01d4913-d6ed-4f7c-9229-fb972d668854%22%7D&scope=tree&store=missguided", success: function(data){
+                     
+                    // Log out the result
+                    console.log("This is the result in JSON-LD:");
+                    console.log(JSON.stringify(data));
+                    // console.log("---");
+ 
+                    // Use the SDK to inline the content from the graphs.
+                    var inlineResult = amp.inlineContent(data);
+ 
+                    // This is the new content
+                    // console.log("This is the result inlined:");
+                    // console.log(JSON.stringify(inlineResult));
+                    // console.log("---");
+ 
+                    if(inlineResult && inlineResult.length === 1){
+                        // Now log out the text from the inline content
+                        console.log("The content is here:");
+                        console.log("---");
+                        console.log(inlineResult[0].title);
+                        console.log(inlineResult[0].subtitle);
+                        console.log("---");
+                    }
+            }});
 
-            $(window).load(function () {
-                // Code that uses jQuery's $ can follow here.
-                amp.init({
-                    "client_id": "missguided",
-                    "di_basepath": "http://i1.adis.ws/",
-                    "err_img": "http://i1.adis.ws/i/playground/404"
-                });
-                // amp gen
-                // var contents = document.getElementById('contents');
-                // amp.get({ "name": "P9664838_set", "type": "s" }, function (data) {
-                // amp.genHTML(data.P9664838_set, contents);
-                // });
-
-                // handlebars
-                var contents = $('#contents');
-                var template = Handlebars.compile($("#carousel-template").html());
-                amp.get({ "name": "P9664838_set", "type": "s" }, function (data) {
-                    var dom = template(data.P9664838_set);
-                    contents.append(dom);
-                    $('ul#carousel').ampCarousel({ "autoplay": true });
-
-                });
-
-            });
-        });
 
     })(jQuery);
 </script>
-<script src="/js/handlebars-v4.0.11.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="js/amplience-sdk-client-master/dist/amplience-sdk-client.js"></script>
