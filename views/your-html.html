@@ -1,10 +1,21 @@
 <style>
-    .main {
-        min-height: 400px;
+    .main-container,
+    .main-container .main>:not(.toolbar-container) {
+        box-sizing: border-box;
+        max-width: 100000px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
+
+
+
     .std {
-        min-height: 450px;
+        max-width: 2200px;
+        margin: 0 auto;
+        min-height: 100vh;
         background-image: url('https://media.missguided.co.uk/image/upload/v1532701738/texture-1_ueaqba.jpg');
         background-color: #ff4d8c;
         background-blend-mode: soft-light;
@@ -15,12 +26,16 @@
         position: absolute;
         top: 100px;
         left: 50px;
-        max-width: 500px;
+        max-width: 50%;
         color: white;
         padding: 20px;
     }
 
-    .text p {
+    .text h1 {
+        font-size: 6vw;
+    }
+
+    .text h5 {
         max-width: 70%;
     }
 
@@ -42,16 +57,19 @@
 
         box-shadow: none;
         width: 300px;
-        height: 300px;
+        height: 236px;
         border: none;
-        border-radius: 150px;
+        /* border-radius: 150px; */
         -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
         -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
         /* background: white; */
-        background-image: url('https://media.missguided.co.uk/image/upload/v1533137721/festival_jackets_evkyfx.png');
+        /* background-image: url('https://media.missguided.co.uk/image/upload/v1533137721/festival_jackets_evkyfx.png'); */
+        background-image: url('https://media.missguided.co.uk/image/upload/v1533739065/box-2_xueygo.gif');
+
+
         background-size: contain;
         background-repeat: no-repeat;
         /* background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%); */
@@ -62,10 +80,67 @@
         -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.3);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.3);
     }
+
+    @media (max-width:768px) {
+        .text {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            max-width: 300px;
+            padding: 0;
+        }
+        .text h1 {
+            font-size: 50px
+        }
+        .text h3 {
+            font-size: 22px;
+        }
+
+
+        .atlwdg-trigger.atlwdg-SUBTLE {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 70%;
+            left: 50%;
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        .text {
+            top: 150px;
+        }
+
+        .text h3 {
+            font-size: 30px;
+        }
+        .text h5 {
+            font-size: 18px;
+        }
+
+        .atlwdg-trigger.atlwdg-SUBTLE {
+            top: 40%;
+            width: 450px;
+            height: 353px;
+        }
+    }
+
+    @media (min-width: 2000px) {
+        .atlwdg-trigger.atlwdg-SUBTLE {
+            top: 30%;
+            width: 600px;
+            height: 473px;
+        }
+    }
 </style>
+
 <div class="text">
-    <h1>make your creative request here...</h1>
-    <p>Just click the button over there, fill in and submit, we'll allocate some creative time to deal with it.</p>
+    <h1>hit the request line</h1>
+    <h3>make your creative request here...</h3>
+    <h5>Just click the button over there, fill in and submit, we'll allocate some creative time to deal with it.</h5>
 </div>
 
 <script type="text/javascript" src="https://missguided.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-nusm4m/b/9/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=0d35045a"></script>
