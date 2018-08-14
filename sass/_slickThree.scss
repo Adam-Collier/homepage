@@ -22,15 +22,16 @@
 
 @media only screen and (max-width: 767px) {
   .slick-three {
-  padding: 0 0 $mobileSpacing 0;
-  img {
-    width: 100%;
-    }
+    padding: 0 0 $mobileSpacing 0;
+
+    img {
+      width: 100%;
+      }
   }
   .slick-three {
     img {
       align-self: flex-start;
-      max-width: 80%;
+      max-width: 75%;
       margin: 0 auto 1em;
     }
   }

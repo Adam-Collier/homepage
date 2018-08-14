@@ -83,8 +83,33 @@
 
   .slick-next,
   .slick-prev {
-    top: 40vw;
+    top: 37.5vw;
   }
+
+  .slick-next:before, .slick-prev:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    transform: translateY(-50%);
+    background: transparent;    
+  }
+
+  .slick-next:before{
+    top: 50%;
+    bottom: 0;
+    right: -10px;
+  }
+
+  .slick-prev:before{
+    top: 50%;
+    bottom: 0;
+    left: -10px;
+  }
+
+
+
+
 
   .slick-next {
     right: 13px;
