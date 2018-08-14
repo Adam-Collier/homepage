@@ -36,6 +36,18 @@ h6 {
   margin-bottom: 0.6em;
 }
 
+.title3 + .button{
+  margin-top: 25px;
+}
+
+.title-below > .subtitle3:first-child {
+  margin-top: 8px;
+}
+
+div + .subtitle3 {
+  margin-top: 50px;
+}
+
 .subtitle1 {
   font-size: 16px;
   display: block;
