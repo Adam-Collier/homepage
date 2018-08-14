@@ -1,44 +1,44 @@
 <style>
-  @media (min-width: 768px) {
-    .row1 {
-      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 134'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23aebcbb' d='M0 0h300v133H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse fill='%238b4836' rx='1' ry='1' transform='matrix(10.45305 -71.65492 32.55728 4.74947 65.3 70.4)'/%3e%3cellipse fill='white' rx='1' ry='1' transform='rotate(-179.5 120.9 28) scale(20.7903 85.07156)'/%3e%3cellipse fill='%2300e0f7' rx='1' ry='1' transform='rotate(-128.4 11 -4.7) scale(35.95493 40.71652)'/%3e%3cellipse fill='white' cx='144' cy='64' rx='18' ry='212'/%3e%3cpath fill='%2330b3e7' d='M124 118V51l-90 72z'/%3e%3cpath fill='%23824c3e' d='M158.7 87.8l38.2-78.6 3.5 9.5 13.2 47.6z'/%3e%3cpath fill='%2300c1e0' d='M224 11l-62 25-1-26z'/%3e%3cellipse fill='%23ff8553' rx='1' ry='1' transform='matrix(-15.68151 -6.68873 31.07793 -72.8612 38.2 89)'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
-    }
-    .row2 {
-      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 134'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23827e7a' d='M0 0h300v133H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse fill='%23c1cac5' rx='1' ry='1' transform='matrix(29.013 .96247 -2.20547 66.48231 193.5 26.2)'/%3e%3cellipse fill='%23181a2c' cx='83' cy='73' rx='18' ry='33'/%3e%3cpath fill='%23fff2d9' d='M111.2 38L99 86l28-43.4-9.7-28.8z'/%3e%3cpath fill='%2302000c' d='M126 112l-10-57-9 37z'/%3e%3cellipse fill='%235d6267' cx='27' cy='48' rx='58' ry='59'/%3e%3cpath fill='%2398492a' d='M127 26h27v82h-27z'/%3e%3cellipse fill='%23bca087' rx='1' ry='1' transform='matrix(21.9176 -11.0405 8.84025 17.54969 140.5 12)'/%3e%3cellipse fill='%23949893' cx='195' cy='94' rx='36' ry='48'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
-    }
-    .row3 {
-      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 134'%3e%3cfilter id='c'%3e%3cfeGaussianBlur stdDeviation='55' /%3e%3c/filter%3e%3cpath fill='%23e3ada3' d='M0 0h300v133H0z'/%3e%3cg filter='url(%23c)' fill-opacity='.5'%3e%3cellipse fill='%23db9f00' fill-opacity='.5' rx='1' ry='1' transform='matrix(6.95746 -48.88564 20.31885 2.8918 146.3 104.6)'/%3e%3cellipse fill='%23c67c00' fill-opacity='.5' rx='1' ry='1' transform='matrix(11.265 1.49985 -16.8618 126.64483 252 104.6)'/%3e%3cpath fill='%23ce8100' fill-opacity='.5' d='M62.2 30.6L51.3 134.3l-18.6-2L43.6 28.6z'/%3e%3cellipse fill='%23f2c1e1' fill-opacity='.5' rx='1' ry='1' transform='rotate(97.9 72.9 128.5) scale(94.56439 35.04641)'/%3e%3cellipse fill='%23eebcdf' fill-opacity='.5' rx='1' ry='1' transform='matrix(-34.5865 -2.83083 6.16915 -75.37349 87 99.7)'/%3e%3cellipse fill='%23f7c8eb' fill-opacity='.5' rx='1' ry='1' transform='matrix(32.64955 2.35079 -9.71339 134.90708 .6 95)'/%3e%3cellipse fill='%23f9c9ec' fill-opacity='.5' rx='1' ry='1' transform='matrix(-19.37032 -2.82582 19.30928 -132.36033 299.3 45)'/%3e%3cpath fill='%23b37967' fill-opacity='.5' d='M145.6 73l24.5-91.2h-17.2l-35.4 85.6z'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
-    }
+  button.button {
+    text-transform: none;
+  }
+
+  @media (min-width:768px) {
     .row1 .title1,
     .row2 .title1,
     .row3 .title1 {
       display: none;
     }
-    .row .subtitle1 {
+    .row subtitle1 {
       margin-top: 20px;
     }
-    .row1 svg {
-      max-width: 60%;
-      filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 0px 10px);
+    .row2 svg {
+      margin: 0 auto 1em;
+      filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 0px 30px);
     }
-    .row3 .banner_content {
-      top: 70%;
+    .row1 .banner_content {
+      width: 40%;
+    }
+    .row1 .subtitle1 {
+      display: none;
+    }
+    .row3 svg {
+      width: 60%;
+      margin-bottom: 1em;
     }
   }
 
   @media (max-width: 767px) {
-    .row1 {
-      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23c4d1d0' d='M0 0h300v300H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cpath fill='%2300a4bc' d='M58 106l155-86-152 3z'/%3e%3cellipse fill='%23ae3b14' rx='1' ry='1' transform='rotate(-71.4 127 -43.8) scale(51.93602 24.19117)'/%3e%3cellipse fill='%237baeb3' cx='128' cy='172' rx='67' ry='67'/%3e%3cellipse fill='%23e9835f' rx='1' ry='1' transform='matrix(-23.40103 70.11722 -19.14412 -6.38919 100 150.7)'/%3e%3cpath fill='%23fff7ef' d='M311.5 254.5h-113V-.5h113z'/%3e%3cellipse fill='%23fff7ef' rx='1' ry='1' transform='matrix(-37.61015 -.89808 5.0199 -210.22484 21.7 150.7)'/%3e%3cellipse fill='%2387faff' rx='1' ry='1' transform='rotate(-102.9 154.8 42) scale(36.95346 50.38294)'/%3e%3cpath fill='%237a4745' d='M143 89h25v46h-25z'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
-    }
-    .row2 {
-      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%238b827c' d='M0 0h300v300H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse fill='%23242837' rx='1' ry='1' transform='rotate(-54.8 211 43.5) scale(46.79473 68.7713)'/%3e%3cpath fill='%23fff4e9' d='M77 183L69 79l113 12z'/%3e%3cellipse fill='%23b5bfba' rx='1' ry='1' transform='matrix(-10.48868 154.74272 -68.09378 -4.6155 255 40)'/%3e%3cellipse fill='%2379412e' cx='160' cy='223' rx='39' ry='63'/%3e%3cellipse fill='%23ffffea' rx='1' ry='1' transform='matrix(9.22481 -36.68103 8.62209 2.16835 75 184.4)'/%3e%3cpath fill='ivory' d='M112.3 73.2L130 41.7 91.3 48l11.5 24z'/%3e%3cpath fill='%23070000' d='M90 87L74 63 99 1z'/%3e%3cpath fill='%23fffffe' d='M100 147h55v18h-55z'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
-    }
-    .row3 {
-      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23e1aa98' d='M0 0h300v300H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse fill='%23cc8403' rx='1' ry='1' transform='matrix(20.04296 2.74897 -24.94302 181.86184 182.6 178.2)'/%3e%3cellipse fill='%23d99500' rx='1' ry='1' transform='matrix(26.2623 2.3359 -9.57726 107.67602 59 169.9)'/%3e%3cellipse fill='%23f3c9ee' rx='1' ry='1' transform='matrix(34.63358 3.83959 -13.5543 122.2615 134.5 137.5)'/%3e%3cellipse fill='%23f6c6f0' rx='1' ry='1' transform='rotate(98.6 59 189.2) scale(221.56218 35.3201)'/%3e%3cellipse fill='%23faf1ea' cx='91' cy='106' rx='100' ry='10'/%3e%3cellipse fill='%23f3c2ee' cy='117' rx='29' ry='255'/%3e%3cpath fill='%23c37a31' d='M70 96l43-50 28 49z'/%3e%3cellipse fill='%237e474f' rx='1' ry='1' transform='matrix(5.69044 -22.7995 15.73924 3.9283 74.7 28)'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
-    }
     .row svg {
       display: none;
     }
+    .row1 .banner_content img,
+    .row1 .banner_content .subtitle1,
+    .row2 .title1,
+    .row3 .title1 {
+      display: none;
+    }
+
   }
 </style>
 <div class="container">
@@ -49,178 +49,114 @@
       <a href="/de/schuhe">Schuhe</a>
       <a href="/de/bekleidung/roecke">Röcke</a>
     </div>
+
     <div class="row fullwidth row1">
-      <a href="/de/nach-anlass-shoppen/urlaubsshop" class="tracking">
+      <a href="/de/nach-trend-shoppen/new-season-essentials" class="tracking">
         <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1532701279/Holiday_DE_mobile_qzpdfm.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg 1920w"
+          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1534162864/DE-promo-mobile_ehka4t.gif 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1534162864/DE-promo-mobile_ehka4t.gif 767w">
+          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534162753/DE_promo_desktop_vygus1.jpg 1920w"
             alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532701092/Holiday_DE_IRE_EU_POL_itoibw.jpg"
-            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 134&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23aebcbb&apos; d=&apos;M0 0h300v133H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;%238b4836&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(10.45305 -71.65492 32.55728 4.74947 65.3 70.4)&apos;/%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;rotate(-179.5 120.9 28) scale(20.7903 85.07156)&apos;/%3e%3cellipse fill=&apos;%2300e0f7&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;rotate(-128.4 11 -4.7) scale(35.95493 40.71652)&apos;/%3e%3cellipse fill=&apos;white&apos; cx=&apos;144&apos; cy=&apos;64&apos; rx=&apos;18&apos; ry=&apos;212&apos;/%3e%3cpath fill=&apos;%2330b3e7&apos; d=&apos;M124 118V51l-90 72z&apos;/%3e%3cpath fill=&apos;%23824c3e&apos; d=&apos;M158.7 87.8l38.2-78.6 3.5 9.5 13.2 47.6z&apos;/%3e%3cpath fill=&apos;%2300c1e0&apos; d=&apos;M224 11l-62 25-1-26z&apos;/%3e%3cellipse fill=&apos;%23ff8553&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-15.68151 -6.68873 31.07793 -72.8612 38.2 89)&apos;/%3e%3c/g%3e%3c/svg%3e"
-            alt="backup">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534162753/DE_promo_desktop_vygus1.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1534162753/DE_promo_desktop_vygus1.jpg" alt="backup">
         </picture>
         <div class="banner_content center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 623.07 181.04">
-            <title>Asset 2</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path d="M6.61,31.63H21.23c.22,3.36,2.71,4,6.67,4,4.49,0,6.88-1.08,6.88-3,0-.54-.06-3.68-6.78-3.68H25.24v-9.1H28c6.61,0,6.83-2.5,6.83-3.25,0-2.28-2.65-3.09-6.23-3.09-3.9,0-6.45,1-6.45,4.17H7.64c-.11-12,7.31-17,21.07-17,14,0,20.91,5,20.91,13,0,5.2-2.87,7.8-6.23,9.48v.81c4.33,1.36,7.58,5,7.58,10.78,0,8.78-8.5,13.82-22.75,13.82C13.54,48.54,6.45,43.77,6.61,31.63Z"
-                  style="fill:#fff" />
-                <path d="M56.44,24.59C56.44,9.21,64.84.65,80.06.65s23.62,8.56,23.62,23.94-8.45,24-23.62,24S56.44,40,56.44,24.59Zm31.09,0c0-6.34-2.33-10.18-7.47-10.18s-7.48,3.84-7.48,10.18,2.28,10.19,7.48,10.19S87.53,30.93,87.53,24.59Z"
-                  style="fill:#fff" />
-                <path d="M110.34,13.49c0-6.56,3.68-12.3,12.62-12.3s12.67,5.74,12.67,12.3S132,25.89,123,25.89,110.34,20.15,110.34,13.49Zm15.11,0A2.23,2.23,0,0,0,123,11.16a2.19,2.19,0,0,0-2.44,2.33A2.29,2.29,0,0,0,123,15.93,2.33,2.33,0,0,0,125.45,13.49Zm-3.2,30.87L151.5,0l6.72,4.5L129,48.91Zm22.54-8.77c0-6.56,3.68-12.3,12.67-12.3s12.62,5.74,12.62,12.3S166.4,48,157.46,48,144.79,42.25,144.79,35.59Zm15.11,0a2.22,2.22,0,0,0-2.44-2.38A2.26,2.26,0,0,0,155,35.59,2.33,2.33,0,0,0,157.46,38,2.29,2.29,0,0,0,159.9,35.59Z"
-                  style="fill:#fff" />
-                <path d="M227.5,47.34l-5.74-11.16h-10.3V47.34H195.11V1.84h26.75c12.79,0,20,5.31,20,17.77a15.62,15.62,0,0,1-6.23,13l7.91,14.73ZM211.46,24h9.21c3.25,0,4.82-1.63,4.82-4.28s-1.57-4.28-4.82-4.28h-9.21Z"
-                  style="fill:#fff" />
-                <path d="M284.37,41.87H265.85l-1.74,5.47h-16.9l16.42-45.5h23l16.47,45.5H286.11Zm-3.84-12.08-4-12.56H273.7l-4,12.56Z" style="fill:#fff"
-                />
-                <path d="M356.25,34.23c0,7.53-5.09,13.11-19.66,13.11H308.2V1.84h29.47c14,0,17.44,6.23,17.44,12,0,5.58-2.6,7.36-5.68,9.21v1C354.25,26.06,356.25,29.25,356.25,34.23ZM324.56,14.35v5.53h11.11c3.3,0,3.79-2.17,3.79-2.71,0-1-.49-2.82-3.79-2.82ZM339.68,31.8c0-1-.55-2.93-3.8-2.93H324.56v6h11.32C339.13,34.83,339.68,32.61,339.68,31.8Z"
-                  style="fill:#fff" />
-                <path d="M395.69,41.87H377.16l-1.73,5.47H358.52l16.42-45.5h23l16.46,45.5H397.42Zm-3.85-12.08-4-12.56H385l-4,12.56Z" style="fill:#fff"
-                />
-                <path d="M458.68,15.49H442.54V47.34H426.12V15.49H410V1.84h48.64Z" style="fill:#fff" />
-                <path d="M513.55,15.49H497.41V47.34H481V15.49H464.91V1.84h48.64Z" style="fill:#fff" />
-                <path d="M537.54,1.84H553.9v45.5H537.54Z" style="fill:#fff" />
-                <path d="M560.73,1.84h20.58l6.12,23.94h1.19l6.12-23.94h20.59v45.5h-15.6V29.58h-1.25L594,47.34H582l-4.44-17.76h-1.24V47.34h-15.6Z"
-                  style="fill:#fff" />
-                <path d="M0,105.19V79.84H16.52v25c0,5.09,2.11,8.34,7.58,8.34s7.7-3.25,7.7-8.34v-25H48.21v25.24c0,15.06-7.91,21.78-24.11,21.78S0,120.14,0,105.19Z"
-                  style="fill:#fff" />
-                <path d="M87.37,125.34l-5.74-11.16H71.34v11.16H55V79.84H81.74c12.78,0,20,5.31,20,17.77a15.62,15.62,0,0,1-6.23,13l7.91,14.73ZM71.34,102h9.21c3.25,0,4.82-1.63,4.82-4.28s-1.57-4.28-4.82-4.28H71.34Z"
-                  style="fill:#fff" />
-                <path d="M109.52,79.84h16.36v31.85H149.5v13.65h-40Z" style="fill:#fff" />
-                <path d="M191.42,119.87H172.9l-1.73,5.47h-16.9l16.41-45.5h23l16.46,45.5h-17Zm-3.84-12.08-4-12.56h-2.82l-4,12.56Z" style="fill:#fff"
-                />
-                <path d="M211.57,105.19V79.84H228.1v25c0,5.09,2.11,8.34,7.58,8.34s7.69-3.25,7.69-8.34v-25h16.41v25.24c0,15.06-7.9,21.78-24.1,21.78S211.57,120.14,211.57,105.19Z"
-                  style="fill:#fff" />
-                <path d="M314.6,112.23c0,7.53-5.09,13.11-19.66,13.11H266.55V79.84H296c14,0,17.44,6.23,17.44,12,0,5.58-2.6,7.36-5.69,9.21v1C312.6,104.05,314.6,107.25,314.6,112.23ZM282.91,92.35v5.53H294c3.3,0,3.79-2.17,3.79-2.71,0-1-.49-2.82-3.79-2.82ZM298,109.8c0-1-.54-2.93-3.79-2.93H282.91v6h11.32C297.48,112.83,298,110.61,298,109.8Z"
-                  style="fill:#fff" />
-                <path d="M319.74,109.74h14.68c.11,2.71,2.39,4.28,8.56,4.39,5.31.05,7.58-1.35,7.58-3,0-.87-.21-2.38-4.33-2.92l-6-.93c-8.56-1.35-19.5-2-19.5-14.19,0-9.15,7.31-14.79,22.37-14.79,13.44,0,22.81,3.47,22.43,17H350.94c-.48-2.65-2.81-4.28-8.18-4.28-4.6,0-6.28,1.3-6.28,2.93,0,.76.38,2.27,3.47,2.76l4.76.76c9.16,1.52,22.16,1.35,22.16,14.35,0,10.19-7.8,15.06-23.89,15C326.68,126.81,319.26,121.93,319.74,109.74Z"
-                  style="fill:#fff" />
-                <path d="M373.1,96h31.41v13.7H373.1Z" style="fill:#fff" />
-                <path d="M410.63,109.74h14.68c.11,2.71,2.39,4.28,8.56,4.39,5.31.05,7.58-1.35,7.58-3,0-.87-.21-2.38-4.33-2.92l-6-.93c-8.56-1.35-19.5-2-19.5-14.19C411.66,84,419,78.32,434,78.32c13.44,0,22.81,3.47,22.43,17H441.83c-.48-2.65-2.81-4.28-8.18-4.28-4.6,0-6.28,1.3-6.28,2.93,0,.76.38,2.27,3.47,2.76l4.76.76c9.16,1.52,22.16,1.35,22.16,14.35,0,10.19-7.8,15.06-23.89,15C417.57,126.81,410.15,121.93,410.63,109.74Z"
-                  style="fill:#fff" />
-                <path d="M512.41,79.84v45.5H496V109.8H480v15.54H463.61V79.84H480V96.31h16V79.84Z" style="fill:#fff" />
-                <path d="M518.37,102.59c0-14.68,10.13-24.27,26-24.27s26,9.59,26,24.27-10.13,24.27-26,24.27S518.37,117.27,518.37,102.59Zm35.75,0c0-6.61-4.5-10.13-9.75-10.13s-9.75,3.52-9.75,10.13,4.55,10.13,9.75,10.13S554.12,109.2,554.12,102.59Z"
-                  style="fill:#fff" />
-                <path d="M576.43,79.84h26.49c12.52,0,20.15,5.42,20.15,18.15s-7.63,18.09-20.09,18.09H592.79v9.26H576.43Zm25,22.64c3,0,5-1.51,5-4.49s-2-4.55-5-4.55h-8.73v9Z"
-                  style="fill:#fff" />
-                <path d="M54.09,159.35h9.5l2.82,11.05H67l2.83-11.05h9.5v21h-7.2v-8.2h-.58l-2.05,8.2H63.91l-2-8.2h-.57v8.2h-7.2Z" style="fill:#fff"
-                />
-                <path d="M82.44,159.35H90v21H82.44Z" style="fill:#fff" />
-                <path d="M115.46,165.65H108v14.69h-7.57V165.65H93v-6.3h22.44Z" style="fill:#fff" />
-                <path d="M149,169.85c0,6-3,10.49-11.64,10.49H126.54v-21h10.85C146.06,159.35,149,163.77,149,169.85Zm-7.59,0c0-3.15-1.83-4.18-4.05-4.18h-3.25l0,8.35h3.28C139.61,174,141.44,173,141.44,169.85Z"
-                  style="fill:#fff" />
-                <path d="M151.91,159.35h19.32v6H159.46v2h11.33v4.85H159.46v2h11.77v6.05H151.91Z" style="fill:#fff" />
-                <path d="M174.39,159.35h9.5l2.82,11.05h.55l2.83-11.05h9.49v21h-7.2v-8.2h-.57l-2.05,8.2h-5.55l-2.05-8.2h-.57v8.2h-7.2Z" style="fill:#fff"
-                />
-                <path d="M210.44,169.85c0-6.78,4.72-11.2,11.9-11.2,5.27,0,10.72,2.32,11.29,9.72h-7.2a3.79,3.79,0,0,0-4.09-3.2,4.68,4.68,0,0,0,0,9.35,3.79,3.79,0,0,0,4.09-3.25h7.2c-.57,7.45-5.95,9.77-11.29,9.77C215.16,181,210.44,176.62,210.44,169.85Z"
-                  style="fill:#fff" />
-                <path d="M236.36,169.85c0-6.78,4.68-11.2,12-11.2s12,4.42,12,11.2-4.67,11.19-12,11.19S236.36,176.62,236.36,169.85Zm16.5,0a4.5,4.5,0,1,0-4.5,4.67A4.36,4.36,0,0,0,252.86,169.85Z"
-                  style="fill:#fff" />
-                <path d="M285.66,169.85c0,6-3,10.49-11.65,10.49H263.16v-21H274C282.68,159.35,285.66,163.77,285.66,169.85Zm-7.6,0c0-3.15-1.83-4.18-4.05-4.18h-3.25l0,8.35H274C276.23,174,278.06,173,278.06,169.85Z"
-                  style="fill:#fff" />
-                <path d="M288.54,159.35h19.32v6H296.09v2h11.32v4.85H296.09v2h11.77v6.05H288.54Z" style="fill:#fff" />
-                <path d="M322.16,166.32l3.47,1.63-2.15,3.75-3.12-2.2.32,3.82h-4.29l.32-3.82-3.12,2.2L311.44,168l3.47-1.63-3.47-1.62,2.15-3.73,3.12,2.18-.32-3.8h4.29l-.32,3.8,3.12-2.18,2.15,3.73Z"
-                  style="fill:#fff" />
-                <path d="M329.24,164.72a3.71,3.71,0,1,1,3.7,3.65A3.73,3.73,0,0,1,329.24,164.72Zm0,10.5a3.71,3.71,0,1,1,3.7,3.65A3.74,3.74,0,0,1,329.24,175.22Z"
-                  style="fill:#fff" />
-                <path d="M347.41,173.14h6.78c0,1.25,1.09,2,3.94,2,2.45,0,3.5-.63,3.5-1.38,0-.4-.1-1.1-2-1.35l-2.75-.42c-3.94-.63-9-.9-9-6.55,0-4.22,3.37-6.82,10.32-6.82,6.2,0,10.52,1.6,10.35,7.85h-6.75c-.23-1.23-1.3-2-3.78-2-2.12,0-2.9.6-2.9,1.35,0,.35.18,1,1.6,1.28l2.2.35c4.23.7,10.23.62,10.23,6.62,0,4.7-3.6,6.95-11,6.92S347.19,178.77,347.41,173.14Z"
-                  style="fill:#fff" />
-                <path d="M371.86,171V159.35h7.62v11.52c0,2.35,1,3.85,3.5,3.85s3.55-1.5,3.55-3.85V159.35h7.57V171c0,6.94-3.64,10-11.12,10S371.86,177.94,371.86,171Z"
-                  style="fill:#fff" />
-                <path d="M397.24,159.35h8.64l6.05,10.42h.7V159.35H420v21h-8.48l-6.25-10.42h-.67v10.42h-7.37Z" style="fill:#fff" />
-                <path d="M422.64,173.14h6.77c0,1.25,1.1,2,3.95,2,2.45,0,3.5-.63,3.5-1.38,0-.4-.1-1.1-2-1.35l-2.75-.42c-3.95-.63-9-.9-9-6.55,0-4.22,3.37-6.82,10.32-6.82,6.2,0,10.52,1.6,10.35,7.85H437c-.22-1.23-1.3-2-3.77-2-2.13,0-2.9.6-2.9,1.35,0,.35.17,1,1.6,1.28l2.2.35c4.22.7,10.22.62,10.22,6.62,0,4.7-3.6,6.95-11,6.92S422.41,178.77,422.64,173.14Z"
-                  style="fill:#fff" />
-                <path d="M446.71,169.85c0-6.78,4.67-11.2,12-11.2s12,4.42,12,11.2-4.68,11.19-12,11.19S446.71,176.62,446.71,169.85Zm16.5,0a4.5,4.5,0,1,0-4.5,4.67A4.36,4.36,0,0,0,463.21,169.85Z"
-                  style="fill:#fff" />
-                <path d="M473.51,171V159.35h7.62v11.52c0,2.35,1,3.85,3.5,3.85s3.55-1.5,3.55-3.85V159.35h7.57V171c0,6.94-3.65,10-11.12,10S473.51,177.94,473.51,171Z"
-                  style="fill:#fff" />
-                <path d="M521.2,165.65h-7.44v14.69h-7.58V165.65h-7.42v-6.3H521.2Z" style="fill:#fff" />
-                <path d="M524,173.09h6.75c.1,1.55,1.25,1.85,3.07,1.85,2.08,0,3.18-.5,3.18-1.4,0-.25,0-1.7-3.13-1.7h-1.27v-4.19h1.27c3,0,3.15-1.15,3.15-1.5,0-1.05-1.22-1.43-2.87-1.43-1.8,0-3,.45-3,1.93h-6.7c0-5.53,3.38-7.85,9.73-7.85s9.64,2.32,9.64,6a4.55,4.55,0,0,1-2.87,4.37v.37a4.9,4.9,0,0,1,3.5,5c0,4-3.92,6.37-10.5,6.37C527.16,180.89,523.88,178.69,524,173.09Z"
-                  style="fill:#fff" />
-                <path d="M547,169.85c0-7.1,3.87-11,10.9-11s10.89,3.95,10.89,11-3.9,11-10.89,11S547,176.94,547,169.85Zm14.35,0c0-2.93-1.08-4.7-3.45-4.7s-3.45,1.77-3.45,4.7,1.05,4.69,3.45,4.69S561.31,172.77,561.31,169.85Z"
-                  style="fill:#fff" />
-              </g>
-            </g>
-          </svg>
+          <img src="https://media.missguided.co.uk/image/upload/v1534162866/DE-promo-text_niwonx.gif">
+          <h4 class="subtitle1 white">25% Rabatt auf Styles f&#xFC;r die Schule mit dem Code*: SCHULE</h4>
           <div class="more-buttons">
-            <button class="button">zum Urlaubs-Shop</button>
+            <button class="button">Shoppe Schul-Outfits</button>
           </div>
         </div>
       </a>
     </div>
     <div class="row fullwidth row2">
-      <a href="/de/nach-trend-shoppen/new-season-essentials" class="tracking">
+      <a href="/de/bekleidung/casual" class="tracking">
         <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1532698500/New_Essentials_Mobile_d6qabd.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1532698500/New_Essentials_Mobile_d6qabd.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1532698671/New_Essentials_nvjjlk.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1532698671/New_Essentials_nvjjlk.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532698671/New_Essentials_nvjjlk.jpg 1920w"
+          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1533565975/casual_mobile_joubet.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1533565975/casual_mobile_joubet.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1533565975/casual_mobile_joubet.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1533565975/casual_mobile_joubet.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1533565975/casual_mobile_joubet.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1533565975/casual_mobile_joubet.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1533565975/casual_mobile_joubet.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1533565975/casual_mobile_joubet.jpg 767w">
+          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1533565975/casual_desktop_ra1fai.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1533565975/casual_desktop_ra1fai.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1533565975/casual_desktop_ra1fai.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1533565975/casual_desktop_ra1fai.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1533565975/casual_desktop_ra1fai.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1533565975/casual_desktop_ra1fai.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1533565975/casual_desktop_ra1fai.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1533565975/casual_desktop_ra1fai.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1533565975/casual_desktop_ra1fai.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1533565975/casual_desktop_ra1fai.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533565975/casual_desktop_ra1fai.jpg 1920w"
             alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532698671/New_Essentials_nvjjlk.jpg"
-            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 134&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23827e7a&apos; d=&apos;M0 0h300v133H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;%23c1cac5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(29.013 .96247 -2.20547 66.48231 193.5 26.2)&apos;/%3e%3cellipse fill=&apos;%23181a2c&apos; cx=&apos;83&apos; cy=&apos;73&apos; rx=&apos;18&apos; ry=&apos;33&apos;/%3e%3cpath fill=&apos;%23fff2d9&apos; d=&apos;M111.2 38L99 86l28-43.4-9.7-28.8z&apos;/%3e%3cpath fill=&apos;%2302000c&apos; d=&apos;M126 112l-10-57-9 37z&apos;/%3e%3cellipse fill=&apos;%235d6267&apos; cx=&apos;27&apos; cy=&apos;48&apos; rx=&apos;58&apos; ry=&apos;59&apos;/%3e%3cpath fill=&apos;%2398492a&apos; d=&apos;M127 26h27v82h-27z&apos;/%3e%3cellipse fill=&apos;%23bca087&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(21.9176 -11.0405 8.84025 17.54969 140.5 12)&apos;/%3e%3cellipse fill=&apos;%23949893&apos; cx=&apos;195&apos; cy=&apos;94&apos; rx=&apos;36&apos; ry=&apos;48&apos;/%3e%3c/g%3e%3c/svg%3e"
-            alt="backup">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533565975/casual_desktop_ra1fai.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1533565975/casual_desktop_ra1fai.jpg" alt="backup">
         </picture>
         <div class="banner_content center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1108.01 59.56">
-            <title>Asset 4</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 939.97 61.93">
+            <title>Asset 1</title>
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
-                <path d="M59.34,29.78c-2.26,18.39-12.83,28.9-31,28.9H0L7.1.88H35.48C53.61.88,61.6,11.39,59.34,29.78Zm-20.84,0c1.21-9.9-.17-14.36-7.7-14.36H25.72L22.19,44.14h5.08C34.8,44.14,37.28,39.68,38.5,29.78Z"
+                <path d="M59.22,0H33.29L0,61.92H17.84l3.53-7H40.2l1.3,7H70.65ZM28.48,41.06l6.71-13.19,2.47,13.19Z" style="fill:#fff" />
+                <path d="M152.21,3.45A9.39,9.39,0,0,0,144.57,0H88.82L77.9,61.92h29.18l4.16-23.58h4.54a3.77,3.77,0,0,1,3,1.38,3.67,3.67,0,0,1,.8,3.15l-1.27,13.61a4.62,4.62,0,0,0,.89,3.86,4.32,4.32,0,0,0,3.56,1.58h27l.19-.41q-3-1.41-2.41-5,.07-3,.27-6.13t.26-6.12a9,9,0,0,0-3.5-7.79,13.74,13.74,0,0,0,7.06-9.82l2.64-15A9.68,9.68,0,0,0,152.21,3.45Zm-28.35,15-.26,1.48a5.7,5.7,0,0,1-5.37,4.53h-4.54l1.86-10.54h4.53a3.68,3.68,0,0,1,3,1.34h0A3.72,3.72,0,0,1,123.86,18.45Z"
                   style="fill:#fff" />
-                <path d="M86.62,58.68H66.22L73.31.88H93.72Z" style="fill:#fff" />
-                <path d="M149.77,43.71l-1.84,15h-49L106,.88h48l-1.84,15H124.55L123.67,23h22.25l-1.7,13.84H122l-.84,6.84Z" style="fill:#fff"
-                />
-                <path d="M239.2,58.68H217.13L206.52,32.41l-2.29-7.1h-.17L203,37.22l-2.64,21.46H182.62l7.1-57.8h22.07l10.6,26.36,2.29,7h.18L226,22.33,228.61.88H246.3Z"
+                <polygon points="88.82 0.01 88.82 0.01 88.82 0.01 88.82 0.01" style="fill:#fff" />
+                <polygon points="167.97 0.01 157.05 61.92 216.85 61.92 219.3 48.01 188.68 48.01 190.74 36.33 221.36 36.33 223.81 22.42 193.19 22.42 194.69 13.92 225.31 13.92 227.77 0.01 167.97 0.01 167.97 0.01"
                   style="fill:#fff" />
-                <path d="M302.35,43.71l-1.84,15h-49l7.1-57.8h48l-1.84,15H277.13L276.25,23h22.24l-1.7,13.84H274.55l-.84,6.84Z" style="fill:#fff"
-                />
-                <path d="M367.42,33.81C365.3,51.06,355,59.56,336.31,59.56s-26.89-8.5-24.77-25.75l4-32.93h20.49l-4.23,34.5c-.72,5.87,1.54,8.85,6.36,8.85s7.89-3,8.61-8.85L351.05.88h20.41Z"
+                <polygon points="304.04 26.32 326.33 0.01 307.59 0.01 292.93 17.32 284.42 0.01 257.01 0.01 273.6 33.5 268.58 61.92 297.76 61.92 304.04 26.32"
                   style="fill:#fff" />
-                <path d="M426.2,43.71l-1.84,15H375.31l7.1-57.8h48l-1.84,15H401L400.1,23h22.24l-1.7,13.84H398.4l-.84,6.84Z" style="fill:#fff"
-                />
-                <path d="M490.22,58.68H468.15L457.54,32.41l-2.28-7.1h-.18L454,37.22l-2.63,21.46h-17.7l7.1-57.8h22.07l10.61,26.36,2.29,7h.17L477,22.33,479.63.88h17.69Z"
+                <path d="M397,3.45A9.37,9.37,0,0,0,389.34,0H345.27a13.37,13.37,0,0,0-8.87,3.44,13.81,13.81,0,0,0-4.87,8.24l-6.8,38.55a9.72,9.72,0,0,0,2,8.26,9.37,9.37,0,0,0,7.65,3.42h44.07a13.38,13.38,0,0,0,8.85-3.42,13.63,13.63,0,0,0,4.89-8.26L399,11.69A9.69,9.69,0,0,0,397,3.45Zm-28.39,15-4.41,25a5.33,5.33,0,0,1-1.91,3.21A5.21,5.21,0,0,1,358.84,48a3.67,3.67,0,0,1-3-1.32,3.79,3.79,0,0,1-.76-3.21l4.42-25a5.34,5.34,0,0,1,1.88-3.19,5.15,5.15,0,0,1,3.45-1.34,3.6,3.6,0,0,1,3,1.34A3.73,3.73,0,0,1,368.59,18.45Z"
                   style="fill:#fff" />
-                <path d="M578.77,43.71l-1.83,15H527.89L535,.88h48l-1.84,15H553.55L552.67,23h22.25l-1.7,13.84H551l-.84,6.84Z" style="fill:#fff"
-                />
-                <path d="M644.06,9.2,633.57,21.9A20.8,20.8,0,0,0,617.34,15c-4.12,0-6.92,1.4-7.15,3.33-.19,1.48,1.62,2.45,8,3.5,16,2.54,22.31,8.06,21,19.09C637.61,53.16,625.18,59.56,611,59.56c-14.63,0-20.92-3-27.38-8.15l10.67-14.1c4.1,5.08,9.53,7.27,17.06,7.27,4.9,0,6.53-1.14,6.71-2.63.21-1.66-1.79-2.54-8.48-3.68-15.88-2.62-21.79-8-20.51-18.39C590.51,8.06,601.13,0,618.56,0,629.6,0,636.79,2.1,644.06,9.2Z"
+                <path d="M408.28,0l-8.86,50.23a9.75,9.75,0,0,0,2,8.26A9.4,9.4,0,0,0,409,61.92h44a13.38,13.38,0,0,0,8.85-3.42,13.63,13.63,0,0,0,4.89-8.26L475.67,0H446.53l-7.67,43.47A5.64,5.64,0,0,1,433.53,48a3.67,3.67,0,0,1-3-1.32,3.79,3.79,0,0,1-.76-3.21L437.46,0Z"
                   style="fill:#fff" />
-                <path d="M704.15,9.2l-10.5,12.7A20.8,20.8,0,0,0,677.42,15c-4.11,0-6.91,1.4-7.15,3.33-.18,1.48,1.63,2.45,8,3.5,16,2.54,22.31,8.06,21,19.09-1.5,12.26-13.94,18.66-28.13,18.66-14.62,0-20.91-3-27.37-8.15l10.66-14.1c4.11,5.08,9.53,7.27,17.06,7.27,4.91,0,6.54-1.14,6.72-2.63.2-1.66-1.79-2.54-8.48-3.68-15.88-2.62-21.8-8-20.52-18.39C650.59,8.06,661.22,0,678.65,0,689.68,0,696.87,2.1,704.15,9.2Z"
+                <path d="M568.31,3.45A9.35,9.35,0,0,0,560.68,0H504.92L494,61.92h29.19l4.15-23.58h4.54a3.76,3.76,0,0,1,3,1.38,3.6,3.6,0,0,1,.8,3.15l-1.26,13.61a4.62,4.62,0,0,0,.89,3.86,4.32,4.32,0,0,0,3.55,1.58h27l.18-.41q-3-1.41-2.41-5,.09-3,.27-6.13t.27-6.12a8.93,8.93,0,0,0-3.51-7.79,13.75,13.75,0,0,0,7.07-9.82l2.64-15A9.68,9.68,0,0,0,568.31,3.45ZM540,18.45l-.26,1.48a5.7,5.7,0,0,1-5.37,4.53h-4.54l1.86-10.54h4.54a3.65,3.65,0,0,1,3,1.34A3.69,3.69,0,0,1,540,18.45Z"
                   style="fill:#fff" />
-                <path d="M757.28,43.71l-1.84,15H706.39l7.1-57.8h48l-1.84,15H732.06L731.18,23h22.24l-1.7,13.84H729.48l-.84,6.84Z" style="fill:#fff"
-                />
-                <path d="M821.31,58.68H799.23L788.62,32.41l-2.28-7.1h-.17l-1.12,11.91-2.63,21.46H764.73L771.82.88H793.9l10.6,26.36,2.29,7H807l1.12-11.92L810.71.88H828.4Z"
+                <polygon points="573.15 61.92 602.33 61.92 613.25 0.01 584.07 0.01 573.15 61.92" style="fill:#fff" />
+                <path d="M683.89,3.45A9.35,9.35,0,0,0,676.26,0H620.51L609.59,61.92h55.75a13.36,13.36,0,0,0,8.84-3.42,13.65,13.65,0,0,0,4.9-8.26l6.8-38.55A9.68,9.68,0,0,0,683.89,3.45Zm-28.38,15-4.42,25A5.63,5.63,0,0,1,645.76,48h-4.54l6-34.09h4.54a3.63,3.63,0,0,1,3,1.34A3.79,3.79,0,0,1,655.51,18.45Z"
                   style="fill:#fff" />
-                <path d="M892.78,15.85h-18l-5.26,42.83H849.07l5.26-42.83H836.2L838,.88h56.58Z" style="fill:#fff" />
-                <path d="M917.57,58.68H897.16L904.25.88h20.41Z" style="fill:#fff" />
-                <path d="M964.55,47.65H949l-4.07,11H924.57L950.41.88h24.53l11.73,57.8H965.83ZM963.13,35l-2.27-19.27h-.27l-3.48,9.81L953.59,35Z"
+                <polygon points="684.28 61.92 713.46 61.92 724.37 0.01 695.19 0.01 684.28 61.92" style="fill:#fff" />
+                <polygon points="770.81 30.96 760.81 0.01 731.63 0.01 720.71 61.92 749.89 61.92 755.35 30.96 765.35 61.92 794.49 61.92 805.41 0.01 776.27 0.01 770.81 30.96"
                   style="fill:#fff" />
-                <path d="M1042.11,43.71l-1.84,15H993.68l7.1-57.8h20.4l-5.26,42.83Z" style="fill:#fff" />
-                <path d="M1108,9.2l-10.49,12.7A20.8,20.8,0,0,0,1081.29,15c-4.12,0-6.92,1.4-7.15,3.33-.19,1.48,1.62,2.45,8,3.5,16,2.54,22.31,8.06,21,19.09-1.51,12.26-13.94,18.66-28.13,18.66-14.63,0-20.92-3-27.38-8.15l10.67-14.1c4.1,5.08,9.53,7.27,17.06,7.27,4.9,0,6.53-1.14,6.72-2.63.2-1.66-1.79-2.54-8.49-3.68-15.88-2.62-21.79-8-20.51-18.39C1054.46,8.06,1065.09,0,1082.51,0,1093.55,0,1100.74,2.1,1108,9.2Z"
+                <path d="M815.48,3.45a13.81,13.81,0,0,0-4.87,8.24l-6.8,38.55a9.76,9.76,0,0,0,2,8.26,9.4,9.4,0,0,0,7.66,3.42H857.5a13.38,13.38,0,0,0,8.85-3.42,13.71,13.71,0,0,0,4.89-8.26L874.64,31H840.92l-1.72,9.79h4.53l-.48,2.72A5.64,5.64,0,0,1,837.92,48a3.67,3.67,0,0,1-3-1.32,3.79,3.79,0,0,1-.76-3.21l4.41-25a5.48,5.48,0,0,1,1.89-3.19,5.15,5.15,0,0,1,3.45-1.34,3.63,3.63,0,0,1,3,1.34,3.79,3.79,0,0,1,.78,3.19l-.48,2.73h29.18L878,11.69a9.68,9.68,0,0,0-2-8.24A9.35,9.35,0,0,0,868.42,0H824.35a13.37,13.37,0,0,0-8.87,3.44Z"
+                  style="fill:#fff" />
+                <polygon points="890.36 61.93 911.54 61.93 914.17 47.02 893 47.02 890.36 61.93" style="fill:#fff" />
+                <path d="M894.05,41.06h21.17l1.35-7.71q20.89-3,23.11-15.59Q942.83,0,911.51,0a100.17,100.17,0,0,0-22.3,2.56l-2.78,15.75a83.17,83.17,0,0,1,19.75-2.55A49.18,49.18,0,0,1,918,16.91l-.79,4.47-5.13,1.07-3.85.81q-11.49,2.39-13.33,12.82Z"
                   style="fill:#fff" />
               </g>
             </g>
           </svg>
-          <h2 class="title1 white">Die neuen Essentials</h2>
-          <h4 class="subtitle1 white">Zu cool, um zu Hause zu bleiben.</h4>
+          <h2 class="title1 white">Are you riding ?</h2>
+          <h4 class="subtitle1 white">Die neuen Looks der Saison</h4>
           <div class="more-buttons">
-            <button class="button">Shoppe New Essentials</button>
+            <button class="button">Shoppe Casual-Wear</button>
           </div>
         </div>
       </a>
     </div>
     <div class="row fullwidth row3">
-      <a href="/de/nach-anlass-shoppen/partyshop" class="tracking">
+      <a href="/de/neu" class="tracking">
         <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1532700330/Occasion_Mobile_DE_IRE_EU_j63bdq.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg 1920w"
+          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1533910731/new_in_DE_mobile_mpu4ly.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1533910731/new_in_DE_mobile_mpu4ly.jpg 767w">
+          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg 1920w"
             alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532700217/Occasion__DE_IRE_EU_qxhilz.jpg"
-            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 134&apos;%3e%3cfilter id=&apos;c&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;55&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23e3ada3&apos; d=&apos;M0 0h300v133H0z&apos;/%3e%3cg filter=&apos;url(%23c)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;%23db9f00&apos; fill-opacity=&apos;.5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(6.95746 -48.88564 20.31885 2.8918 146.3 104.6)&apos;/%3e%3cellipse fill=&apos;%23c67c00&apos; fill-opacity=&apos;.5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(11.265 1.49985 -16.8618 126.64483 252 104.6)&apos;/%3e%3cpath fill=&apos;%23ce8100&apos; fill-opacity=&apos;.5&apos; d=&apos;M62.2 30.6L51.3 134.3l-18.6-2L43.6 28.6z&apos;/%3e%3cellipse fill=&apos;%23f2c1e1&apos; fill-opacity=&apos;.5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;rotate(97.9 72.9 128.5) scale(94.56439 35.04641)&apos;/%3e%3cellipse fill=&apos;%23eebcdf&apos; fill-opacity=&apos;.5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-34.5865 -2.83083 6.16915 -75.37349 87 99.7)&apos;/%3e%3cellipse fill=&apos;%23f7c8eb&apos; fill-opacity=&apos;.5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(32.64955 2.35079 -9.71339 134.90708 .6 95)&apos;/%3e%3cellipse fill=&apos;%23f9c9ec&apos; fill-opacity=&apos;.5&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-19.37032 -2.82582 19.30928 -132.36033 299.3 45)&apos;/%3e%3cpath fill=&apos;%23b37967&apos; fill-opacity=&apos;.5&apos; d=&apos;M145.6 73l24.5-91.2h-17.2l-35.4 85.6z&apos;/%3e%3c/g%3e%3c/svg%3e"
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1532967364/AUS_promo_no_text_j5leas.jpg"
             alt="backup">
         </picture>
         <div class="banner_content center">
-          <h4 class="subtitle1 white">Alles f&#xFC;r den n&#xE4;chsten Special-Moment</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.4 42.12">
+            <title>Asset 2</title>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path d="M15.6,30.06h18v12H0V.06H32.4v12H15.6v3H31.2v12H15.6Z" style="fill:#fff" />
+                <path d="M51.9,29.82a2.64,2.64,0,0,0,1.77-.54,1.54,1.54,0,0,0,.63-1.16c0-.5-.4-.92-1.2-1.28s-1.8-.76-3-1.19-2.5-1-3.9-1.57a16.32,16.32,0,0,1-3.9-2.38,12.58,12.58,0,0,1-3-3.64,10.73,10.73,0,0,1-1.2-5.28A10.11,10.11,0,0,1,39.3,8,12.83,12.83,0,0,1,42.72,4a17.59,17.59,0,0,1,5.37-2.87A21.85,21.85,0,0,1,55.2,0a21.46,21.46,0,0,1,7.08,1.05,28.74,28.74,0,0,1,5,2.25A20.13,20.13,0,0,1,71.4,6.6l-5.7,8.81a17.47,17.47,0,0,0-2.34-1.53,14.43,14.43,0,0,0-2.49-1.1,9.15,9.15,0,0,0-3-.48,2.64,2.64,0,0,0-1.77.54A1.54,1.54,0,0,0,55.5,14c0,.5.4.92,1.2,1.28s1.8.76,3,1.19,2.5,1,3.9,1.6a17.34,17.34,0,0,1,3.9,2.38,12.19,12.19,0,0,1,3,3.61,10.73,10.73,0,0,1,1.2,5.28,10.11,10.11,0,0,1-1.2,4.74,12.83,12.83,0,0,1-3.42,4.09A17.38,17.38,0,0,1,61.71,41a21.85,21.85,0,0,1-7.11,1.08A28.39,28.39,0,0,1,46.11,41a27,27,0,0,1-5.79-2.49A16.18,16.18,0,0,1,36,34.92l5.7-8.63a14.88,14.88,0,0,0,2.82,1.79,22.46,22.46,0,0,0,3.24,1.2A14.83,14.83,0,0,0,51.9,29.82Z"
+                  style="fill:#fff" />
+                <path d="M112.5,27.42V21.06h14.4V34.92a18.46,18.46,0,0,1-4.2,3.6A25.15,25.15,0,0,1,117.27,41a24.25,24.25,0,0,1-7.77,1.11,23.45,23.45,0,0,1-8.79-1.62,21.28,21.28,0,0,1-7-4.47A21,21,0,0,1,89,29.34a20.12,20.12,0,0,1-1.71-8.28A20.12,20.12,0,0,1,89,12.78a21,21,0,0,1,4.68-6.69,21.28,21.28,0,0,1,7-4.47,25.62,25.62,0,0,1,16.23-.57,29.73,29.73,0,0,1,5.22,2.25,21.76,21.76,0,0,1,4.14,3.3l-7.2,11a16.15,16.15,0,0,0-2.34-1.45,14.46,14.46,0,0,0-2.49-1,9.42,9.42,0,0,0-3-.46,7.52,7.52,0,0,0-5.19,1.78,5.82,5.82,0,0,0-2,4.58,5.82,5.82,0,0,0,2,4.58,7.52,7.52,0,0,0,5.19,1.78Z"
+                  style="fill:#fff" />
+                <path d="M148.5,42.06H132.9V.06h15.6Z" style="fill:#fff" />
+                <path d="M184.5,19.8a14.12,14.12,0,0,1,4.8,1.84,12.15,12.15,0,0,1,3.3,3.17,8.9,8.9,0,0,1,1.5,5.38,10.2,10.2,0,0,1-1.08,4.6,9.86,9.86,0,0,1-3.51,3.77,20.07,20.07,0,0,1-6.3,2.55,40.75,40.75,0,0,1-9.51,1H161.1a36.71,36.71,0,0,1-5.4-.38V.06h17.7A36.61,36.61,0,0,1,182,1a18.2,18.2,0,0,1,5.88,2.43A9.84,9.84,0,0,1,191.25,7a9.13,9.13,0,0,1,1.05,4.26,6.76,6.76,0,0,1-1.23,4.2A10.3,10.3,0,0,1,188.4,18a14.05,14.05,0,0,1-3.9,1.54Zm-13.2-4.5h2.1a3.88,3.88,0,0,0,2.43-.68,2.08,2.08,0,0,0,.87-1.69,2.05,2.05,0,0,0-.87-1.68,3.82,3.82,0,0,0-2.43-.69h-2.1Zm2.4,16.2a3.93,3.93,0,0,0,2.7-.81,3.11,3.11,0,0,0,0-4.38,3.93,3.93,0,0,0-2.7-.81h-2.4v6Z"
+                  style="fill:#fff" />
+                <path d="M234.3.06v13.8H222.9v28.2H207.3V13.86H195.9V.06Z" style="fill:#fff" />
+                <path d="M266.7,23.46v18.6H251.1V.06h17.4l10.2,18.6V.06h15.6v42H276.9Z" style="fill:#fff" />
+                <path d="M317.1,30.06h18v12H301.5V.06h32.4v12H317.1v3h15.6v12H317.1Z" style="fill:#fff" />
+                <path d="M360.9,27.12a4.59,4.59,0,0,0,3.42-1.4,5.22,5.22,0,0,0,1.38-3.84V.06h15.6V22.12a21.22,21.22,0,0,1-1.5,8.09,18.51,18.51,0,0,1-4.2,6.32,18.92,18.92,0,0,1-6.45,4.12,23.89,23.89,0,0,1-16.5,0,18.92,18.92,0,0,1-6.45-4.12,18.51,18.51,0,0,1-4.2-6.32,21.22,21.22,0,0,1-1.5-8.09V.06h15.6V21.88a5.22,5.22,0,0,0,1.38,3.84A4.59,4.59,0,0,0,360.9,27.12Z"
+                  style="fill:#fff" />
+                <path d="M404.1,30.06h18v12H388.5V.06h32.4v12H404.1v3h15.6v12H404.1Z" style="fill:#fff" />
+                <path d="M440.4,29.82a2.64,2.64,0,0,0,1.77-.54,1.54,1.54,0,0,0,.63-1.16c0-.5-.4-.92-1.2-1.28s-1.8-.76-3-1.19-2.5-1-3.9-1.57a16.32,16.32,0,0,1-3.9-2.38,12.58,12.58,0,0,1-3-3.64,10.73,10.73,0,0,1-1.2-5.28A10.11,10.11,0,0,1,427.8,8,12.83,12.83,0,0,1,431.22,4a17.59,17.59,0,0,1,5.37-2.87A21.85,21.85,0,0,1,443.7,0a21.46,21.46,0,0,1,7.08,1.05,28.74,28.74,0,0,1,5,2.25,20.13,20.13,0,0,1,4.08,3.3l-5.7,8.81a17.47,17.47,0,0,0-2.34-1.53,14.43,14.43,0,0,0-2.49-1.1,9.15,9.15,0,0,0-3-.48,2.64,2.64,0,0,0-1.77.54A1.54,1.54,0,0,0,444,14c0,.5.4.92,1.2,1.28s1.8.76,3,1.19,2.5,1,3.9,1.6a17.34,17.34,0,0,1,3.9,2.38,12.19,12.19,0,0,1,3,3.61,10.73,10.73,0,0,1,1.2,5.28,10.11,10.11,0,0,1-1.2,4.74,12.83,12.83,0,0,1-3.42,4.09A17.38,17.38,0,0,1,450.21,41a21.85,21.85,0,0,1-7.11,1.08A28.39,28.39,0,0,1,434.61,41a27,27,0,0,1-5.79-2.49,16.18,16.18,0,0,1-4.32-3.6l5.7-8.63A14.88,14.88,0,0,0,433,28.08a22.46,22.46,0,0,0,3.24,1.2A14.83,14.83,0,0,0,440.4,29.82Z"
+                  style="fill:#fff" />
+                <path d="M476.4,30.06v12H463.8v-12Z" style="fill:#fff" />
+              </g>
+            </g>
+          </svg>
+          <h2 class="title1 white">Es gibt Neues.</h2>
+          <h4 class="subtitle1 white">T&#xE4;glich andere Styles</h4>
           <div class="more-buttons">
-            <button class="button">zum Party-Shop</button>
+            <button class="button">Shoppe Neuheiten</button>
           </div>
         </div>
       </a>
@@ -229,16 +165,16 @@
   <div class="slick-three">
     <div class="blocker"></div>
     <div>
-      <a href="/de/neu" class="tracking">
+      <a href="/de/kleider" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1532959336/new_in_jwec1n.jpg"
-            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 300&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23a98c55&apos; d=&apos;M0 0h300v300H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(30.88815 12.54238 -28.32625 69.75915 174.4 74.5)&apos;/%3e%3cellipse fill=&apos;%23fff6ff&apos; cx=&apos;64&apos; cy=&apos;22&apos; rx=&apos;25&apos; ry=&apos;185&apos;/%3e%3cellipse fill=&apos;%23422e00&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-1.14897 47.01298 -153.0951 -3.74156 146.3 245.4)&apos;/%3e%3cellipse fill=&apos;%23fff2ff&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;rotate(13.9 -120.8 386.3) scale(53.21784 26.19172)&apos;/%3e%3cellipse fill=&apos;%23694900&apos; cx=&apos;239&apos; cy=&apos;98&apos; rx=&apos;25&apos; ry=&apos;255&apos;/%3e%3cellipse fill=&apos;%23906e00&apos; cx=&apos;15&apos; cy=&apos;79&apos; rx=&apos;25&apos; ry=&apos;255&apos;/%3e%3cpath fill=&apos;white&apos; d=&apos;M191 130h24v70h-24z&apos;/%3e%3cellipse fill=&apos;%234f3200&apos; cx=&apos;106&apos; rx=&apos;249&apos; ry=&apos;11&apos;/%3e%3c/g%3e%3c/svg%3e"
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534158387/dresses_lower_slot_sgaira.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534158387/dresses_lower_slot_sgaira.jpg"
             alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">Lust auf Neues?</h2>
-          <h4 class="subtitle3">Jeden Tag neue Looks</h4>
-          <button class="button">Shoppe Neuheiten</button>
+          <h2 class="title3">All dressed up</h2>
+          <h4 class="subtitle3">T&#xE4;glich neue Trend-Kleider</h4>
+          <button class="button">Shoppe Kleider</button>
         </div>
       </a>
     </div>
@@ -246,7 +182,7 @@
       <a href="/de/refer-a-friend" class="tracking">
         <div class="imgContainer">
           <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70,b_rgb:FEF5F0/v1532343152/refer-a-friend-DE_twfn4p.jpg"
-            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 300&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23c4afab&apos; d=&apos;M0 0h300v300H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;%23230000&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;scale(61.42596 81.12501) rotate(90 .1 2)&apos;/%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-245.80485 67.85997 -15.05802 -54.54369 95 30.3)&apos;/%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-145.47406 -157.24476 29.17326 -26.98947 5 204.4)&apos;/%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-4.27422 -254.96418 38.11831 -.63902 255 236.7)&apos;/%3e%3cpath fill=&apos;%23006fc2&apos; d=&apos;M167 80l67 26-28-59z&apos;/%3e%3cellipse fill=&apos;%232d0300&apos; cx=&apos;157&apos; cy=&apos;140&apos; rx=&apos;23&apos; ry=&apos;54&apos;/%3e%3cellipse fill=&apos;%2332aa7f&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;rotate(118.1 50.4 142.8) scale(49.41103 24.64748)&apos;/%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(8.8721 26.21147 -140.18906 47.45138 180.8 249.2)&apos;/%3e%3c/g%3e%3c/svg%3e"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70,b_rgb:FEF5F0/v1532343152/refer-a-friend-DE_twfn4p.jpg"
             alt="backup_img">
         </div>
         <div class="title-below">
@@ -257,20 +193,19 @@
       </a>
     </div>
     <div>
-      <a href="/de/catalog/category/view/id/457" class="tracking">
+      <a href="/de/accessoires/handtaschen" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1531740213/footwear_US_lwwdzr.jpg"
-            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 300&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23b4888f&apos; d=&apos;M0 0h300v300H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;%230d0000&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-3.77115 79.96704 -62.0617 -2.92676 177.5 61)&apos;/%3e%3cellipse fill=&apos;%23fffbff&apos; cx=&apos;11&apos; cy=&apos;80&apos; rx=&apos;34&apos; ry=&apos;138&apos;/%3e%3cellipse fill=&apos;%23ffdcf4&apos; cx=&apos;208&apos; cy=&apos;255&apos; rx=&apos;93&apos; ry=&apos;93&apos;/%3e%3cellipse fill=&apos;%23ffb091&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(25.34825 30.88696 -19.66808 16.14116 148.6 44.8)&apos;/%3e%3cellipse fill=&apos;%2300000c&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(25.93332 -5.0185 14.87288 76.85626 204.8 55.5)&apos;/%3e%3cpath fill=&apos;%2300395c&apos; d=&apos;M109 178l2 34-51-14z&apos;/%3e%3cellipse fill=&apos;%23fcdee8&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;rotate(-30 30.6 -65.2) scale(221.045 40.11568)&apos;/%3e%3cpath fill=&apos;%232a0e21&apos; d=&apos;M204 38l-65 131 42-14z&apos;/%3e%3c/g%3e%3c/svg%3e"
-            alt="backup_img">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534162437/bag_lrslvv.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534162437/bag_lrslvv.jpg" alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">Partners in Crime</h2>
-          <h4 class="subtitle3">Finde Deine neuen Lieblingsschuhe hier</h4>
-          <button class="button">Schuhe ab 12,99 &#x20AC;</button>
+          <h2 class="title3">Dein +1</h2>
+          <h4 class="subtitle3">Deine Handtasche ist die perfekte Begleitung</h4>
+          <button class="button">Shoppe Taschen</button>
         </div>
       </a>
     </div>
+
   </div>
 </div>
-
 <script type="text/javascript">!function (e) { e(document).ready(function () { e("#homeSlider").slick({ infinite: !0, adaptiveHeight: !0, autoplay: !0, autoplaySpeed: 5e3, pauseOnHover: !1, dots: !0, slide: ".fullwidth", slidesToShow: 1, slidesToScroll: 1, responsive: [{ breakpoint: 1e3, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 768, settings: "unslick" }] }), e(".slick-three").slick({ infinite: !0, adaptiveHeight: !1, slide: ":not(.blocker)", dots: !1, slidesToShow: 3, slidesToScroll: 1, arrows: !0, centerMode: !0, centerPadding: "0", responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 }, centerMode: !0, centerPadding: "50", variableWidth: !0 }] }) }), e(window).on("resize orientationchange", function () { e("#homeSlider").slick("resize"), e(".slick-three").slick("resize") }), e(window).scroll(_.debounce(function () { if (e(window).width() < 767) { var i = e(this).scrollTop(); console.log(i), i > e(".slick-three").offset().top - 400 && (e(".slick-three .slick-slide").css("animation", "swipe 1200ms ease-in-out forwards"), setTimeout(function () { e(".blocker").css("display", "none") }, 1600)) } }, 100)) }(jQuery);</script>
