@@ -1,0 +1,282 @@
+$background: pink;
+$font: #323232;
+
+.std {
+  background-color: $background;
+  background-image: url("https://media.missguided.co.uk/image/upload/v1532701738/texture-1_ueaqba.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.termina {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  color: $font;
+}
+
+.sign-up {
+  font-size: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+  color: $font;
+  text-align: center;
+  a {
+    color: $font;
+    text-decoration: underline;
+  }
+
+  h1.title {
+    color: $font;
+    font-size: 8vw;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+}
+
+.copy {
+  max-width: 650px;
+  margin: 80px auto 50px;
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 5%;
+  }
+}
+
+.wrap {
+  max-width: 500px;
+  min-width: 30px;
+  width: 90%;
+  margin: 1em auto;
+  h3.or {
+    font-size: 30px;
+  }
+  li {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    h3 {
+      flex: 80px 0 0;
+    }
+  }
+  h3 {
+    text-transform: none;
+    line-height: 1.5;
+  }
+  h4 {
+    margin: 0 auto 5%;
+  }
+  ul li h5 {
+    text-align: left;
+    min-width: 180px;
+    line-height: 15px;
+    margin-left: 10px;
+  }
+}
+
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  iframe {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+  }
+  a {
+    margin-top: 1em;
+  }
+  p {
+    font-weight: 600;
+  }
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  h5 {
+    font-size: 10px;
+    text-align: center;
+    padding: 0 5%;
+  }
+  .form__input {
+    padding: 0;
+    display: table-cell;
+    width: 100%;
+  }
+  input {
+    width: 450px;
+    height: 50px;
+    border: none;
+    margin: 0;
+    padding: 0 0.7rem;
+    font-size: 16px;
+    text-transform: lowercase !important;
+    text-align: left;
+    color: $font;
+    border-radius: 0;
+    background: none;
+    border-top: 2px solid $font;
+    border-left: 2px solid $font;
+    border-bottom: 2px solid $font;
+    transition: background 300ms ease;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    text-transform: uppercase;
+    color: $font;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-transform: uppercase;
+    color: $font;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    text-transform: uppercase;
+    color: $font;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-transform: uppercase;
+    color: $font;
+  }
+  button {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    // background-color: #ffded9;
+    // border-radius: 0 10px 10px 0;
+
+    border: 2px solid $font;
+    transition: background-color 300ms ease;
+    svg {
+      height: 20px;
+      width: 20px;
+      fill: $font;
+      transition: fill ease 300ms;
+    }
+    &:hover {
+      background-color: $background;
+      svg {
+        fill: $font;
+      }
+    }
+  }
+}
+.tc {
+//   color: #fff;
+  transform: skewX(0deg);
+  text-transform: none;
+  font-size: 9px;
+  font-weight: 300;
+  margin: 10px auto;
+}
+
+@media (min-width: 1200px) {
+  .sign-up {
+    h1.title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .std {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .timer {
+    margin: 5% 0 2%;
+  }
+  h1.clock {
+    font-size: 60px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      &:not(:last-of-type) {
+        &:after {
+          content: ":";
+          position: absolute;
+          right: -20px;
+        }
+      }
+    }
+
+    span {
+      font-size: 30px;
+      // margin-top: 25px;
+      text-align: center;
+    }
+  }
+  .wrap {
+    h1 {
+      font-size: 10vw;
+      &:first-of-type {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) and (min-width: 600px) {
+  .email input {
+    width: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .sign-up {
+    h1.title {
+      font-size: 50px;
+    }
+  }
+  h1.clock {
+    font-size: 30px;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    span {
+      font-size: 15px;
+      // margin-top: 25px;
+      text-align: center;
+    }
+  }
+
+  .email input {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  .timer {
+    margin: 10% 0;
+  }
+  h1.clock {
+    font-size: 28px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.form__field-message_error,
+.validation-advice {
+  color: white !important;
+  font-weight: 600;
+}
