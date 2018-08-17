@@ -24,7 +24,7 @@
 	<link rel="alternate" hreflang="pl-PL" href="https://www.missguided.com/pl/">
 	<meta name="robots" content="INDEX,FOLLOW">
 	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=no">
-	<script data-footer-js-skip="true" src="https://static.missguided.co.uk/skin/frontend/mgresponsive/default/js/newrelic/newrelic.min.js"></script>
+	<!-- <script data-footer-js-skip="true" src="https://static.missguided.co.uk/skin/frontend/mgresponsive/default/js/newrelic/newrelic.min.js"></script> -->
 	<!-- <script data-footer-js-skip="true" type="text/javascript">
 		NEWRELICLIBRARY.init(["39260d23cf", "24832197"]);
 		NEWRELICLIBRARY.newrelicjs();
@@ -60,7 +60,7 @@
 
 
 	<script data-footer-js-skip="true" src="https://static.missguided.co.uk/skin/frontend/mgresponsive/default/js/jquery/jquery.1.12.4.noconflict.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
 	<!-- custom snippets start -->
 	<!-- <script data-footer-js-skip="true" src="https://cdn.optimizely.com/public/5517080075/s/homepage_UK.js"></script> -->
 	<!-- custom snippets end -->
@@ -79,11 +79,11 @@
 	<!-- schema end -->
 	<!-- MG Google Tag Global Data -->
 	<!-- End MG Google Tag Global Data -->
-	<csi id="google-tag-user-js" rel="google.tag.user.js" class="csi" data-storage-type="session" data-csi-tag="account" data-flash="0"></csi>
+	<!-- <csi id="google-tag-user-js" rel="google.tag.user.js" class="csi" data-storage-type="session" data-csi-tag="account" data-flash="0"></csi> -->
 	<!-- GOOGLE TAG MANAGER -->
-	<noscript>
+	<!-- <noscript>
 		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-ZCD2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
+	</noscript> -->
 	<!-- END GOOGLE TAG MANAGER -->
 	<div id="empty-bag__tooltip-text" style="display: none;">
 		<h3>your bag is empty!</h3>
@@ -1062,17 +1062,17 @@
 	<!-- <script type="text/javascript" src="https://static.missguided.co.uk/js/mgresponsive/100330cc.core.min.cache.js"></script> -->
 	<script type="text/javascript" src="https://static.missguided.co.uk/skin/frontend/mgresponsive/default/js/slick-theme.min.js"></script>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		//<![CDATA[
 		Mage.Cookies.path = '/';
 		Mage.Cookies.domain = '.www.missguided.co.uk';
 		//]]>
-	</script>
+ </script> -->
 
-	<script>
+	<!-- <script>
 		var mgAft = ["utm_source", "utm_medium"];
 		var mgPre = 'mga_';
-	</script>
+	</script> -->
 
 	<!--
 	<script type="text/javascript">
@@ -1121,7 +1121,7 @@
 		});
 		//]]>
 	</script> -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		//<![CDATA[
 		var Translator = new Translate({
 			"Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.": "Please enter a valid phone number. For example 01234 567890,  (123) 456-7890 or 123-456-7890.",
@@ -1138,13 +1138,13 @@
 			"error_p24_init": "An error occured. Please try again later. If the problem persists, choose another payment method"
 		});
 		//]]>
-	</script>
-	<script type="text/javascript">
+	</script> -->
+	<!-- <script type="text/javascript">
 		//<![CDATA[
 		var MAGE_STORE_CODE = 'default';
 		//]]>
-	</script>
-	<script type="text/javascript">
+	</script> -->
+	<!-- <script type="text/javascript">
 		LocalStorage.init('_browser_storage_product_viewed', 1, 10);
 	</script>
 	<script type="text/javascript">
@@ -1198,8 +1198,8 @@
 		}
 
 		mergeLayers(dataLayerBase, false);
-	</script>
-	<!-- <script type="text/javascript">
+	</script> 
+	<script type="text/javascript">
 		//<![CDATA[
 		(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
@@ -1246,13 +1246,6 @@
 				</a>
 			</div>
 		</div>
-	</script>
-	<script>
-		jQuery(document).ready(function () {
-			jQuery('.catz.sale').click(function () {
-				jQuery(this).toggleClass('red');
-			});
-		});
 	</script>
 	<script type="application/ld+json">
 		{
@@ -1349,7 +1342,7 @@
 	<script>
 		window.canUseSecondaryCookie = "";
 	</script>
-	<script type="text/javascript" async>
+	<!-- <script type="text/javascript" async>
 		//<![CDATA[
 		(function (document, window, undefined) {
 			var queryParams = window.location.search.toQueryParams();
@@ -1359,19 +1352,19 @@
 			}
 		})(document, window);
 		//]]>
-	</script>
+	</script> -->
 
-	<script>
+	<!-- <script>
 		//this is accessed via the webpack build in order to dynamically set the public path to include the Magento BaseUrl
 		window.webpackPublicPath = "https://static.missguided.co.uk/js/mgresponsive/webpack/dist/";
-	</script>
-
+	</script> -->
+<!-- 
 	<script type="text/javascript" src="https://static.missguided.co.uk/js/mgresponsive/webpack/dist/polyfill.bundle.77790f85eec51c6c3814.js"
 	 defer></script>
 	<script type="text/javascript" src="https://static.missguided.co.uk/js/mgresponsive/webpack/dist/main.bundle.fbff6f11422039caf17d.js"
 	 defer></script>
 	<script type="text/javascript" src="https://static.missguided.co.uk/js/mgresponsive/webpack/dist/modules.bundle.185a2805d11c33989fe1.js"
-	 defer></script>
+	 defer></script> -->
 	<script type="text/javascript" src="https://static.missguided.co.uk/skin/frontend/mgresponsive/default/js/55207d88.scripts.min.cache.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js" async=""></script>
 	<!-- <script type="text/javascript"> 

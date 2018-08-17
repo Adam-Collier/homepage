@@ -4,7 +4,7 @@
 
 #homeSlider-nav {
   font-weight: 700;
-  padding: 15px;
+  // padding: 15px;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -80,16 +80,17 @@
     }
   }
 
-  #homeSlider-nav {
+  #homeSlider-nav:not(:empty) {
     position: relative;
     align-items: center;
     font-size: 30px;
-
-    margin-bottom: $mobileSpacing;
     order: 1;
-    a {
+    a:not(:empty) {
       padding-bottom: 6px;
       display: block;
+        &:nth-last-child() {
+          margin-bottom: $mobileSpacing;
+        }
     }
   }
 
