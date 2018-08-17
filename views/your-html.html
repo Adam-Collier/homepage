@@ -225,7 +225,6 @@
 <!-- http://hub.amplience.com/display/DEV/Content+Authoring+Developer+Documentation#ContentAuthoringDeveloperDocumentation-ContentAuthoringDevelopmentDemonstrations -->
 <!-- Handlebars Template to render content -->
 <script id="promo_template" type="text/x-handlebars-template">
-
 <style>
     .promo-container {
         /* min-height: 100px; */
@@ -236,11 +235,9 @@
         align-items: center;
         /* flex-direction: column; */
         color: white;
-
-height: 0;
-animation-delay: 3s;
-transition: height ease 500ms;
-
+        height: 0;
+        animation-delay: 3s;
+        transition: height ease 500ms;
     }
     .promo-container > * {
         margin: 0 10px;
@@ -253,14 +250,26 @@ transition: height ease 500ms;
     .promo-container.animate > * {
         opacity: 1;
     }
+    .promo-container h3, .promo-container p {
+        margin: 0;
+
+    }
     .promo-container h3 {
-        font-size: 30px;
+        font-size: 26px;
     }
     .promo-container p {
-        font-size: 18px;
+        font-size: 16px;
+        text-align: right;
     }
     .promo-container button.button {
+        background: white;
+        border-color: white;
         margin: 0 10px;
+    }
+    .promo-container button.button:hover {
+        background: #323232;
+        border-color: #323232;
+        color: white;
     }
 
 p#close{
@@ -274,9 +283,11 @@ p#close{
         <a href="{{url}}">
 <div class="promo-container" style="background: #{{bg-hex}};">
 
-      
-    <h3 class="title">{{title}}</h3>
+      <div>
+              <h3 class="title">{{title}}</h3>
     <p class="subtitle">{{subtitle}}</p>
+      </div>
+
 <!-- <button class="button">{{btn-txt}}</button> -->
 <button class="button">{{btn-txt}}</button>
 <!-- <p id="close">X</p> -->
@@ -286,6 +297,7 @@ p#close{
 
 
 </script>
+
 <script>
     (function ($) {
         $(window).load(function () {
