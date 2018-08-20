@@ -8,15 +8,21 @@
     .row .subtitle1 {
       margin-top: 20px;
     }
-    .row1 svg {
-      filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 0px 10px);
-    }
-    .row2 svg,
-    .row3 svg {
-      width: 50%;
-    }
-    .row3 .banner_content {
+    .row1 .banner_content {
+      max-width: 500px;
+      width: 25%;
       left: 60%;
+      text-align: left;
+    }
+    #homeSlider .row1 .banner_content button.button {
+      color: #FCD736;
+      border-color: #FCD736;
+      margin: 0;
+    }
+    #homeSlider .row1 .banner_content button.button:hover {
+      background-color: #FCD736;
+      border-color: #FCD736;
+      color: black;
     }
   }
 
@@ -28,151 +34,119 @@
 </style>
 <div class="container">
   <div id="homeSlider">
-    <div class="row fullwidth row1">
-      <a href="/ie/clothing/casual-wear" class="tracking">
+    <div id="homeSlider-nav">
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </div>
+
+
+
+    <div class="row fullwidth row-out">
+      <style>
+        @media (min-width: 768px) {
+          .row-out {
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 134'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23b0a989' d='M0 0h300v133H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cpath fill='%2354061d' d='M211 14.9l20.6 4.3-10.6 50-20.6-4.4z'/%3e%3cellipse fill='%23b8674a' rx='1' ry='1' transform='matrix(19.71943 3.11372 -12.29747 77.88076 129.8 79.5)'/%3e%3cellipse fill='%23874839' rx='1' ry='1' transform='matrix(8.46286 2.57121 -19.2793 63.45564 46.7 33.1)'/%3e%3cellipse fill='%23c5dbb5' cx='79' cy='77' rx='23' ry='119'/%3e%3cellipse fill='%23d1c49e' rx='1' ry='1' transform='matrix(58.07158 20.7573 -8.81357 24.65726 171.3 75.5)'/%3e%3cpath fill='%23120000' d='M110 68l11 27 10-6z'/%3e%3cellipse fill='%23cfddba' cx='241' cy='25' rx='13' ry='88'/%3e%3cellipse fill='%23b0d3aa' cx='176' cy='16' rx='25' ry='95'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .row-out {
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23ada78b' d='M0 0h300v300H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse fill='%235d130f' rx='1' ry='1' transform='matrix(26.457 -.41562 .83712 53.28818 139.9 52.8)'/%3e%3cellipse fill='%2377473a' cx='104' cy='222' rx='49' ry='65'/%3e%3cellipse fill='%23cdedcb' rx='1' ry='1' transform='rotate(17 -461 748.7) scale(45.48616 86.13884)'/%3e%3cellipse fill='%23d4e0c0' cx='53' cy='109' rx='43' ry='62'/%3e%3cpath fill='%23270000' d='M92.7 138.6l18-45.7L156 59l-48.2 13.6z'/%3e%3cellipse fill='%23400000' cx='140' cy='136' rx='21' ry='7'/%3e%3cellipse fill='%23f0a087' rx='1' ry='1' transform='matrix(44.81218 -26.61 10.8036 18.19366 143.5 105.3)'/%3e%3cpath fill='%23fffdfb' d='M103 104h35v21h-35z'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
+          }
+          .row svg {
+            display: none;
+          }
+        }
+      </style>
+      <a href="/occasion/party-shop" class="tracking">
         <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1533565975/casual_mobile_joubet.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1533565975/casual_mobile_joubet.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1533565975/casual_mobile_joubet.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1533565975/casual_mobile_joubet.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1533565975/casual_mobile_joubet.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1533565975/casual_mobile_joubet.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1533565975/casual_mobile_joubet.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1533565975/casual_mobile_joubet.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1533565975/casual_desktop_ra1fai.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1533565975/casual_desktop_ra1fai.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1533565975/casual_desktop_ra1fai.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1533565975/casual_desktop_ra1fai.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1533565975/casual_desktop_ra1fai.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1533565975/casual_desktop_ra1fai.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1533565975/casual_desktop_ra1fai.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1533565975/casual_desktop_ra1fai.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1533565975/casual_desktop_ra1fai.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1533565975/casual_desktop_ra1fai.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533565975/casual_desktop_ra1fai.jpg 1920w"
+          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1534332036/goingoutout_atursx.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1534332036/goingoutout_atursx.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1534332036/goingoutout_atursx.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1534332036/goingoutout_atursx.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1534332036/goingoutout_atursx.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1534332036/goingoutout_atursx.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1534332036/goingoutout_atursx.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1534332036/goingoutout_atursx.jpg 767w">
+          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1534330511/babes-budget_twhe1a.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1534330511/babes-budget_twhe1a.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1534330511/babes-budget_twhe1a.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1534330511/babes-budget_twhe1a.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1534330511/babes-budget_twhe1a.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1534330511/babes-budget_twhe1a.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1534330511/babes-budget_twhe1a.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1534330511/babes-budget_twhe1a.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1534330511/babes-budget_twhe1a.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1534330511/babes-budget_twhe1a.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534330511/babes-budget_twhe1a.jpg 1920w"
             alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533565975/casual_desktop_ra1fai.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1533565975/casual_desktop_ra1fai.jpg" alt="backup">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534330511/babes-budget_twhe1a.jpg"
+            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 134&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23b0a989&apos; d=&apos;M0 0h300v133H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cpath fill=&apos;%2354061d&apos; d=&apos;M211 14.9l20.6 4.3-10.6 50-20.6-4.4z&apos;/%3e%3cellipse fill=&apos;%23b8674a&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(19.71943 3.11372 -12.29747 77.88076 129.8 79.5)&apos;/%3e%3cellipse fill=&apos;%23874839&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(8.46286 2.57121 -19.2793 63.45564 46.7 33.1)&apos;/%3e%3cellipse fill=&apos;%23c5dbb5&apos; cx=&apos;79&apos; cy=&apos;77&apos; rx=&apos;23&apos; ry=&apos;119&apos;/%3e%3cellipse fill=&apos;%23d1c49e&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(58.07158 20.7573 -8.81357 24.65726 171.3 75.5)&apos;/%3e%3cpath fill=&apos;%23120000&apos; d=&apos;M110 68l11 27 10-6z&apos;/%3e%3cellipse fill=&apos;%23cfddba&apos; cx=&apos;241&apos; cy=&apos;25&apos; rx=&apos;13&apos; ry=&apos;88&apos;/%3e%3cellipse fill=&apos;%23b0d3aa&apos; cx=&apos;176&apos; cy=&apos;16&apos; rx=&apos;25&apos; ry=&apos;95&apos;/%3e%3c/g%3e%3c/svg%3e"
+            alt="backup">
         </picture>
         <div class="banner_content center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 939.97 61.93">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1312.41 171.76"><defs>
+              <style>
+                .cls-1 {
+                  fill: #fff9ee;
+                }
+              </style>
+            </defs>
             <title>Asset 1</title>
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
-                <path d="M59.22,0H33.29L0,61.92H17.84l3.53-7H40.2l1.3,7H70.65ZM28.48,41.06l6.71-13.19,2.47,13.19Z" style="fill:#fff" />
-                <path d="M152.21,3.45A9.39,9.39,0,0,0,144.57,0H88.82L77.9,61.92h29.18l4.16-23.58h4.54a3.77,3.77,0,0,1,3,1.38,3.67,3.67,0,0,1,.8,3.15l-1.27,13.61a4.62,4.62,0,0,0,.89,3.86,4.32,4.32,0,0,0,3.56,1.58h27l.19-.41q-3-1.41-2.41-5,.07-3,.27-6.13t.26-6.12a9,9,0,0,0-3.5-7.79,13.74,13.74,0,0,0,7.06-9.82l2.64-15A9.68,9.68,0,0,0,152.21,3.45Zm-28.35,15-.26,1.48a5.7,5.7,0,0,1-5.37,4.53h-4.54l1.86-10.54h4.53a3.68,3.68,0,0,1,3,1.34h0A3.72,3.72,0,0,1,123.86,18.45Z"
-                  style="fill:#fff" />
-                <polygon points="88.82 0.01 88.82 0.01 88.82 0.01 88.82 0.01" style="fill:#fff" />
-                <polygon points="167.97 0.01 157.05 61.92 216.85 61.92 219.3 48.01 188.68 48.01 190.74 36.33 221.36 36.33 223.81 22.42 193.19 22.42 194.69 13.92 225.31 13.92 227.77 0.01 167.97 0.01 167.97 0.01"
-                  style="fill:#fff" />
-                <polygon points="304.04 26.32 326.33 0.01 307.59 0.01 292.93 17.32 284.42 0.01 257.01 0.01 273.6 33.5 268.58 61.92 297.76 61.92 304.04 26.32"
-                  style="fill:#fff" />
-                <path d="M397,3.45A9.37,9.37,0,0,0,389.34,0H345.27a13.37,13.37,0,0,0-8.87,3.44,13.81,13.81,0,0,0-4.87,8.24l-6.8,38.55a9.72,9.72,0,0,0,2,8.26,9.37,9.37,0,0,0,7.65,3.42h44.07a13.38,13.38,0,0,0,8.85-3.42,13.63,13.63,0,0,0,4.89-8.26L399,11.69A9.69,9.69,0,0,0,397,3.45Zm-28.39,15-4.41,25a5.33,5.33,0,0,1-1.91,3.21A5.21,5.21,0,0,1,358.84,48a3.67,3.67,0,0,1-3-1.32,3.79,3.79,0,0,1-.76-3.21l4.42-25a5.34,5.34,0,0,1,1.88-3.19,5.15,5.15,0,0,1,3.45-1.34,3.6,3.6,0,0,1,3,1.34A3.73,3.73,0,0,1,368.59,18.45Z"
-                  style="fill:#fff" />
-                <path d="M408.28,0l-8.86,50.23a9.75,9.75,0,0,0,2,8.26A9.4,9.4,0,0,0,409,61.92h44a13.38,13.38,0,0,0,8.85-3.42,13.63,13.63,0,0,0,4.89-8.26L475.67,0H446.53l-7.67,43.47A5.64,5.64,0,0,1,433.53,48a3.67,3.67,0,0,1-3-1.32,3.79,3.79,0,0,1-.76-3.21L437.46,0Z"
-                  style="fill:#fff" />
-                <path d="M568.31,3.45A9.35,9.35,0,0,0,560.68,0H504.92L494,61.92h29.19l4.15-23.58h4.54a3.76,3.76,0,0,1,3,1.38,3.6,3.6,0,0,1,.8,3.15l-1.26,13.61a4.62,4.62,0,0,0,.89,3.86,4.32,4.32,0,0,0,3.55,1.58h27l.18-.41q-3-1.41-2.41-5,.09-3,.27-6.13t.27-6.12a8.93,8.93,0,0,0-3.51-7.79,13.75,13.75,0,0,0,7.07-9.82l2.64-15A9.68,9.68,0,0,0,568.31,3.45ZM540,18.45l-.26,1.48a5.7,5.7,0,0,1-5.37,4.53h-4.54l1.86-10.54h4.54a3.65,3.65,0,0,1,3,1.34A3.69,3.69,0,0,1,540,18.45Z"
-                  style="fill:#fff" />
-                <polygon points="573.15 61.92 602.33 61.92 613.25 0.01 584.07 0.01 573.15 61.92" style="fill:#fff" />
-                <path d="M683.89,3.45A9.35,9.35,0,0,0,676.26,0H620.51L609.59,61.92h55.75a13.36,13.36,0,0,0,8.84-3.42,13.65,13.65,0,0,0,4.9-8.26l6.8-38.55A9.68,9.68,0,0,0,683.89,3.45Zm-28.38,15-4.42,25A5.63,5.63,0,0,1,645.76,48h-4.54l6-34.09h4.54a3.63,3.63,0,0,1,3,1.34A3.79,3.79,0,0,1,655.51,18.45Z"
-                  style="fill:#fff" />
-                <polygon points="684.28 61.92 713.46 61.92 724.37 0.01 695.19 0.01 684.28 61.92" style="fill:#fff" />
-                <polygon points="770.81 30.96 760.81 0.01 731.63 0.01 720.71 61.92 749.89 61.92 755.35 30.96 765.35 61.92 794.49 61.92 805.41 0.01 776.27 0.01 770.81 30.96"
-                  style="fill:#fff" />
-                <path d="M815.48,3.45a13.81,13.81,0,0,0-4.87,8.24l-6.8,38.55a9.76,9.76,0,0,0,2,8.26,9.4,9.4,0,0,0,7.66,3.42H857.5a13.38,13.38,0,0,0,8.85-3.42,13.71,13.71,0,0,0,4.89-8.26L874.64,31H840.92l-1.72,9.79h4.53l-.48,2.72A5.64,5.64,0,0,1,837.92,48a3.67,3.67,0,0,1-3-1.32,3.79,3.79,0,0,1-.76-3.21l4.41-25a5.48,5.48,0,0,1,1.89-3.19,5.15,5.15,0,0,1,3.45-1.34,3.63,3.63,0,0,1,3,1.34,3.79,3.79,0,0,1,.78,3.19l-.48,2.73h29.18L878,11.69a9.68,9.68,0,0,0-2-8.24A9.35,9.35,0,0,0,868.42,0H824.35a13.37,13.37,0,0,0-8.87,3.44Z"
-                  style="fill:#fff" />
-                <polygon points="890.36 61.93 911.54 61.93 914.17 47.02 893 47.02 890.36 61.93" style="fill:#fff" />
-                <path d="M894.05,41.06h21.17l1.35-7.71q20.89-3,23.11-15.59Q942.83,0,911.51,0a100.17,100.17,0,0,0-22.3,2.56l-2.78,15.75a83.17,83.17,0,0,1,19.75-2.55A49.18,49.18,0,0,1,918,16.91l-.79,4.47-5.13,1.07-3.85.81q-11.49,2.39-13.33,12.82Z"
-                  style="fill:#fff" />
+                <path id="from_8" data-name="from 8" class="cls-1" d="M1.75,88.19c.63,4.26,1.75,11.4,10.4,17.91,8.89,6.51,21.17,8.64,32.32,8.64,22.55,0,32.19-6.39,36.33-9.52,8.89-6.89,9.52-15,9.64-22.3V22H60.88v6c-3.63-2.38-11-7.27-24.43-7.27C12.4,20.79,0,35.83,0,53.24,0,73.91,17.29,84.05,35,84.05a59.42,59.42,0,0,0,16.91-2.51,34,34,0,0,0,9-4.13c.25,10.15.38,13.53-3.13,16.79s-8.89,3.63-12.53,3.63c-6.64,0-13.28-2.38-13.53-9.65H1.75ZM44.72,40c7.27-.25,16.41,3,16.41,12.28,0,8.52-7.52,12.9-15.28,12.9-9,0-15.53-5.26-15.53-12.53,0-5.88,4.38-12.39,14.41-12.65ZM150.58,20.29c-23.55.38-47,10.15-47,35.08,0,26.06,25.8,34.83,49.11,34.83,27.43,0,49.11-11.65,49.11-35.08,0-16.79-12.28-35.33-51.24-34.83Zm.88,17.41c12.4-.38,19.92,6.26,19.92,17.16,0,14.41-12,17.41-18,17.41-8.77,0-19.17-4-19.17-17.41,0-7.39,4-16.79,17.29-17.16Zm63.14-22.3H244V0H214.59V15.41Zm.13,73H244V22.17H214.72V88.44ZM290,22H260.19V88.44H290V58.88c0-5.89.13-11.65,5.51-16a15.33,15.33,0,0,1,9.9-3.13c5.51,0,12.15,2.25,14.28,9.9.5,1.75.75,4.13.75,8.52V88.44h29.69v-35c0-13.15-.63-22-10.9-28.06-5.51-3.26-11.52-4.64-20.42-4.64-13.65,0-21.55,4.38-28.81,9.65V22.05Zm73.79,66.14c.63,4.26,1.75,11.4,10.4,17.91,8.89,6.51,21.17,8.64,32.32,8.64,22.55,0,32.19-6.39,36.33-9.52,8.89-6.89,9.52-15,9.65-22.3V22H422.92v6c-3.63-2.38-11-7.27-24.43-7.27-24.05,0-36.45,15-36.45,32.45,0,20.67,17.29,30.82,35,30.82a59.42,59.42,0,0,0,16.91-2.51,34,34,0,0,0,9-4.13c.25,10.15.38,13.53-3.13,16.79s-8.89,3.63-12.53,3.63c-6.64,0-13.28-2.38-13.53-9.65H363.79Zm43-48.23c7.27-.25,16.41,3,16.41,12.28,0,8.52-7.52,12.9-15.28,12.9-9,0-15.53-5.26-15.53-12.53,0-5.88,4.38-12.39,14.41-12.65ZM563.35,20.29c-23.55.38-47,10.15-47,35.08,0,26.06,25.8,34.83,49.1,34.83,27.43,0,49.1-11.65,49.1-35.08C614.58,38.33,602.31,19.79,563.35,20.29Zm.88,17.41c12.4-.38,19.92,6.26,19.92,17.16,0,14.41-12,17.41-18,17.41-8.77,0-19.17-4-19.17-17.41,0-7.39,4-16.79,17.29-17.16Zm63.39,24.68c.13,5,.38,20.54,18.79,25.93a46.48,46.48,0,0,0,12.53,1.63c17.66,0,25.8-7.39,29.31-10.52v9h28.81V22.17H687.49V53.36c-.12,3.63-.25,9-3.76,12.78C680.86,69.4,676,70.65,672,70.65c-3.26,0-8-.88-11-3.76-3.64-3.51-3.64-8-3.64-11.78V22.17H627.62Zm136.17-60H735.23L735,24.81h-9.52V42h9.27l-.37,26.93-.13,4.51c.13,3.38,0,6.76,2.88,10.4,3.89,3.76,9,4.38,18.67,4.64h18.91V69.66c-7.64,0-10.52,0-10.77-5.89V42h10.65V24.8H763.79V2.38Zm21,54.12h46.1V34.58h-46.1V56.5ZM891.44,20.3c-23.55.38-47,10.15-47,35.08,0,26.06,25.81,34.83,49.11,34.83,27.43,0,49.1-11.65,49.1-35.08,0-16.79-12.27-35.33-51.23-34.83Zm.88,17.41c12.4-.38,19.91,6.26,19.91,17.16,0,14.41-12,17.41-18,17.41-8.76,0-19.16-4-19.16-17.41,0-7.4,4-16.79,17.29-17.17ZM955.7,62.39c.13,5,.38,20.54,18.79,25.93A46.5,46.5,0,0,0,987,89.95c17.66,0,25.81-7.39,29.31-10.52v9h28.82V22.17h-29.57V53.36c-.12,3.63-.25,9-3.76,12.78-2.88,3.26-7.76,4.51-11.77,4.51-3.26,0-8-.88-11-3.76-3.64-3.51-3.64-8-3.64-11.77V22.17H955.7V62.38Zm136.18-60h-28.57l-.25,22.42h-9.52V42h9.27l-.37,26.93-.13,4.51c.13,3.38,0,6.76,2.88,10.4,3.89,3.76,9,4.38,18.67,4.64h18.91V69.66c-7.64,0-10.52,0-10.77-5.89V42h10.65V24.8h-10.77V2.38ZM989.52,122.45c-3.31.07-6.48.07-8.78,2.64-1.89,2-2,4.46-2,6.62v4.19h-5.33v9.25h5.2v25.07h15.87V145.15h6.09v-9.26h-6.76c0-3.45,0-4.93,4.32-4.93.81,0,1.35.07,2.5.14v-8.65H989.52Zm32.16,12h-15.94v35.81h15.88v-16c.06-1.62.13-3.31,1.68-4.73,1-.95,2.71-1.89,7-1.89a33.45,33.45,0,0,1,3.79.27V133.73a15.24,15.24,0,0,0-7.44,1.82,13.34,13.34,0,0,0-4.93,4.53v-5.67Zm40.81-.95c-12.7.2-25.34,5.47-25.34,18.92,0,14.05,13.92,18.78,26.49,18.78,14.79,0,26.48-6.28,26.48-18.92,0-9.05-6.62-19.05-27.63-18.78Zm.47,9.39c6.69-.2,10.75,3.38,10.75,9.26,0,7.77-6.49,9.39-9.73,9.39-4.73,0-10.34-2.16-10.34-9.39C1053.64,148.12,1055.8,143.05,1063,142.85Zm34.26,27.36h15.4V152.78c0-4.46.48-6,2-7.3a6.75,6.75,0,0,1,4.19-1.35,5.86,5.86,0,0,1,5.13,2.84c.82,1.49.82,4,.82,5.81v17.44h15.47V153.06c0-2.3,0-4.12,1.08-5.88a6.16,6.16,0,0,1,5.4-2.7c2.5,0,4.39.95,5.2,3a8.84,8.84,0,0,1,.41,3.31v19.39h15.4V146.37c0-3.11-.27-7.3-5.6-10.14a20.1,20.1,0,0,0-9.26-2.23,19.37,19.37,0,0,0-14.46,6,10.58,10.58,0,0,0-1.75-2.36c-1.29-1.35-4.46-3.65-10.68-3.65-4.86,0-11.35,1.49-13.78,6.35v-5.95h-14.93v35.81Zm108.37-24.6v5h12c1.82,2.43,2.63,3.65,2.9,6.76-5.27-1.76-6.69-2.23-10-2.23-6.82,0-9.39,4.46-9.39,8.45,0,6.28,5.61,8.17,10.41,8.17a23.4,23.4,0,0,0,13.37-4.32c4.06,1.76,9.46,4.19,16,4.19,4.19,0,9.46-1.15,11.89-5.81,1.42-2.77,1.42-6.42,1.49-9.12h-13.44c-.14,1.69-.34,5.47-5,5.47a14.76,14.76,0,0,1-4.87-1,9.79,9.79,0,0,0,2.1-6.22,10.26,10.26,0,0,0-1-4.26h7.44v-4.93h-10.27c-3-4.66-3.72-5.88-3.72-7.9,0-3.51,2.91-4.66,6.08-4.66a7.54,7.54,0,0,1,4.8,1.49c1.48,1.42,1.55,3,1.62,6.28l14.52-.81c-.33-4.66-.81-12.36-10.6-15.2a42.86,42.86,0,0,0-12.1-1.28c-6.89,0-14,.88-18.1,5.34a10.21,10.21,0,0,0-2.84,6.76c0,4.8,3.45,8.72,4.53,9.86h-7.84Zm11.69,18.17a8.87,8.87,0,0,1-5.47,2.16c-.95,0-3.25-.27-3.25-2.09s2.16-2,2.64-2c2.29,0,5.13,1.42,6.08,1.9Zm84.25-17.57s1.35-.4,2.36-.74c1.62-.61,7.23-2.84,7.23-8.71,0-7-6.55-13.31-23.91-13.31-18.38,0-25.41,6.55-25.41,13.65,0,3,1.69,7.16,9.53,9.05-3.11.74-11,2.64-11,10.67,0,7.84,7.36,14.26,25,14.19,14.53.27,26.76-3,27.1-14.19,0-8.44-8.52-10.13-10.88-10.6Zm-15.47-13c3.37,0,8.64.27,8.64,4.39,0,4.66-6.21,4.66-8.31,4.66-3.44,0-8.31-.2-8.31-4.53s5.88-4.52,8-4.52Zm.6,17.3c2.77,0,9.06,0,9.06,5.27,0,3.78-2.77,5.07-9.19,5.34-4.66.2-9.46-.81-9.53-5.34C1277,150.89,1282.61,150.49,1286.66,150.49Z"
+                />
               </g>
-            </g>
-          </svg>
-          <h4 class="subtitle1 white">These are the new season casuals that are down for you always</h4>
+            </g></svg>
           <div class="more-buttons">
-            <button class="button">shop casuals</button>
+            <button class="button">shop party</button>
           </div>
         </div>
       </a>
     </div>
-    <div class="row fullwidth row2">
-      <a href="/ie/dresses" class="tracking">
-        <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1533911690/dresses_mobile_IRE_r61phr.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1533911690/dresses_mobile_IRE_r61phr.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1533909815/dressesno_text_q5b0lt.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1533909815/dressesno_text_q5b0lt.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533909815/dressesno_text_q5b0lt.jpg 1920w"
-            alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533909815/dressesno_text_q5b0lt.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1533909815/dressesno_text_q5b0lt.jpg" alt="backup">
-        </picture>
-        <div class="banner_content center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 485.87 159.58">
-            <title>Asset 1</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="Dresses_for_days_copy_2" data-name="Dresses for days copy 2" d="M51,41.86H44.11v-24H51q10.13,0,10.12,12T51,41.86Zm0-41H23.86V58.87H51q30.36,0,30.36-29T51,.81ZM122,16.2q6.47,0,6.47,5.38T122,27h-8.1V16.2Zm6.72,42.67h24l-8.05-17.33Q142,35.75,134.38,35V33q14.7-3.48,14.7-14.41Q149.08.8,122,.81H93.62V58.87h20.24V39.56h7.69ZM162.56.81V58.87h47.28l.81-14.58H182.8V36.72H209V23H182.8V15.39h27V.81H162.56Zm90.56,41.58a64.43,64.43,0,0,1-11,.69,79.84,79.84,0,0,1-18.58-2.43v16.6a86,86,0,0,0,20.2,2.43q30.93,0,30.93-18.5,0-15.58-23.84-18.34l-8-.89V17.29a73,73,0,0,1,11-.69A81.28,81.28,0,0,1,272.83,19V2.43A87.45,87.45,0,0,0,252.26,0q-31,0-31,18.51,0,15.18,23.89,17.89l7.94.93v5.06Zm62.78,0a64.38,64.38,0,0,1-11,.69,79.77,79.77,0,0,1-18.58-2.43v16.6a86,86,0,0,0,20.2,2.43q30.93,0,30.93-18.5,0-15.58-23.85-18.34l-8-.89V17.29a73,73,0,0,1,11.05-.69A81.28,81.28,0,0,1,335.62,19V2.43A87.39,87.39,0,0,0,315.05,0q-31,0-31,18.51,0,15.18,23.89,17.89l7.93.93v5.06Zm34-41.58V58.87h47.28L398,44.29H370.15V36.72h26.23V23H370.15V15.39h27V.81Zm90.56,41.58a63.43,63.43,0,0,1-11,.69,79.77,79.77,0,0,1-18.58-2.43v16.6a86,86,0,0,0,20.2,2.43q30.93,0,30.93-18.5,0-15.58-23.84-18.34l-8-.89V17.29a73,73,0,0,1,11.05-.69A81.28,81.28,0,0,1,460.18,19V2.43A87.39,87.39,0,0,0,439.61,0q-31,0-31,18.51,0,15.18,23.89,17.89l7.94.93v5.06ZM0,100.31v58.05H20.24V138.65H47.29V124.07h-27v-8.38H47.29V100.31Zm90.52,41.86q-11.74-.4-11.74-12.83,0-12.84,11.74-12.84t11.74,12.84q0,12.82-11.74,12.83Zm0-43.08q-32.79,0-32.79,30.25t32.79,30.24q32.79,0,32.79-30.24T90.52,99.09Zm73.6,16.6q6.48,0,6.48,5.39t-6.48,5.42H156V115.69Zm6.72,42.67h24L186.83,141q-2.67-5.79-10.28-6.56v-2q14.7-3.48,14.7-14.41,0-17.73-27.12-17.73H135.79v58.05H156V139.05h7.69Zm86.22-17h-6.88V117.31h6.88q10.13,0,10.12,12t-10.12,12Zm0-41.05H229.93v58.05h27.13q30.36,0,30.36-29t-30.36-29Zm62.83,34.29L323.77,117h2.84l3.89,17.57Zm13.64,13.76,2.19,10h23.07l-19-58.05H310.62l-19,58.05h23.08l2.18-10Zm47.45,10h20.24V143.79q8.91,0,12.67-10.89l11.21-32.59H401.22l-6.68,26h-6.88L381,100.31H357.09l11.25,32.59q3.74,10.89,12.64,10.89v14.57Zm83.35-16.47a64.31,64.31,0,0,1-11,.69,79.85,79.85,0,0,1-18.59-2.43v16.6a86.61,86.61,0,0,0,20.21,2.42q30.93,0,30.93-18.5,0-15.58-23.85-18.34l-8-.89v-4.65a73,73,0,0,1,11.05-.69,81.15,81.15,0,0,1,18.95,2.43v-16.6a87.39,87.39,0,0,0-20.57-2.43q-31,0-31,18.5,0,15.18,23.88,17.9l7.94.93v5.06Z"
-                  style="fill:#fefefe" />
-              </g>
-            </g>
-          </svg>
-          <h2 class="title1 white">Dresses for days</h2>
-          <div class="more-buttons">
-            <button class="button">shop dresses</button>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="row fullwidth row3">
-      <a href="/occasion/festival-shop" class="tracking">
-        <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1533908802/festival_mobile_ff4drx.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1533908802/festival_mobile_ff4drx.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1533908802/festival_mobile_ff4drx.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1533908802/festival_mobile_ff4drx.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1533908802/festival_mobile_ff4drx.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1533908802/festival_mobile_ff4drx.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1533908802/festival_mobile_ff4drx.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1533908802/festival_mobile_ff4drx.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1533896361/festivalnotext_hno8o1.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1533896361/festivalnotext_hno8o1.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1533896361/festivalnotext_hno8o1.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1533896361/festivalnotext_hno8o1.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1533896361/festivalnotext_hno8o1.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1533896361/festivalnotext_hno8o1.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1533896361/festivalnotext_hno8o1.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1533896361/festivalnotext_hno8o1.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1533896361/festivalnotext_hno8o1.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1533896361/festivalnotext_hno8o1.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533896361/festivalnotext_hno8o1.jpg 1920w"
-            alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533896361/festivalnotext_hno8o1.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1533896361/festivalnotext_hno8o1.jpg" alt="backup">
-        </picture>
-        <div class="banner_content center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 507.73 138.79">
-            <title>Asset 1</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="_" data-name=" " d="M0,52.2H45.29l2.9-16.48H22.69l6-34H8.91Zm78.12,1.68c17.92,0,31-10.58,33.92-26.94S105.54,0,87.62,0s-31.08,10.52-34,26.94,6.5,26.94,24.48,26.94Zm3-17c-5.05,0-9-3.24-7.81-9.92S79.57,17,84.62,17s9,3.18,7.81,9.92-6.32,9.92-11.31,9.92Zm60.86,17c17.92,0,31-10.58,33.92-26.94S169.4,0,151.48,0s-31.08,10.52-34,26.94S124,53.88,142,53.88Zm3-17c-5,0-9-3.24-7.81-9.92S143.43,17,148.48,17s9,3.18,7.81,9.92S150,36.86,145,36.86ZM235.19,52.2l-15.63-28L243.74,1.68H221.91l-18.07,17.2h-1.2l3-17.2H185.94L177,52.2h19.73l1.75-9.92,6.8-6.2h1.09l8.77,16.12Zm83.72-28.75H291.19l-1.59,9h8.72c-2.56,4.63-8.05,4.39-9,4.39-5.35,0-9-3.67-7.93-9.92s5.9-9.92,12.1-9.92c4.15,0,6.22,2.22,6.44,3.36h19.6C320.57,6.19,308.68,0,296.05,0c-18.23,0-31.39,10.52-34.29,26.94s7.34,26.94,23,26.94c8.54,0,15.22-3.12,19.6-7.45h.36L304,52.2h9.86Zm29.75,30.43c17.92,0,31-10.58,33.92-26.94S376.09,0,358.16,0s-31.08,10.52-34,26.94,6.5,26.94,24.48,26.94Zm3-17c-5.05,0-9-3.24-7.81-9.92S350.11,17,355.16,17s9,3.18,7.81,9.92-6.32,9.92-11.31,9.92Zm60.86,17c17.92,0,31-10.58,33.92-26.94S440,0,422,0s-31.08,10.52-34,26.94,6.5,26.94,24.48,26.94Zm3-17c-5,0-9-3.24-7.81-9.92S414,17,419,17s9,3.18,7.82,9.92-6.33,9.92-11.32,9.92ZM483.3,1.68H456.48L447.57,52.2H474.4c21.23,0,30.15-10.71,32.72-25.26S504.53,1.68,483.3,1.68Zm-5.93,34h-7l3.08-17.5h7c4.27,0,8.05,1.74,6.81,8.78s-5.63,8.72-9.9,8.72ZM39.72,138.79H59.5l8.91-50.52H48.62Zm26.27,0H85.24l4-22.85h1.8l8.78,22.85h22.07l8.91-50.52H111.59l-4,22.86h-1.74l-8.3-22.86H74.9Zm122.56,0h20.39l-9-50.52H172.26l-26.83,50.52h20.39l2.65-5.47h19.42Zm-13.14-20,5.8-12.09h3.31l1.54,12.09ZM294.16,88.27H239.07l-2.9,16.42h17.69l-6,34.1h19.73l6-34.1h17.68Zm-2.72,50.52H339l2.77-15.69H314l.58-3.31h26.65l2.19-12.45H316.77l.59-3.37h27.73l2.77-15.7H300.34Zm54,0h19.24l4-22.85h1.81l8.78,22.85h22.07l8.91-50.52H391l-4,22.86h-1.74L377,88.27H354.35ZM471.55,88.27H416.46l-2.89,16.42h17.68l-6,34.1H445l6-34.1h17.68Z"
-                  style="fill:#fff" />
-              </g>
-            </g>
-          </svg>
-          <h2 class="title1 white">look good in a tent</h2>
-          <div class="more-buttons">
-            <button class="button">shop festival</button>
-          </div>
-        </div>
-      </a>
-    </div>
+
+
+
+
   </div>
   <div class="slick-three">
     <div class="blocker"></div>
     <div>
-      <a href="/ie/occasion/holiday-shop" class="tracking">
+      <a href="https://blog.missguided.co.uk/babezine/festival-outfits-raining/" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534167314/Holiday_lower_slot_qlutus.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534167314/Holiday_lower_slot_qlutus.jpg"
-            alt="backup_img">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1533903709/festival_rnndwr.gif"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1533903709/festival_rnndwr.gif" alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">holiday essentials</h2>
-          <button class="button">shop holiday</button>
+          <h2 class="title3">your festival outfits whatever the weather</h2>
+          <button class="button">read the feature</button>
         </div>
       </a>
     </div>
-
+    <!-- <div>
+    <a href="https://blog.missguided.co.uk/fashion/best-sellers-round-up/" class="tracking">
+      <div class="imgContainer">
+        <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1533903613/bestsellers_rmjqcu.jpg" src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1533903613/bestsellers_rmjqcu.jpg" alt="backup_img">
+      </div>
+      <div class="title-below">
+        <button class="button">check it out</button>
+      </div>
+    </a>
+  </div> -->
     <div>
-      <a href="/refer-a-friend" class="tracking">
+      <a href="https://blog.missguided.co.uk/babezine/how-to-wear-check/" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1532347330/refer_a_friend_bmqqpv.png"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1532347330/refer_a_friend_bmqqpv.png" alt="backup_img">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70,b_rgb:FEF5F0/v1533556417/checkitout3_mvgp7e.jpg"
+            src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 300&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23a199bb&apos; d=&apos;M0 0h300v300H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse fill=&apos;%233d448d&apos; cx=&apos;139&apos; cy=&apos;133&apos; rx=&apos;111&apos; ry=&apos;111&apos;/%3e%3cellipse fill=&apos;white5e0&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-49.94629 -13.91425 68.43307 -245.64591 22.5 102.7)&apos;/%3e%3cellipse fill=&apos;%23ff5900&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-30.91443 6.79698 -7.95209 -36.16818 187.6 107)&apos;/%3e%3cpath fill=&apos;white&apos; d=&apos;M194.5 321l-45.7-49 112.7-105 45.7 49z&apos;/%3e%3cellipse fill=&apos;white&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(123.46498 136.41846 -24.81598 22.4596 246.6 35.4)&apos;/%3e%3cellipse fill=&apos;%23003dff&apos; cx=&apos;117&apos; cy=&apos;104&apos; rx=&apos;41&apos; ry=&apos;41&apos;/%3e%3cellipse fill=&apos;%230039ff&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(15.47904 -10.0522 26.36407 40.59712 61.3 192.7)&apos;/%3e%3cpath d=&apos;M115 31l34-47 24 46z&apos;/%3e%3c/g%3e%3c/svg%3e"
+            alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">get €20 off for you and your BFF's</h2>
+          <h2 class="title3">check mate</h2>
+          <h4 class="subtitle3">How to wear the pattern of the season, checks...</h4>
+          <button class="button">check it out</button>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="https://blog.missguided.co.uk/fashion/layer-up/" class="tracking">
+        <div class="imgContainer">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1533903654/LAYERPLAYER_cirl8t.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1533903654/LAYERPLAYER_cirl8t.jpg" alt="backup_img">
+        </div>
+        <div class="title-below">
+          <h2 class="title3">layer player</h2>
           <button class="button">go go go</button>
         </div>
       </a>
     </div>
-
-    <div>
-      <a href="/ie/new-in" class="tracking">
-        <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534149597/new_in_lower_slot_wbnkpa.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534149597/new_in_lower_slot_wbnkpa.jpg" alt="backup_img">
-        </div>
-        <div class="title-below">
-          <h2 class="title3">hey newbie</h2>
-          <button class="button">shop new in</button>
-        </div>
-      </a>
-    </div>
-
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js" async=""></script>
 <script type="text/javascript">!function (e) { e(document).ready(function () { e("#homeSlider").slick({ infinite: !0, adaptiveHeight: !0, autoplay: !0, autoplaySpeed: 5e3, pauseOnHover: !1, dots: !0, slide: ".fullwidth", slidesToShow: 1, slidesToScroll: 1, responsive: [{ breakpoint: 1e3, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 768, settings: "unslick" }] }), e(".slick-three").slick({ infinite: !0, adaptiveHeight: !1, slide: ":not(.blocker)", dots: !1, slidesToShow: 3, slidesToScroll: 1, arrows: !0, centerMode: !0, centerPadding: "0", responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 }, centerMode: !0, centerPadding: "50", variableWidth: !0 }] }) }), e(window).on("resize orientationchange", function () { e("#homeSlider").slick("resize"), e(".slick-three").slick("resize") }), e(window).scroll(_.debounce(function () { if (e(window).width() < 767) { var i = e(this).scrollTop(); console.log(i), i > e(".slick-three").offset().top - 400 && (e(".slick-three .slick-slide").css("animation", "swipe 1200ms ease-in-out forwards"), setTimeout(function () { e(".blocker").css("display", "none") }, 1600)) } }, 100)) }(jQuery);</script>
