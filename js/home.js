@@ -6,8 +6,8 @@ var min = "</script><script type='text/javascript'>!function(e){e(document).read
     var jira =
       "<script type='text/javascript' src='https://missguided.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/l24at6/b/0/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=efc408fe'></script>";
 
-    $("body").append(jira);
-    $("body").append(min);
+    $("body").append(jira, min);
+    // $("body").append(min);
 
 
     $("#homeSlider").slick("resize");
