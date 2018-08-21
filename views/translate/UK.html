@@ -1,4 +1,8 @@
 <style>
+  /* .title3 {
+    text-transform: lowercase;
+  } */
+
   @media (min-width:768px) {
     .row1 .title1,
     .row2 .title1,
@@ -9,27 +13,40 @@
       margin-top: 20px;
     }
     .row1 .banner_content {
-      max-width: 500px;
-      width: 25%;
-      left: 60%;
-      text-align: left;
+      height: 90%;
+      width: 95%;
     }
-    #homeSlider .row1 .banner_content button.button {
-      color: #FCD736;
-      border-color: #FCD736;
+    .row1 .more-buttons {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 100%;
+    }
+    .row1 .button {
       margin: 0;
+      background: transparent;
+      border: #fff 2px solid;
+      color: #fff;
     }
-    #homeSlider .row1 .banner_content button.button:hover {
-      background-color: #FCD736;
-      border-color: #FCD736;
-      color: black;
+
+
+    .row1 {
+      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 860'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23b2665b' d='M0 0h1920v855H0z'/%3e%3cg filter='url(%23b)' transform='matrix(7.5 0 0 7.5 3.8 3.8)' fill-opacity='.5'%3e%3cellipse fill='%23f9ffff' rx='1' ry='1' transform='matrix(-20.91272 41.58032 -27.6515 -13.90726 209 85.2)'/%3e%3cellipse fill='%23a90000' cx='133' cy='52' rx='42' ry='200'/%3e%3cellipse fill='%23e8f9e2' rx='1' ry='1' transform='matrix(-21.27422 18.62417 -21.3869 -24.43007 59.5 58.8)'/%3e%3cellipse fill='red' rx='1' ry='1' transform='matrix(18.0242 .09037 -.88577 176.66564 0 81)'/%3e%3cellipse fill='%23042923' rx='1' ry='1' transform='rotate(-88.4 98.4 -70.5) scale(144.31513 11.0591)'/%3e%3cellipse fill='%23ff393b' cx='124' cy='81' rx='19' ry='186'/%3e%3cpath fill='%23000500' d='M82.2 83.3L98 81.9l3.7 42.8-15.9 1.4z'/%3e%3cpath fill='%23701a0c' d='M190 1h46v36h-46z'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
     }
+
+
+
+
   }
 
   @media (max-width: 767px) {
     .row svg {
       display: none;
     }
+    .row1 {
+      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 768 768'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23af685f' d='M0 0h768v768H0z'/%3e%3cg filter='url(%23b)' transform='matrix(3 0 0 3 1.5 1.5)' fill-opacity='.5'%3e%3cellipse fill='%23f7ffff' cx='196' cy='198' rx='86' ry='111'/%3e%3cellipse fill='%23530000' cx='72' cy='85' rx='41' ry='243'/%3e%3cellipse fill='%23ff0813' cx='28' cy='102' rx='36' ry='255'/%3e%3cellipse fill='%23540000' rx='1' ry='1' transform='matrix(-51.29202 -38.09282 20.36647 -27.42347 191.1 1.4)'/%3e%3cellipse fill='%23ffffe4' rx='1' ry='1' transform='matrix(-28.3935 45.4644 -39.40068 -24.60659 149.1 221.9)'/%3e%3cellipse fill='%23654a32' rx='1' ry='1' transform='matrix(47.89573 .3653 -.19158 25.11951 233 255)'/%3e%3cellipse fill='%2321221f' rx='1' ry='1' transform='matrix(0 -198.93349 21.30617 0 84.5 94.9)'/%3e%3cellipse fill='%23600000' rx='1' ry='1' transform='matrix(15.1163 16.78836 -19.2271 17.31216 220.9 62.4)'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
+    }
+
   }
 </style>
 <div class="container">
@@ -41,103 +58,81 @@
       <a href=""></a>
     </div>
     <div class="row fullwidth row1">
-      <a href="/occasion/holiday-shop" class="tracking">
+      <a href="/occasion/party-shop" class="tracking">
         <picture>
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1533907673/Summer_UK_mobile_xwgbkh.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1533907673/Summer_UK_mobile_xwgbkh.jpg 767w">
-          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1533907561/Summer_UK_kehzfx.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1533907561/Summer_UK_kehzfx.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1533907561/Summer_UK_kehzfx.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1533907561/Summer_UK_kehzfx.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1533907561/Summer_UK_kehzfx.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1533907561/Summer_UK_kehzfx.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1533907561/Summer_UK_kehzfx.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1533907561/Summer_UK_kehzfx.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1533907561/Summer_UK_kehzfx.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1533907561/Summer_UK_kehzfx.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533907561/Summer_UK_kehzfx.jpg 1920w"
+          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1534768539/GlamGeisha_mobile_UK_US_DE_AUS_EU_ES_qo4xgj.jpg 767w">
+          <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg 1920w"
             alt="image failed">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1533907561/Summer_UK_kehzfx.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1533907561/Summer_UK_kehzfx.jpg" alt="backup">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_1920,q_70/v1534768562/GlamGeisha_UK_US_DE_AUS_EU_ES_tdwqno.jpg"
+            alt="backup">
         </picture>
         <div class="banner_content center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349.03 194.23">
-            <title>Asset 1</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path d="M0,35.22H15c.18,3.42,3.06,5.52,10.26,5.58,6.36.06,9.3-1.74,9.3-4.08,0-1.62-.9-3.3-5.82-4l-6.48-1c-9.54-1.56-21-2.7-21-15.6C1.22,6.12,9.32,0,25.33,0,39.79,0,49.87,4,49.57,18.42H34.75C34.15,15.06,31.33,13,25,13c-5.52,0-7.8,1.68-7.8,4,0,1.44.9,3.18,4.74,3.78l5.34.9c10,1.68,23.76,2,23.76,15.78,0,11-8.52,16.44-25.8,16.38S-.4,48.3,0,35.22Z"
-                  style="fill:#fdd915" />
-                <path d="M56,30.12V1.68H72.73v28c0,6.24,2.76,10.14,9.36,10.14s9.48-3.9,9.48-10.14v-28h16.62V30c0,16.38-8.76,23.76-26.1,23.76S56,46.38,56,30.12Z"
-                  style="fill:#fdd915" />
-                <path d="M114.19,1.68h20.94l8.22,28.74h1.2l8.22-28.74h20.94v50.4H157.87V29.76h-1.32l-6.42,22.32H137.77l-6.42-22.32H130V52.08H114.19Z"
-                  style="fill:#fdd915" />
-                <path d="M179.71,1.68h20.94l8.22,28.74h1.2l8.22-28.74h20.94v50.4H223.39V29.76h-1.32l-6.42,22.32H203.29l-6.42-22.32h-1.32V52.08H179.71Z"
-                  style="fill:#fdd915" />
-                <path d="M245.23,1.68h45.42V15h-28.8v6.42h27.72V32.34H261.85v6.42h28.8V52.08H245.23Z" style="fill:#fdd915"
-                />
-                <path d="M332.71,52.08l-6.84-13h-12.6v13H296.65V1.68h28.86c14,0,21.84,6,21.84,19.26A17.09,17.09,0,0,1,340,35.52l9,16.56ZM313.27,26.64h11.1c4.2,0,6.36-2,6.36-5.58s-2.16-5.58-6.36-5.58h-11.1Z"
-                  style="fill:#fdd915" />
-                <path d="M0,121.62H15c.18,3.42,3.06,5.52,10.26,5.58,6.36.06,9.3-1.74,9.3-4.08,0-1.62-.9-3.3-5.82-4l-6.48-1c-9.54-1.56-21-2.7-21-15.6,0-10,8.1-16.08,24.11-16.08,14.46,0,24.54,4,24.24,18.42H34.75c-.6-3.36-3.42-5.46-9.78-5.46-5.52,0-7.8,1.68-7.8,4,0,1.44.9,3.18,4.74,3.78l5.34.9c10,1.68,23.76,2,23.76,15.78,0,11-8.52,16.44-25.8,16.38S-.4,134.7,0,121.62Z"
-                  style="fill:#fdd915" />
-                <path d="M106.75,101.94H88.63v36.54H72V101.94H53.9V88.08h52.85Z" style="fill:#fdd915" />
-                <path d="M147,122.82v15.66H130.33V122.76L109.75,88.08h17.46L138,107h1.32l10.8-19h17.46Z" style="fill:#fdd915"
-                />
-                <path d="M171.49,88.08h16.62v36.54H215v13.86h-43.5Z" style="fill:#fdd915" />
-                <path d="M221,88.08h16.62v50.4H221Z" style="fill:#fdd915" />
-                <path d="M243.61,88.08h19.08l16.74,27.24h1.5V88.08h16.2v50.4H278.47l-17.16-27.24h-1.5v27.24h-16.2Z" style="fill:#fdd915"
-                />
-                <path d="M309.37,101.94h-6.54V88.08h19.56v3.06c0,13.86-2.1,22.26-3.6,25.08h-10.2A99.37,99.37,0,0,0,309.37,101.94Z"
-                  style="fill:#fdd915" />
-                <path d="M.05,171.07H20.19v6.16H7.44v3.05H19.63v5.33H7.44v7.87H.05Z" style="fill:#fdd915" />
-                <path d="M38.88,193.48l-3-5.79h-5.6v5.79H22.85V171.07H35.68c6.21,0,9.71,2.67,9.71,8.57a7.6,7.6,0,0,1-3.26,6.48l4,7.36Zm-8.64-11.31h4.93c1.87,0,2.83-.91,2.83-2.48s-1-2.48-2.83-2.48H30.24Z"
-                  style="fill:#fdd915" />
-                <path d="M47.33,182.28c0-7.18,5-11.95,12.69-11.95s12.7,4.77,12.7,11.95-5,11.95-12.7,11.95S47.33,189.45,47.33,182.28Zm18.06,0A5.37,5.37,0,1,0,60,187.85,5.22,5.22,0,0,0,65.39,182.28Z"
-                  style="fill:#fdd915" />
-                <path d="M75,171.07h9.31l3.65,12.78h.54l3.65-12.78h9.31v22.41h-7v-9.92h-.59L91,193.48h-5.5l-2.85-9.92H82v9.92H75Z"
-                  style="fill:#fdd915" />
-                <path d="M119,178.78c0,1.2.66,1.9,1.14,2.83h8.11v3.07H120.5a4.07,4.07,0,0,1-2.08,3v.22h13.44v5.6H111.43v-5.6a6.17,6.17,0,0,0,3.31-3.2h-3.31v-3.07h2.27a7.36,7.36,0,0,1-1.63-4.32c0-4.14,4-6.8,9.93-6.8,6.21,0,10.51,2.88,9.86,8.29h-7c-.27-1.89-1.84-2.24-3-2.24C120.18,176.54,119,177.4,119,178.78Z"
-                  style="fill:#fdd915" />
-                <path d="M134.05,186.14h6.56c.27,1.55,1.63,2.16,3.36,2.16,2.64,0,3.71-1.36,3.71-2.8s-1.07-2.69-3.47-2.69a4.06,4.06,0,0,0-3.44,1.44h-6.51l2.53-13.18h15.9v5.58H142.26l-.64,3a8.49,8.49,0,0,1,4.75-1.09c4.4,0,8.21,2.37,8.21,7.3S151,194.07,144,194.07C137.19,194.07,133.94,191.42,134.05,186.14Z"
-                  style="fill:#fdd915" />
-              </g>
-            </g>
-          </svg>
-          <h2 class="title1 white">Summer stylin&apos; from &#xA3;5</h2>
+          <h2 class="title1">turn up to the club like...</h2>
+
           <div class="more-buttons">
-            <button class="button">shop holiday</button>
+            <button class="button">shop out out</button>
           </div>
         </div>
       </a>
     </div>
   </div>
-
   <div class="slick-three">
     <div class="blocker"></div>
     <div>
-      <a href="https://blog.missguided.co.uk/babezine/festival-outfits-raining/" class="tracking">
+      <a href="/student" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1533903709/festival_rnndwr.gif"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1533903709/festival_rnndwr.gif" alt="backup_img">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534759656/students_UK_vdfefy.gif"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534759656/students_UK_vdfefy.gif" alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">your festival outfits whatever the weather</h2>
-          <button class="button">read the feature</button>
+          <h2 class="title3">An Actually Useful Guide to Being a Student</h2>
+          <h4 class="subtitle3">Got your results and off to uni? Here&apos;s our actually useful guide to be a student</h4>
+          <button class="button">study this</button>
         </div>
       </a>
     </div>
     <div>
-      <a href="https://blog.missguided.co.uk/fashion/best-sellers-round-up/" class="tracking">
+      <a href="https://blog.missguided.co.uk/babezine/how-to-wear-a-blazer/" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1533903613/bestsellers_rmjqcu.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1533903613/bestsellers_rmjqcu.jpg" alt="backup_img">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534782711/blazer_UK_jgwrul.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534782711/blazer_UK_jgwrul.jpg" alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">a round up of this week's bestsellers</h2>
+          <h2 class="title3">get your girl boss on with a blazer</h2>
+          <h4 class="subtitle3">How to wear a blazer, courtesy of our beaut #babesofmissguided</h4>
+          <button class="button">read me</button>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="https://blog.missguided.co.uk/babezine/festival-jackets/" class="tracking">
+        <div class="imgContainer">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70,b_rgb:FEF5F0/v1533137721/festival_jackets_evkyfx.png"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70,b_rgb:FEF5F0/v1533137721/festival_jackets_evkyfx.png"
+            alt="backup_img">
+        </div>
+        <div class="title-below">
+          <h2 class="title3">Festival Jackets for every weather eventuality</h2>
+          <h4 class="subtitle3">If you&apos;re off to a festival this bank holiday, we&apos;ve got you covered...</h4>
           <button class="button">check it out</button>
         </div>
       </a>
     </div>
     <div>
-      <a href="https://blog.missguided.co.uk/fashion/layer-up/" class="tracking">
+      <a href="/occasion/winter-warmers" class="tracking">
         <div class="imgContainer">
-          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1533903654/LAYERPLAYER_cirl8t.jpg"
-            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1533903654/LAYERPLAYER_cirl8t.jpg" alt="backup_img">
+          <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534760315/Autumn_rggmx8.jpg"
+            src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534760315/Autumn_rggmx8.jpg" alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">here’s how to layer like a player</h2>
-          <button class="button">go go go</button>
+          <h2 class="title3">autumn ready</h2>
+          <h4 class="subtitle3">fall in love with your now wardrobe</h4>
+          <button class="button">shop autumn</button>
         </div>
       </a>
     </div>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js" async=""></script>
 <script type="text/javascript">!function (e) { e(document).ready(function () { e("#homeSlider").slick({ infinite: !0, adaptiveHeight: !0, autoplay: !0, autoplaySpeed: 5e3, pauseOnHover: !1, dots: !0, slide: ".fullwidth", slidesToShow: 1, slidesToScroll: 1, responsive: [{ breakpoint: 1e3, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 768, settings: "unslick" }] }), e(".slick-three").slick({ infinite: !0, adaptiveHeight: !1, slide: ":not(.blocker)", dots: !1, slidesToShow: 3, slidesToScroll: 1, arrows: !0, centerMode: !0, centerPadding: "0", responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 }, centerMode: !0, centerPadding: "50", variableWidth: !0 }] }) }), e(window).on("resize orientationchange", function () { e("#homeSlider").slick("resize"), e(".slick-three").slick("resize") }), e(window).scroll(_.debounce(function () { if (e(window).width() < 767) { var i = e(this).scrollTop(); console.log(i), i > e(".slick-three").offset().top - 400 && (e(".slick-three .slick-slide").css("animation", "swipe 1200ms ease-in-out forwards"), setTimeout(function () { e(".blocker").css("display", "none") }, 1600)) } }, 100)) }(jQuery);</script>
