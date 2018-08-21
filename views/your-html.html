@@ -108,12 +108,15 @@
             var includes = $('[data-include]');
             jQuery.each(includes, function () {
                 var file = './views/translate/' + terr + '.html';
-                $(this).load(file);
                 var s = document.createElement("script");
+
                 s.type = "text/javascript";
-                s.src = "/js/translations-helper.js";
+                s.src = "/js/home.js";
                 // Use any selector
                 $("body").append(s);
+
+                $(this).load(file);
+
             });
         });
     })(jQuery);
