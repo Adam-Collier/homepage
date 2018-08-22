@@ -242,17 +242,28 @@ body {
 }
 @media (max-width: 600px) {
   .sign-up {
-    padding: 1em 5px;
+    margin: 100px 1em;
+    padding: 50px 5px;
   }
   .email input {
     width: 300px;
   }
+  .tc {
+    width: 80%;
+  }
   .wrap {
     width: 100%;
-    ul {
+    ul.steps {
+      margin: 0 20px;
       padding: 0;
+      // text-align: left;
       li {
+         padding: 0;
+        align-items: flex-start;
         flex-direction: column;
+        h5 {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -262,4 +273,12 @@ body {
 .validation-advice {
   color: white !important;
   font-weight: 600;
+}
+
+@media (max-width: 320px){
+  .sign-up {
+    max-width: 320px;
+    margin: 100px 0;
+    border-width: 5px;
+  }
 }
