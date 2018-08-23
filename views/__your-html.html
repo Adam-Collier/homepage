@@ -1,0 +1,445 @@
+<style>
+    @media (min-width:768px) {
+        .row1 .title1,
+        .row2 .title1,
+        .row3 .title1 {
+            display: none;
+        }
+        .row .subtitle1 {
+            margin-top: 20px;
+        }
+        .row1 .banner_content {
+            height: 90%;
+            width: 95%;
+        }
+        .row1 .more-buttons {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100%;
+        }
+        .row1 .button {
+            margin: 0;
+            background: transparent;
+            border: #fff 2px solid;
+            color: #fff;
+        }
+
+
+    }
+
+    @media (max-width: 767px) {
+        .row svg {
+            display: none;
+        }
+
+    }
+</style>
+<div class="container">
+    <div id="homeSlider">
+        <div id="homeSlider-nav">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+
+        <div class="row fullwidth row-sale">
+            <style>
+                @import url("https://use.typekit.net/jzw7xnz.css");
+                .row-sale {
+                    position: relative;
+                    background: #ff4ba8;
+                    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 767 767'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23f83177' d='M0 0h767v767H0z'/%3e%3cg filter='url(%23b)' transform='translate(1.5 1.5) scale(2.9961)' fill-opacity='.5'%3e%3cpath fill='%23ff5ec9' d='M59 271l2-24-41-32z'/%3e%3cpath fill='%23ed0000' d='M203.5 200.6l-13.9 1.7-1.1-9 13.9-1.6z'/%3e%3cpath fill='%23ff53b5' d='M236.7 57.4l-17.4-44.6 19.4 25.8-51.6 6.2z'/%3e%3cpath fill='%23ff60ce' d='M266.4 254.7l-10.4 7.8-20.4-27.2 10.4-7.8z'/%3e%3cpath fill='%23f00013' d='M166.9 103.6l17.9 25.6 7.3-20.9 19.5 15.2z'/%3e%3cellipse fill='%23ef0000' rx='1' ry='1' transform='matrix(8.56862 3.8869 -1.91032 4.21128 78.5 208.5)'/%3e%3cellipse fill='%23e00' cx='107' cy='228' rx='12' ry='4'/%3e%3cellipse fill='%23ff52b3' rx='1' ry='1' transform='matrix(.96202 3.89847 -74.12743 18.29233 26.7 153.4)'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
+                }
+
+                .termina {
+                    font-family: "termina", missguided, sans-serif;
+                    font-weight: 700;
+                    color: #ffd5e1;
+                }
+
+                .row-sale .sale-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    max-width: 1600px;
+                    overflow: hidden;
+                }
+
+                .row-sale .subtitle1 {
+                    color: #ffd5e1;
+                    text-transform: none;
+                    text-align: center;
+                    margin: 10px auto;
+                    max-width: 90%;
+                    font-size: 20px;
+                }
+
+                .row-sale .flex {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .row-sale .flex h1 {
+                    margin-left: 10px;
+                }
+
+                .row-sale .flex h5 {
+                    font-size: 22px;
+                }
+
+                .row-sale button.button {
+                    border-color: #ffd5e1;
+                    background: #ffd5e1;
+                    color: #f4052c;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .row-sale button.button:hover {
+                    border-color: #f4052c;
+                    background: #f4052c;
+                    color: #ffd5e1;
+
+                }
+
+                @media (min-width: 1200px) {
+                    .row-sale .flex h1 {
+                        font-size: 80px;
+                    }
+                    .row-sale .subtitle1 {
+                        margin: 20px auto;
+
+                    }
+                }
+
+                .categories-container--mobile {
+                    display: block;
+                }
+
+                .categories-container--desktop {
+                    display: none;
+                }
+
+                .categories-container__heading {
+                    text-align: center;
+                    padding-bottom: 32px;
+                    padding-top: 65px;
+                    margin-bottom: 0;
+                }
+
+                .categories-carousel {
+                    margin: 0 auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    padding-bottom: 20px;
+                    padding-right: 20px;
+                }
+
+                .category-tile__link {
+                    width: 100%;
+                    margin-left: 10px;
+                }
+
+                .category-tile__heading {
+                    padding: 5px 0 7px;
+                    text-align: center;
+                    font-weight: 700;
+                    background: #f4052c;
+                    color: #ffd5e1;
+                    font-size: 16px;
+                }
+
+                @media (max-width: 767px) {
+                    #homeSlider .row.row-sale img {
+                        min-height: auto;
+                        margin: 0;
+                    }
+
+                    .row-sale picture {
+                        display: none;
+                    }
+                    .row-sale {
+                        min-height: 600px;
+                        max-height: 75vh;
+                        background-image: url("https://media.missguided.co.uk/image/upload/w_600,dpr_2,c_fill,ar_1:1/v1535029260/homepage-sale_w88dix.jpg");
+                        background-size: cover;
+                    }
+                    .row-sale .subtitle1 {
+                        font-size: 18px;
+                        max-width: 55%;
+                        margin: 1em auto;
+                    }
+                    .row-sale .flex {
+                        flex-direction: column;
+                    }
+                    .row-sale .flex h5 {
+                        font-size: 18px;
+                    }
+
+                    .row-sale .flex h1 {
+                        font-size: 40px;
+                    }
+                    .row-sale .button {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    .categories-container__heading {
+                        padding: 25px 40px 40px 40px;
+                    }
+                    .categories-carousel {
+                        overflow-x: auto;
+                        -webkit-overflow-scrolling: touch;
+                        padding-bottom: 20px;
+                    }
+                    .categories-carousel::-webkit-scrollbar {
+                        display: none;
+                        width: 0px;
+                        background: transparent;
+                    }
+                    .category-tile__image {
+                        max-width: none;
+                        width: 180px;
+                    }
+                    .category-tile--last {
+                        padding-right: 20px;
+                    }
+                }
+
+                @media (max-width: 660px) {
+                    #homeSlider .category-tile__image {
+                        width: 150px;
+                    }
+                }
+
+                @media (max-width: 550px) {
+                    #homeSlider .category-tile__image {
+                        width: 155px;
+                    }
+                    .row-sale .subtitle1 {
+                        font-size: 16px;
+                        max-width: 55%;
+                        margin: 0 auto 1em;
+                    }
+                    .row-sale .flex h1 {
+                        font-size: 33px;
+                        max-width: 85%;
+
+                    }
+                }
+
+                @media (max-width: 465px) {
+                    #homeSlider .category-tile__image {
+                        width: 155px;
+                    }
+                }
+
+                @media (max-width: 385px) {
+                    #homeSlider .category-tile__image {
+                        width: 135px;
+                    }
+                    .row-sale .flex h1 {
+                        max-width: 95%;
+                        margin-bottom: 1em;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .row-sale {
+                        background: url("https://media.missguided.co.uk/image/upload/w_1920,q_70/v1535029260/homepage-sale_w88dix.jpg") 0% 0% / cover no-repeat;
+                        min-height: 700px;
+                    }
+                    .categories-carousel {
+                        max-width: 1200px;
+                        width: 90%;
+                        margin: 0 auto;
+                        padding: 1em 0 2em;
+                    }
+                    .categories-container--mobile {
+                        display: none;
+                    }
+                    .categories-container--desktop {
+                        display: block;
+                    }
+                }
+            </style>
+
+            <div class="sale-content">
+                <h3 class="subtitle1 white">cling onto summer, let go of some cash</h3>
+                <div class="flex">
+                    <h5 class="termina">up to</h5>
+                    <h1 class="termina">50% off summer sale
+                    </h1>
+                </div>
+
+                <div class="categories-container">
+                    <div class="categories-carousel">
+                        <!-- sale dersses -->
+                        <a class="category-tile__link" href="https://www.missguided.co.uk/sale/sale-tops">
+                            <div class="category-tile">
+                                <img class="category-tile__image lazyload" data-src="https://media.missguided.co.uk/image/upload/w_230,q_70,dpr_2/v1535033755/bardot-bodycon-midi-dress-black_hb2icb.jpg"
+                                    src="">
+                                <div class="category-tile__heading termina">sale dresses</div>
+                            </div>
+
+                        </a>
+                        <!--  tops -->
+                        <a class="category-tile__link" href="https://www.missguided.co.uk/sale/sale-dresses">
+                            <div class="category-tile">
+                                <img class="category-tile__image lazyload" data-src="https://media.missguided.co.uk/image/upload/w_230,q_70,dpr_2/v1535033755/white-bardot-v-plunge-bodysuit_htssys.jpg"
+                                    src=""> <div class="category-tile__heading termina">sale
+                                    tops
+                                </div>
+                            </div>
+                        </a>
+                        <!-- swim -->
+                        <a class="category-tile__link" href="https://www.missguided.co.uk/sale/view-all-sale#price_gbp=2.00%3C15.99&amp;p_low=2&amp;p_high=15">
+                            <div class="category-tile">
+                                <img class="category-tile__image lazyload" data-src="https://media.missguided.co.uk/image/upload/w_230,q_70,dpr_2/v1535033755/bikini-top-bralette-de-bandage-en-negro_j5ce5x.jpg"
+                                    src=""> <div class="category-tile__heading termina">sale
+                                    swimwear
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- £5 and under -->
+                        <a class="category-tile__link" href="https://www.missguided.co.uk/sale/view-all-sale#price_gbp=2.00%3C15.99&amp;p_low=2&amp;p_high=10">
+                            <div class="category-tile">
+                                <img class="category-tile__image lazyload" data-src="https://media.missguided.co.uk/image/upload/w_230,q_70,dpr_2/v1535033755/rose-round-neck-keyhole-midi-dress_ouynvb.jpg"
+                                    src=""> <div class="category-tile__heading termina">£5 and
+                                    under
+                                </div>
+                            </div>
+                        </a>
+                        <!-- £10 and under -->
+                        <a class="category-tile__link" href="https://www.missguided.co.uk/sale#price_gbp=2.00%3C15.99&amp;p_low=2&amp;p_high=5">
+                            <div class="category-tile">
+                                <img class="category-tile__image lazyload" data-src="https://media.missguided.co.uk/image/upload/w_230,q_70,dpr_2/v1535033755/white-high-waisted-shredded-denim-shorts_skqmpi.jpg"
+                                    src=""> <div class="category-tile__heading termina">£10 and
+                                    under
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="more-buttons">
+                    <a href="/sale">
+                        <button class="button">shop summer sale</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 
+      <div class="row fullwidth row-back-to-college">
+        <style>
+          @media (min-width: 768px) {
+            .row-back-to-college {
+              background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 134'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23c0a9b1' d='M0 0h300v133H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse rx='1' ry='1' transform='matrix(-7.46296 -31.57054 19.17856 -4.53362 181 93.8)'/%3e%3cellipse fill='%23320b00' cx='71' cy='22' rx='23' ry='22'/%3e%3cpath fill='%23050000' d='M174 3h32v31h-32z'/%3e%3cellipse fill='%23ffdded' cx='244' cy='33' rx='32' ry='118'/%3e%3cellipse fill='%23f9d8e1' rx='1' ry='1' transform='matrix(14.59051 -130.07733 38.77096 4.34886 138 0)'/%3e%3cellipse fill='white9ff' cx='7' cy='73' rx='70' ry='17'/%3e%3cpath fill='%23030009' d='M55 104h46v8H55z'/%3e%3cpath d='M215 98l-43-40-12 44z'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
+            }
+            .row-back-to-college .title1 {
+              display: none;
+            }
+            .row-back-to-college .banner_content {
+              top: 66%;
+            }
+            #homeSlider .row-back-to-college .button {
+              border: 1px solid #000000;
+            }
+          }
+  
+          @media (max-width: 767px) {
+            .row-back-to-college {
+              background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3e%3cfilter id='b'%3e%3cfeGaussianBlur stdDeviation='12' /%3e%3c/filter%3e%3cpath fill='%23c2a5ae' d='M0 0h300v300H0z'/%3e%3cg filter='url(%23b)' transform='translate(.6 .6) scale(1.17188)' fill-opacity='.5'%3e%3cellipse cx='108' cy='186' rx='44' ry='44'/%3e%3cellipse fill='%23160000' rx='1' ry='1' transform='matrix(30.00974 -11.5501 13.21458 34.33445 124.4 44.2)'/%3e%3cellipse fill='%23ffebfb' cx='14' cy='47' rx='81' ry='81'/%3e%3cellipse fill='%23ffddef' rx='1' ry='1' transform='rotate(-92.1 156.9 -58) scale(255 42.17851)'/%3e%3cellipse fill='black005' rx='1' ry='1' transform='matrix(-29.71607 -26.22613 20.8611 -23.6371 103 178)'/%3e%3cellipse fill='%23ffe3f5' cy='195' rx='69' ry='69'/%3e%3cpath fill='%23b85043' d='M165 176l29 76-126-4z'/%3e%3cellipse fill='%23090000' rx='1' ry='1' transform='matrix(9.07407 -4.93796 19.07749 35.05709 151.4 57.6)'/%3e%3c/g%3e%3c/svg%3e") 0% 0% / contain no-repeat;
+            }
+          }
+        </style>
+        <a href="/clothing/casual-wear" class="tracking">
+          <picture>
+            <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1534953071/BACK_TO_COLLEGE_Mobile_z8kvsr.jpg 767w">
+            <source sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="https://media.missguided.co.uk/image/upload/w_768,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 768w, https://media.missguided.co.uk/image/upload/w_937,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 937w, https://media.missguided.co.uk/image/upload/w_1086,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1086w, https://media.missguided.co.uk/image/upload/w_1226,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1226w, https://media.missguided.co.uk/image/upload/w_1353,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1353w, https://media.missguided.co.uk/image/upload/w_1474,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1474w, https://media.missguided.co.uk/image/upload/w_1582,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1582w, https://media.missguided.co.uk/image/upload/w_1686,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1686w, https://media.missguided.co.uk/image/upload/w_1792,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1792w, https://media.missguided.co.uk/image/upload/w_1905,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1905w, https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg 1920w"
+              alt="image failed">
+            <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_1920,q_70/v1534952780/BACK_TO_COLLEGE_xiwf4n.jpg"
+              src="data:image/svg+xml,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 300 134&apos;%3e%3cfilter id=&apos;b&apos;%3e%3cfeGaussianBlur stdDeviation=&apos;12&apos; /%3e%3c/filter%3e%3cpath fill=&apos;%23c0a9b1&apos; d=&apos;M0 0h300v133H0z&apos;/%3e%3cg filter=&apos;url(%23b)&apos; transform=&apos;translate(.6 .6) scale(1.17188)&apos; fill-opacity=&apos;.5&apos;%3e%3cellipse rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(-7.46296 -31.57054 19.17856 -4.53362 181 93.8)&apos;/%3e%3cellipse fill=&apos;%23320b00&apos; cx=&apos;71&apos; cy=&apos;22&apos; rx=&apos;23&apos; ry=&apos;22&apos;/%3e%3cpath fill=&apos;%23050000&apos; d=&apos;M174 3h32v31h-32z&apos;/%3e%3cellipse fill=&apos;%23ffdded&apos; cx=&apos;244&apos; cy=&apos;33&apos; rx=&apos;32&apos; ry=&apos;118&apos;/%3e%3cellipse fill=&apos;%23f9d8e1&apos; rx=&apos;1&apos; ry=&apos;1&apos; transform=&apos;matrix(14.59051 -130.07733 38.77096 4.34886 138 0)&apos;/%3e%3cellipse fill=&apos;white9ff&apos; cx=&apos;7&apos; cy=&apos;73&apos; rx=&apos;70&apos; ry=&apos;17&apos;/%3e%3cpath fill=&apos;%23030009&apos; d=&apos;M55 104h46v8H55z&apos;/%3e%3cpath d=&apos;M215 98l-43-40-12 44z&apos;/%3e%3c/g%3e%3c/svg%3e"
+              alt="backup">
+          </picture>
+          <div class="banner_content center">
+            <h2 class="title1 white">&#xA3;15 and under</h2>
+            <div class="more-buttons">
+              <button class="button">shop casual</button>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+
+    </div>
+    <div class="slick-three">
+        <div class="blocker"></div>
+        <div>
+            <a href="/student" class="tracking">
+                <div class="imgContainer">
+                    <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534759656/students_UK_vdfefy.gif"
+                        src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534759656/students_UK_vdfefy.gif"
+                        alt="backup_img">
+                </div>
+                <div class="title-below">
+                    <h2 class="title3">An Actually Useful Guide to Being a Student</h2>
+                    <h4 class="subtitle3">Got your results and off to uni? Here&apos;s our actually useful guide to be a
+                        student
+                    </h4>
+                    <button class="button">study this</button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://blog.missguided.co.uk/babezine/how-to-wear-a-blazer/" class="tracking">
+                <div class="imgContainer">
+                    <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70,b_rgb:FEF5F0/v1534761644/new_in_lower_slot_2_i6ytez.jpg"
+                        src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70,b_rgb:FEF5F0/v1534761644/new_in_lower_slot_2_i6ytez.jpg"
+                        alt="backup_img">
+                </div>
+                <div class="title-below">
+                    <h2 class="title3">turn up to the club like...</h2>
+                    <h4 class="subtitle3"></h4>
+                    <button class="button">view the trend</button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://blog.missguided.co.uk/babezine/festival-jackets/" class="tracking">
+                <div class="imgContainer">
+                    <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70,b_rgb:FEF5F0/v1533137721/festival_jackets_evkyfx.jpg"
+                        src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70,b_rgb:FEF5F0/v1533137721/festival_jackets_evkyfx.jpg"
+                        alt="backup_img">
+                </div>
+                <div class="title-below">
+                    <h2 class="title3">Festival Jackets for every weather eventuality</h2>
+                    <h4 class="subtitle3">If you&apos;re off to a festival this bank holiday, we&apos;ve got you covered...</h4>
+                    <button class="button">check it out</button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/occasion/winter-warmers" class="tracking">
+                <div class="imgContainer">
+                    <img class="lazyload" data-expand="-50" data-src="https://media.missguided.co.uk/image/upload/w_600,q_70/v1534760315/Autumn_rggmx8.jpg"
+                        src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1534760315/Autumn_rggmx8.jpg" alt="backup_img">
+                </div>
+                <div class="title-below">
+                    <h2 class="title3">autumn ready</h2>
+                    <h4 class="subtitle3">fall in love with your now wardrobe</h4>
+                    <button class="button">shop autumn</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">!function (e) { e(document).ready(function () { e("#homeSlider").slick({ infinite: !0, adaptiveHeight: !0, autoplay: !0, autoplaySpeed: 5e3, pauseOnHover: !1, dots: !0, slide: ".fullwidth", slidesToShow: 1, slidesToScroll: 1, responsive: [{ breakpoint: 1e3, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 768, settings: "unslick" }] }), e(".slick-three").slick({ infinite: !0, adaptiveHeight: !1, slide: ":not(.blocker)", dots: !1, slidesToShow: 3, slidesToScroll: 1, arrows: !0, centerMode: !0, centerPadding: "0", responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 }, centerMode: !0, centerPadding: "50", variableWidth: !0 }] }) }), e(window).on("resize orientationchange", function () { e("#homeSlider").slick("resize"), e(".slick-three").slick("resize") }), e(window).scroll(_.debounce(function () { if (e(window).width() < 767) { var i = e(this).scrollTop(); console.log(i), i > e(".slick-three").offset().top - 400 && (e(".slick-three .slick-slide").css("animation", "swipe 1200ms ease-in-out forwards"), setTimeout(function () { e(".blocker").css("display", "none") }, 1600)) } }, 100)) }(jQuery);</script>
