@@ -1,33 +1,22 @@
 $background: #f7cfef;
+$window: #ffcdf3;
 $pink: #ed6bbe;
 $font: #662b64;
-$window: #f2e7fd;
 
 .std {
-  background-color: #fedee3;
+  background-image: linear-gradient(to bottom, #fedee3, #fec8f0);
 }
 
 .blobs {
   position: absolute;
   width: 100%;
-  // height: 167%;
-  max-height: 1792px;
   // pointer-events: none;
   overflow: hidden;
   z-index: 0;
   svg {
     padding: 10px;
-    min-width: 200px;
-    max-width: 600px;
-    .cls-1 {
-      transition: all ease 300ms;
-    }
-    &:hover {
-      .cls-1 {
-        transform: translate(0, -1px);
-        fill: darken(#93e9e6, 5%);
-      }
-    }
+    min-width: 100px;
+    max-width: 300px;
   }
 }
 
@@ -37,20 +26,18 @@ $window: #f2e7fd;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+
   .intro {
+    z-index: 1;
     width: 90%;
-    text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     * {
       color: $font;
     }
-  }
-}
-
-.intro {
-  z-index: 1;
-  img {
-    max-width: 50%;
+    img {
+      display: block;
+      margin: 0 auto 1em;
+    }
   }
 }
 
@@ -60,7 +47,7 @@ $window: #f2e7fd;
 }
 .window {
   // background: lighten($window, 2%);
-  background: #ffcdf3;
+  background: $window;
   color: $font;
   // color: white;
   text-align: center;
@@ -81,15 +68,18 @@ $window: #f2e7fd;
   h1 {
     width: 100%;
   }
-  h2,
   h3 {
-    cursor: default;
-    text-transform: none;
-    text-align: center;
+    text-transform: lowercase;
+    color: $font;
+    &.title {
+      margin: 1em auto;
+      width: 90%;
+    }
   }
   img {
     max-width: 400px;
-    width: 100%;
+    width: 90%;
+    border-radius: 10px;
   }
 
   &:before {
@@ -112,6 +102,15 @@ $window: #f2e7fd;
     left: 10px;
     font-size: 15px;
     font-weight: 700;
+  }
+  button.button {
+    background: #ffa6e5;
+    border-color: #ffa6e5;
+    color: white;
+    &:hover {
+      background: $font;
+      border-color: $font;
+    }
   }
 }
 
@@ -182,9 +181,9 @@ $window: #f2e7fd;
       transition: fill ease 300ms;
     }
     &:hover {
-      background-color: $background;
+      background-color: $font;
       svg {
-        fill: $font;
+        fill: $background;
       }
     }
   }
@@ -250,6 +249,110 @@ ul.steps {
   }
   .window {
     padding: 40px;
+    &.email {
+      width: 750px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-desk {
+    display: none;
+  }
+  .hide-on-mob {
+    display: block;
+  }
+
+  .blobs svg {
+    &:nth-of-type(1) {
+      width: 70%;
+      margin: 30px 10% 30px 70%;
+    }
+    &:nth-of-type(2) {
+      width: 60%;
+      max-width: 60%;
+      margin: 0 0 50px -50px;
+    }
+    &:nth-of-type(3) {
+      width: 100%;
+      max-width: 450px;
+      margin: 30px 0 30px 60%;
+    }
+    &:nth-of-type(4) {
+      width: 80%;
+      max-width: 80%;
+      margin: 100px 0 30px 0;
+    }
+  }
+
+  .intro {
+    img {
+      max-width: 50%;
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+  }
+  @keyframes hi {
+    0% {
+      transform: translateY(0);
+    }
+    80% {
+      transform: translateY(500px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .window {
+    &.hi {
+      padding: 40px 5px 5px;
+      width: 200px;
+      margin: -50px 0 -100px 10%;
+      animation: hi 1s 2s 1 ease forwards;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      h5 {
+        line-height: 30px;
+        margin: 0 10px;
+      }
+    }
+    &.email {
+      width: 600px;
+      margin: 0 0 100px 50%;
+    }
+    &.whatsapp {
+      margin: -200px 0 100px 0;
+      min-width: 450px;
+    }
+
+    &.link1 {
+      margin: -600px 0 30px 45%;
+    }
+    &.link2 {
+      margin: 100px 0 100px 25%;
+    }
+    &.link3 {
+      margin: -500px 0 50px 60%;
+    }
+    &.link1,
+    &.link2,
+    &.link3 {
+      max-width: 350px;
+      padding: 40px 0 1em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      button.button {
+        display: block;
+        margin: 1em auto;
+      }
+    }
   }
 }
 
@@ -268,65 +371,6 @@ ul.steps {
     padding: 0 1em;
   }
   .blobs {
-    height: 1800px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hide-on-desk {
-    display: none;
-  }
-  .hide-on-mob {
-    display: block;
-  }
-  .std {
-    background-image: linear-gradient(to bottom, #fedee3, #fec8f0);
-  }
-
-  .blobs svg {
-    &:nth-of-type(1) {
-      width: 70%;
-      margin: 30px 10% -30px 70%;
-    }
-    &:nth-of-type(2) {
-      width: 60%;
-      margin: 50px 0 -50px -150px;
-    }
-    &:nth-of-type(3) {
-      width: 50%;
-      margin: 30px 0 -30px 60%;
-    }
-    &:nth-of-type(4) {
-      width: 50%;
-      margin: 30px 50% -30px 0;
-    }
-  }
-
-  .intro {
-    h1 {
-      font-size: 5vw;
-    }
-  }
-
-  .window {
-    &.email {
-      margin: 0 0 30px 35%;
-    }
-    &.whatsapp {
-      margin: -60px 50% 0 5%;
-    }
-    &.link1 {
-      margin: -600px 0 600px 55%;
-    }
-  }
-}
-
-@media (max-width: 767px) and (min-width: 600px) {
-}
-@media (max-width: 600px) {
-  .blobs {
-    max-height: 1930px;
-    height: 500%;
     svg {
       margin: 0 0 100px 0;
       width: 150%;
@@ -345,10 +389,51 @@ ul.steps {
         margin: 130px 0 0 0;
         width: 90%;
       }
+      &:nth-of-type(5) {
+        margin: 300px 0 0 0;
+        width: 80%;
+        max-width: 80%;
+      }
+      &:nth-of-type(6) {
+        margin: 580px 0 0 10%;
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
   .window {
-    margin: 50px 0;
+    &.hi {
+      padding: 40px 5px 5px;
+      width: 200px;
+      margin: 0 0 -100px 5%;
+      animation: hi 1s 2s 1 ease forwards;
+    }
+    &.email {
+      margin: 0 0 330px 30%;
+    }
+    &.whatsapp {
+      margin: -300px 0 100px 30px;
+      min-width: 450px;
+    }
+
+    &.link1 {
+      margin: -600px 0 30px 60%;
+    }
+    &.link2 {
+      margin: 100px 0 100px 10%;
+    }
+    &.link3 {
+      margin: -500px 0 50px 54%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .window {
+    margin: 0 0 30px 0;
+
     padding: 40px 5px;
     // max-width: 320px;
     max-width: 100%;
