@@ -22,7 +22,7 @@ gulp.task("default", function() {
   browserSync.init({
     port: 7184,
     // https: true,
-    ghostMode: true,
+    ghostMode: false,
     server: {
       baseDir: "./"
     }
