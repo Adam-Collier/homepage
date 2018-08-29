@@ -115,10 +115,7 @@ $font: #662b64;
 }
 
 .email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
   margin-bottom: 1em;
   color: $font;
   h5 {
@@ -127,12 +124,19 @@ $font: #662b64;
     padding: 0 5%;
   }
   .form__input {
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .form__inline .left, .form__inline button {
+flex: 50px 0 0;
+    margin: 0;
     padding: 0;
-    display: table-cell;
-    width: 100%;
   }
   input {
-    width: 450px;
     height: 50px;
     border: none;
     margin: 0;
@@ -143,9 +147,7 @@ $font: #662b64;
     color: $font;
     border-radius: 0;
     background: none;
-    border-top: 2px solid $font;
-    border-left: 2px solid $font;
-    border-bottom: 2px solid $font;
+    border: 2px solid $font;
     transition: background 300ms ease;
   }
   ::-webkit-input-placeholder {
@@ -168,17 +170,24 @@ $font: #662b64;
     text-transform: uppercase;
     color: $font;
   }
-  button {
-    margin: 0;
-    height: 50px;
-    width: 50px;
+  .form__inline button {
+    float: none;
+  }
+  button.button {
+    background: transparent;
     border: 2px solid $font;
     transition: background-color 300ms ease;
+    color: $font;
     svg {
       height: 20px;
       width: 20px;
       fill: $font;
       transition: fill ease 300ms;
+    }
+    svg:before {
+      content: "submit";
+      position: relative;
+      display: block;
     }
     &:hover {
       background-color: $font;
