@@ -94,7 +94,7 @@ $font: #662b64;
     width: 100%;
   }
   &:after {
-    content: url(/images/dots.svg);
+    content: url(https://media.missguided.co.uk/image/upload/v1535547933/dots_dxlbka.svg);
     position: absolute;
     top: -10px;
     width: 40px;
@@ -274,6 +274,7 @@ ul.steps {
   }
 
   .intro h3 {
+    font-size: 2em;
     width: 80%;
   }
 
@@ -324,7 +325,7 @@ ul.steps {
       padding: 40px 5px 5px;
       width: 200px;
       margin: -50px 0 -100px 10%;
-      animation: hi 1s 2s 1 ease forwards;
+      animation: hi 1s 5s 1 ease forwards;
       display: flex;
       align-content: center;
       justify-content: center;
@@ -338,12 +339,12 @@ ul.steps {
       margin: 0 0 100px 50%;
     }
     &.whatsapp {
-      margin: -200px 0 100px 0;
+      margin: -400px 0 100px 0;
       min-width: 450px;
     }
 
     &.link1 {
-      margin: -600px 0 30px 45%;
+      margin: -500px 0 30px 45%;
     }
     &.link2 {
       margin: 100px 0 100px 25%;
@@ -414,6 +415,56 @@ ul.steps {
       }
     }
   }
+
+.email {
+
+  margin-bottom: 1em;
+  color: $font;
+  h5 {
+    font-size: 10px;
+    text-align: center;
+    padding: 0 5%;
+  }
+  .form__input {
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  input {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  button.button {
+    background: $font;
+    border: 2px solid $font;
+    transition: background-color 300ms ease;
+    color: $background;
+    svg {
+      height: 20px;
+      width: 20px;
+      fill: $background;
+      transition: fill ease 300ms;
+    }
+    svg:before {
+      content: "submit";
+      position: relative;
+      display: block;
+    }
+    &:hover {
+      background-color: $font;
+      svg {
+        fill: $background;
+      }
+    }
+  }
+}
+
+
 }
 
 @media (max-width: 1200px) and (min-width: 769px) {
@@ -446,13 +497,8 @@ ul.steps {
 @media (max-width: 600px) {
   .window {
     margin: 0 0 30px 0;
-
     padding: 40px 5px;
-    // max-width: 320px;
     max-width: 100%;
-  }
-  .email input {
-    width: 300px;
   }
 }
 
