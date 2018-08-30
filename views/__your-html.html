@@ -1,0 +1,92 @@
+<style>
+  .site-header,
+  .primary-nav,
+  .top-promos-wrapper,
+  .newsletter-lightbox-content,
+  .footer-container {
+    display: none;
+  }
+
+  .std {
+    height: 100vh;
+    padding-top: 10%;
+  }
+
+  .text-cont {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  button.button {
+    text-transform: none;
+    background: #fff;
+    color: #323232;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  button.button:hover {
+    border: none;
+  }
+</style>
+
+<div data-include="your-html"></div>
+<div class="text-cont">
+  <h2>HI Site Execs, please check your territories below.</h2>
+
+  <h5>Resize your browser window to see banners in the slider (bit broken, sorry!)</h5>
+  <h5>will share upadtes for later in the week in due course.</h5>
+</div>
+
+<div class="button-container">
+  <button data-terr='UK' class="button">UK</button>
+  <button data-terr='IE' class="button">IE</button>
+  <button data-terr='EU' class="button">EU</button>
+  <button data-terr='US' class="button">US</button>
+  <button data-terr='AU' class="button">AU</button>
+  <button data-terr='FR' class="button">FR</button>
+  <button data-terr='DE' class="button">DE</button>
+  <button data-terr='ES' class="button">ES</button>
+  <button data-terr='PL' class="button">PL</button>
+</div>
+
+
+
+<script type="text/javascript">
+  (function ($) {
+    $('button.button').click(function () {
+      var terr = $(this).attr('data-terr');
+      // console.log(data);
+      var includes = $('[data-include]');
+      jQuery.each(includes, function () {
+        var file = './views/translate/' + terr + '.html';
+        var s = document.createElement("script");
+
+        s.type = "text/javascript";
+        s.src = "/js/home.js";
+        // Use any selector
+        $("body").append(s);
+
+        $(this).load(file);
+
+      });
+    });
+  })(jQuery);
+</script>
+
+<!-- <script type="text/javascript">!function (e) { e(document).ready(function () { e("#homeSlider").slick({ infinite: !0, adaptiveHeight: !0, autoplay: !0, autoplaySpeed: 5e3, pauseOnHover: !1, dots: !0, slide: ".fullwidth", slidesToShow: 1, slidesToScroll: 1, responsive: [{ breakpoint: 1e3, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 768, settings: "unslick" }] }), e(".slick-three").slick({ infinite: !0, adaptiveHeight: !1, slide: ":not(.blocker)", dots: !1, slidesToShow: 3, slidesToScroll: 1, arrows: !0, centerMode: !0, centerPadding: "0", responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 }, centerMode: !0, centerPadding: "50", variableWidth: !0 }] }) }), e(window).on("resize orientationchange", function () { e("#homeSlider").slick("resize"), e(".slick-three").slick("resize") }), e(window).scroll(_.debounce(function () { if (e(window).width() < 767) { var i = e(this).scrollTop(); console.log(i), i > e(".slick-three").offset().top - 400 && (e(".slick-three .slick-slide").css("animation", "swipe 1200ms ease-in-out forwards"), setTimeout(function () { e(".blocker").css("display", "none") }, 1600)) } }, 100)) }(jQuery);</script> -->
