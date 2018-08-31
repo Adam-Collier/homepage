@@ -1,8 +1,8 @@
 $background: #f7cfef;
 $window: #ffcdf3;
 $pink: #ff70a9;
-// $font: #662b64;
-$font: #323232;
+$font: #662b64;
+// $font: #323232;
 
 .std {
   background-image: linear-gradient(to bottom, #fedee3, #fec8f0);
@@ -33,7 +33,7 @@ $font: #323232;
 
     * {
       color: $font;
-      text-align: center;
+      text-align: left;
     }
     img {
       display: block;
@@ -393,7 +393,10 @@ ul.steps {
   }
   .window.whatsapp {
     margin: 0 0 100px 5%;
-    max-width: 70%;
+    max-width: 60%;
+  }
+  .window.hi {
+    margin-left: 70%;
   }
 }
 @media (max-width: 768px) {
