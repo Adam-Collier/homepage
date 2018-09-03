@@ -28,11 +28,10 @@
 }
 
 @media (min-width: 768px) {
-  #homeSlider .button {
+  .row .button {
     background: #ffffff;
     color: #323232;
     border-color: #ffffff;
-    margin-top: 45px;
   }
 
   #homeSlider-nav {

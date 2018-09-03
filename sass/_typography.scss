@@ -94,6 +94,10 @@ button.button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 1em;
+  button.button{
+    margin: 1em 1em 0 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,6 +108,9 @@ button.button {
   .hide-on-desk,
   .show-on-mob {
     display: none;
+  }
+  .more-buttons {
+    margin-top: 2em;
   }
 }
 
@@ -128,14 +135,6 @@ button.button {
     line-height: 1.3em;
   }
 
-  // .subtitle1,
-  // .subtitle2,
-  // .subtitle3 {
-  //   font-size: 1.16666667em;
-  //   font-size: 14px;
-  //   line-height: 1.5em;
-  // }
-
   .title3,
   .subtitle1,
   .subtitle3 {
@@ -159,7 +158,4 @@ button.button {
     margin: $buttonSpacingMobile;
   }
 
-  .more-buttons {
-    flex-wrap: nowrap;
-  }
 }
