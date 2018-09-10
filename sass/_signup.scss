@@ -367,15 +367,16 @@ ul.steps {
       }
     }
     &.info {
-      margin: -120px 0 100px 25%;
+      margin: -120px 0 100px 5%;
     }
     &.email {
       width: 50%;
-      margin: -500px 0 350px 46%;
+      margin: -130px 0 0 46%;
     }
     &.whatsapp {
-      margin: 0 0 0 5%;
+      margin: 50px 0 50px 15%;
       min-width: 450px;
+      width: 50%;
     }
 
     &.link1 {
@@ -406,6 +407,7 @@ ul.steps {
   .hover {
     position: relative;
     span {
+      cursor: default;
       opacity: 0;
       transition: opacity ease 300ms;
       position: absolute;
