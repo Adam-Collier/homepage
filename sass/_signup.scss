@@ -1,7 +1,7 @@
 $background: #f7cfef;
 $window: #ffcdf3;
 $pink: #ff70a9;
-$font: #323232;
+$font: darken($window, 75%);
 
 .std {
   background-image: linear-gradient(to bottom, #fedee3, #fec8f0);
@@ -115,7 +115,10 @@ $font: #323232;
     }
   }
   &.info {
-    padding: 40px 20px;
+    padding: 40px 50px;
+    a {
+      color: $font;
+    }
     ul {
       list-style: none;
       display: flex;
@@ -125,10 +128,11 @@ $font: #323232;
         height: 30px;
         margin: 0 5px;
         padding: 5px;
+        svg {
+          fill: $font;
+        }
       }
     }
-  }
-  &.logos {
   }
 }
 
@@ -206,6 +210,7 @@ $font: #323232;
   button.button {
     background: transparent;
     border: 2px solid $font;
+    border-left: none;
     transition: background-color 300ms ease;
     color: $font;
     svg {
