@@ -63,7 +63,6 @@
   }
 
   .slick-three {
-    width: 90%;
     max-width: 1000px;
     display: block;
     margin: 0 auto;
@@ -86,30 +85,27 @@
     top: 37.5vw;
   }
 
-  .slick-next:before, .slick-prev:before{
-    content: '';
+  .slick-next:before,
+  .slick-prev:before {
+    content: "";
     position: absolute;
     width: 60px;
     height: 100px;
     transform: translateY(-50%);
-    background: transparent;    
+    background: transparent;
   }
 
-  .slick-next:before{
+  .slick-next:before {
     top: 50%;
     bottom: 0;
     right: -10px;
   }
 
-  .slick-prev:before{
+  .slick-prev:before {
     top: 50%;
     bottom: 0;
     left: -10px;
   }
-
-
-
-
 
   .slick-next {
     right: 13px;
