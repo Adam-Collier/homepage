@@ -1,7 +1,8 @@
 $background: #f7cfef;
 $window: #ffcdf3;
 $pink: #ff70a9;
-$font: darken($window, 75%);
+// $font: darken($window, 75%);
+$font: #474747;
 
 .std {
   background-image: linear-gradient(to bottom, #fedee3, #fec8f0);
@@ -433,11 +434,11 @@ ul.steps {
       }
       &.echo {
         top: 28%;
-        left: 15%;
+        left: 10%;
       }
       &.tamp {
         top: 80%;
-        left: 80%;
+        left: 82%;
       }
       &.carm {
         top: 80%;
@@ -448,7 +449,7 @@ ul.steps {
         left: 45%;
       }
       &.mg {
-        top: 85%;
+        top: 70%;
         left: 40%;
       }
       &.thorp {

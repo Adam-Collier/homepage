@@ -77,15 +77,15 @@ URL: www.missguided.co.uk/student-sign-up
     </div>
     <div class="window flat">
       <div class="hover">
-        <img src="/images/student/student.jpg" alt="">
+        <img src="https://res.cloudinary.com/dw3plhke2/image/upload/v1536682355/student_pkfufu.jpg" alt="">
         <span class="mayb">Maybelline goodies</span>
         <span class="greggs">Greggs £250 voucher</span>
-        <span class="echo">Echo Falls</span>
-        <span class="tamp">Tampax</span>
-        <span class="carm">Carmex lip balms</span>
-        <span class="colab">Colab dry shampoos</span>
+        <span class="echo">52 bottles of Echo Falls</span>
+        <span class="tamp">12 packs of Tampax</span>
+        <span class="carm">12 Carmex lip balms</span>
+        <span class="colab">12 cans of Colab dry shampoo</span>
         <span class="mg">£3K of Missguided clothes</span>
-        <span class="thorp">Thorpe Park annual passes</span>
+        <span class="thorp">4 Thorpe Park annual passes and x 4 digital photo passes</span>
         <span class="sup">Superdrug essentials</span>
       </div>
     </div>
@@ -178,7 +178,7 @@ URL: www.missguided.co.uk/student-sign-up
         <div style="max-width: 390px;min-width: 320px;width: 100%;height: 345px;">
           <iframe style="border: none; height: 100%; width: 100%;" src="https://wb.whatsbroadcast.com/?widget_hash=d847777adc20067d7a5a0324c78f1647&amp;lang=en&amp;wn=2"></iframe>
           <a style="margin-top: -10px; padding-top: 6px	; text-decoration: none; text-align: right; display: block; font-size: 11px; padding-right: 8px; color: rgba(8, 0, 0, 0.54); font-family: 'Roboto',sans-serif;"
-            href="https://www.whatsbroadcast.com/de/" target="_blank" rel="noopener">© WhatsBroadcast</a>
+            href="https://www.whatsbroadcast.com/" target="_blank" rel="noopener">© WhatsBroadcast</a>
         </div>
         <h5 style="margin-top: 2em">
           <a target="_blank" href="/whatsapp">read all about the whatsapp group here</a>
@@ -192,8 +192,8 @@ URL: www.missguided.co.uk/student-sign-up
     </div>
 
     <div class="window drag logos">
-      <img src="/images/student/logos-1.png" alt="">
-      <img src="/images/student/logos-2.png" alt="">
+      <img src="https://res.cloudinary.com/dw3plhke2/image/upload/v1536682354/logos-1_ipqryn.png" alt="">
+      <img src="https://res.cloudinary.com/dw3plhke2/image/upload/v1536682354/logos-2_uy00qr.png" alt="">
     </div>
 
 
@@ -202,7 +202,7 @@ URL: www.missguided.co.uk/student-sign-up
   </div>
 
 </div>
-<!-- <script>
+<script>
   jQuery(document).ready(function () {
     var footerSignupForm = new MgResponsive.NewsletterSignup.NewsletterSignup(
       '#promo_signup .js-newsletter-validate',
@@ -211,77 +211,71 @@ URL: www.missguided.co.uk/student-sign-up
       '#promo_signup .js-newsletter-button',
       '#promo_signup .js-newsletter-terms'
     );
+
+    setTimeout(function () {
+      blobHeight();
+    }, 500);
+
+    function blobHeight() {
+      var blobs = jQuery('.sign-up').outerHeight();
+      jQuery('.blobs').height(blobs);
+    }
+
+    var is_mobile = false;
+
+    function checkMob() {
+      blobHeight();
+      if (jQuery('.hide-on-mob').css('display') == 'none') {
+        is_mobile = true;
+      }
+      if (is_mobile == false) {
+        drag();
+      }
+    }
+
+    checkMob();
+
+    jQuery(window).on('resize', _.debounce(checkMob, 200));
+
+    function drag() {
+      // alert("drag!");
+      // target elements with the "draggable" class
+      interact('.drag').draggable({
+        // enable inertial throwing
+        inertia: true,
+        // keep the element within the area of it's parent
+        restrict: {
+          restriction: "parent",
+          endOnly: true,
+          elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+        },
+        // enable autoScroll
+        autoScroll: true,
+
+        // call this function on every dragmove event
+        onmove: dragMoveListener
+      });
+
+      function dragMoveListener(event) {
+        var target = event.target,
+          // keep the dragged position in the data-x/data-y attributes
+          x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+          y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+        // translate the element
+        target.style.webkitTransform =
+          target.style.transform =
+          'translate(' + x + 'px, ' + y + 'px)';
+
+        // update the posiion attributes
+        target.setAttribute('data-x', x);
+        target.setAttribute('data-y', y);
+      }
+
+      // this is used later in the resizing and gesture demos
+      window.dragMoveListener = dragMoveListener;
+    }
+
+
   });
-</script> -->
-<script type="text/javascript">
-  (function ($) {
-    $(document).ready(function () {
-
-      setTimeout(function () {
-        blobHeight();
-      }, 500);
-
-      function blobHeight() {
-        var blobs = jQuery('.sign-up').outerHeight();
-        jQuery('.blobs').height(blobs);
-      }
-
-      var is_mobile = false;
-
-      function checkMob() {
-        blobHeight();
-        if ($('.hide-on-mob').css('display') == 'none') {
-          is_mobile = true;
-        }
-        if (is_mobile == false) {
-          drag();
-        }
-      }
-
-      checkMob();
-
-      $(window).on('resize', _.debounce(checkMob, 200));
-
-      function drag() {
-        // alert("drag!");
-        // target elements with the "draggable" class
-        interact('.drag').draggable({
-          // enable inertial throwing
-          inertia: true,
-          // keep the element within the area of it's parent
-          restrict: {
-            restriction: "parent",
-            endOnly: true,
-            elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
-          },
-          // enable autoScroll
-          autoScroll: true,
-
-          // call this function on every dragmove event
-          onmove: dragMoveListener
-        });
-
-        function dragMoveListener(event) {
-          var target = event.target,
-            // keep the dragged position in the data-x/data-y attributes
-            x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-            y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-
-          // translate the element
-          target.style.webkitTransform =
-            target.style.transform =
-            'translate(' + x + 'px, ' + y + 'px)';
-
-          // update the posiion attributes
-          target.setAttribute('data-x', x);
-          target.setAttribute('data-y', y);
-        }
-
-        // this is used later in the resizing and gesture demos
-        window.dragMoveListener = dragMoveListener;
-      }
-
-
-    });
-  })(jQuery);
 </script>
