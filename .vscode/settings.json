@@ -1,3 +1,8 @@
 {
-    "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "editor.smoothScrolling": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#f35b36",
+    "statusBar.foreground": "#fef865"
+  }
 }
