@@ -1,16 +1,20 @@
 $black: black;
 $white: white;
 $margtop: 100px;
-
+@import url("https://use.typekit.net/jzw7xnz.css");
 .wrap {
   background: black;
   color: $white;
+  padding-bottom: $margtop;
+  *:not(.tc) {
+    font-family: "termina";
+  }
 }
 
 .logo {
   width: 100%;
-  min-height: 70vh;
-  border: 1px solid $white;
+  min-height: 60vh;
+  border-bottom: dashed 1px white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -19,23 +23,26 @@ $margtop: 100px;
 
 .timer {
   max-width: 1000px;
+  width: 90%;
   margin: $margtop auto 0;
   padding: 0 5%;
 }
 h1.clock {
   font-size: 82px;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
-
+  height: 100px;
   div {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    width: 25%;
+    display: inline-block;
+    padding-bottom: 30px;
   }
-
   span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 30px;
-    // margin-top: 25px;
     text-align: center;
   }
 }
@@ -75,7 +82,7 @@ h3.copy {
     font-size: 0.75rem;
     text-transform: lowercase;
     color: $white;
-    border-radius: 0;
+    border-radius: 25px 0 0 25px;
     background: none;
     border-top: 2px solid $white;
     border-left: 2px solid $white;
@@ -107,6 +114,8 @@ h3.copy {
     height: 50px;
     width: 50px;
     border: 2px solid $white;
+    border-radius: 0 25px 25px 0;
+
     transition: background-color 300ms ease;
     svg {
       height: 20px;
@@ -133,40 +142,70 @@ h3.copy {
 }
 
 .whatsapp {
-  margin-top: $margtop;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 550px;
+  margin: $margtop auto 0;
+  border: #fff 2px solid;
+  padding: $margtop 0;
+  ul.steps {
+    li {
+      display: flex;
+      align-items: center;
+      h3 {
+        flex: 30px 0 0;
+      }
+      h5 {
+        margin-left: 10px;
+      }
+    }
+  }
+  iframe {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+  }
+  a {
+    color: $white;
+    margin-top: 1em;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 768px) {
   h1.clock {
     font-size: 50px;
-    div {
-      display: flex;
-      flex-direction: column;
-    }
     span {
       font-size: 22px;
       text-align: center;
     }
   }
 }
-//   @media (max-width: 767px) and (min-width: 600px) {}
+
 @media (max-width: 600px) {
   h1.clock {
-    font-size: 30px;
-    div {
-      display: flex;
-      flex-direction: column;
-    }
+    font-size: 45px;
     span {
       font-size: 18px;
-      // margin-top: 25px;
       text-align: center;
     }
   }
 }
 @media (max-width: 350px) {
   h1.clock {
-    font-size: 28px;
     span {
       font-size: 12px;
     }
