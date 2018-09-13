@@ -1,40 +1,27 @@
 $black: #191919;
 $white: white;
-$margtop: 100px;
-@import url("https://use.typekit.net/jzw7xnz.css");
+$margtop: 50px;
+@import url("https://use.typekit.net/yle3gqw.css");
 .wrap {
   background: $black;
   color: $white;
   padding-bottom: $margtop;
   *:not(.tc) {
-    font-family: "termina";
+    // font-family: "termina";
+    font-family: "nimbus-sans-extended";
+    font-weight: 900;
+    text-transform: uppercase;
   }
 }
 
 .logo {
   width: 100%;
   min-height: 60vh;
-  border-bottom: dashed 1px white;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  span {
-    width: 55%;
-    border-bottom: solid 5px $white;
-    margin-bottom: 2em;
-  }
-  h1.x {
-    transform: rotate(45deg);
-    &:after {
-      content: "_";
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: rotate(90deg) translate(63%, -35%);
-    }
-  }
   img {
     max-width: 700px;
     width: 100%;
@@ -42,13 +29,13 @@ $margtop: 100px;
 }
 
 .timer {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 90%;
   margin: $margtop auto 0;
   padding: 0 5%;
 }
 h1.clock {
-  font-size: 82px;
+  font-size: 70px;
   text-align: center;
   height: 100px;
   div {
@@ -68,14 +55,13 @@ h1.clock {
 }
 h3.copy {
   font-size: 18px;
-  line-height: 26px;
-  max-width: 650px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
 .email {
   margin-top: $margtop;
-  h1 {
+  h2 {
     text-align: center;
   }
   h5 {
@@ -168,7 +154,6 @@ h3.copy {
   width: 95%;
   max-width: 550px;
   margin: $margtop auto 0;
-  border: #fff 2px solid;
   padding: $margtop 0;
   ul.steps {
     li {
@@ -200,7 +185,8 @@ h3.copy {
     }
   }
   p {
-    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -213,15 +199,12 @@ h3.copy {
   .logo h1 {
     font-size: 7vw;
   }
+
+  .email {
+    margin-top: 200px;
+  }
   .whatsapp {
-    border-radius: 20px;
     width: 100%;
-  }
-  .email input {
-    border-radius: 25px 0 0 25px;
-  }
-  .email button {
-    border-radius: 0 25px 25px 0;
   }
 }
 
@@ -234,13 +217,22 @@ h3.copy {
       width: 370px;
     }
   }
-
+  h3.copy {
+    font-size: 12px;
+    max-width: 90%;
+  }
+  .timer {
+    margin: 50px auto 0;
+  }
   h1.clock {
     font-size: 50px;
     span {
       font-size: 22px;
       text-align: center;
     }
+  }
+  .whatsapp h5 {
+    font-size: 10px;
   }
 }
 
@@ -258,10 +250,11 @@ h3.copy {
     width: 100%;
   }
   h1.clock {
-    font-size: 45px;
+    font-size: 40px;
     span {
       font-size: 18px;
       text-align: center;
+      height: 20px;
     }
   }
   .email button {
@@ -272,7 +265,7 @@ h3.copy {
     }
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .logo {
     h1 {
       font-size: 32px;
@@ -281,10 +274,19 @@ h3.copy {
       width: 75%;
     }
   }
+  h3.copy {
+    font-size: 10px;
+  }
   h1.clock {
-    font-size: 40px;
+    font-size: 30px;
     span {
       font-size: 12px;
     }
+  }
+  .email h2 {
+    font-size: 16px;
+  }
+  .whatsapp h5 {
+    font-size: 10px;
   }
 }
