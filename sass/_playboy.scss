@@ -1,9 +1,9 @@
-$black: black;
+$black: #191919;
 $white: white;
 $margtop: 100px;
 @import url("https://use.typekit.net/jzw7xnz.css");
 .wrap {
-  background: black;
+  background: $black;
   color: $white;
   padding-bottom: $margtop;
   *:not(.tc) {
@@ -19,6 +19,26 @@ $margtop: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  span {
+    width: 55%;
+    border-bottom: solid 5px $white;
+    margin-bottom: 2em;
+  }
+  h1.x {
+    transform: rotate(45deg);
+    &:after {
+      content: "_";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(90deg) translate(63%, -35%);
+    }
+  }
+  img {
+    max-width: 700px;
+    width: 100%;
+  }
 }
 
 .timer {
@@ -82,7 +102,7 @@ h3.copy {
     font-size: 0.75rem;
     text-transform: lowercase;
     color: $white;
-    border-radius: 25px 0 0 25px;
+    border-radius: 0;
     background: none;
     border-top: 2px solid $white;
     border-left: 2px solid $white;
@@ -114,8 +134,7 @@ h3.copy {
     height: 50px;
     width: 50px;
     border: 2px solid $white;
-    border-radius: 0 25px 25px 0;
-
+    background: $black;
     transition: background-color 300ms ease;
     svg {
       height: 20px;
@@ -146,7 +165,7 @@ h3.copy {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  width: 95%;
   max-width: 550px;
   margin: $margtop auto 0;
   border: #fff 2px solid;
@@ -184,8 +203,38 @@ h3.copy {
     font-weight: 600;
   }
 }
+@media (min-width: 1200px) {
+  .logo {
+    min-height: 80vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo h1 {
+    font-size: 7vw;
+  }
+  .whatsapp {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .email input {
+    border-radius: 25px 0 0 25px;
+  }
+  .email button {
+    border-radius: 0 25px 25px 0;
+  }
+}
 
 @media (max-width: 768px) {
+  .logo {
+    h1 {
+      font-size: 50px;
+    }
+    span {
+      width: 370px;
+    }
+  }
+
   h1.clock {
     font-size: 50px;
     span {
@@ -196,6 +245,18 @@ h3.copy {
 }
 
 @media (max-width: 600px) {
+  .logo {
+    h1 {
+      font-size: 40px;
+    }
+    span {
+      width: 300px;
+    }
+  }
+
+  .timer {
+    width: 100%;
+  }
   h1.clock {
     font-size: 45px;
     span {
@@ -203,9 +264,25 @@ h3.copy {
       text-align: center;
     }
   }
+  .email button {
+    min-width: 50px;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
 }
 @media (max-width: 350px) {
+  .logo {
+    h1 {
+      font-size: 32px;
+    }
+    span {
+      width: 75%;
+    }
+  }
   h1.clock {
+    font-size: 40px;
     span {
       font-size: 12px;
     }
