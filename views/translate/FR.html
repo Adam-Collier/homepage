@@ -19,7 +19,7 @@
     }
 
     .row1 svg {
-      filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 0px 10px);
+      filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 10px);
     }
 
     .row2 .subtitle1 {
@@ -137,7 +137,7 @@
         </div>
       </a>
     </div>
-    <div class="row fullwidth row3">
+    <!-- <div class="row fullwidth row3">
       <a href="/nouveautes" class="tracking">
         <picture>
           <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" data-srcset="https://media.missguided.co.uk/image/upload/c_fill,c_scale,w_300/v1536582254/new_in_mobile_FR_nlh2nq.jpg 300w, https://media.missguided.co.uk/image/upload/w_402,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 402w, https://media.missguided.co.uk/image/upload/w_491,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 491w, https://media.missguided.co.uk/image/upload/w_569,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 569w, https://media.missguided.co.uk/image/upload/w_639,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 639w, https://media.missguided.co.uk/image/upload/w_711,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 711w, https://media.missguided.co.uk/image/upload/w_756,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 756w, https://media.missguided.co.uk/image/upload/w_767,q_70/v1536582254/new_in_mobile_FR_nlh2nq.jpg 767w">
@@ -162,8 +162,153 @@
           </div>
         </div>
       </a>
+    </div> -->
+  </div>
+  <!-- CATEGORIES CAROUSEL -->
+
+  <style>
+    .categories-container--mobile {
+      display: block;
+    }
+
+    .categories-container--desktop {
+      display: none;
+    }
+
+    .categories-container__heading {
+      text-align: center;
+      padding-bottom: 32px;
+      padding-top: 70px;
+      margin-bottom: 0;
+    }
+
+    .categories-carousel {
+      margin: 0 auto 20px auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 20px;
+    }
+
+    .categories-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-tile__link {
+      width: 100%;
+      margin-left: 16px;
+    }
+
+    .category-tile__heading {
+      padding-top: 8px;
+      text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+      .categories-carousel {
+        max-width: 1060px;
+        padding-right: 40px;
+        padding-left: 20px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .categories-container--mobile {
+        display: none;
+      }
+
+      .categories-container--desktop {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .categories-container__heading {
+        padding: 0px 40px 30px 40px;
+      }
+
+      .categories-container {
+        position: relative;
+      }
+
+      .categories-container:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        background: #FEF5F0;
+      }
+
+      .categories-carousel {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 40px;
+      }
+
+      .category-tile__link:last-of-type {
+        padding-right: 16px;
+      }
+
+      .category-tile__image {
+        max-width: none;
+        width: 180px;
+      }
+
+      #homeSlider .row img.category-tile__image {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 660px) {
+      .category-tile__image {
+        width: 38vw;
+      }
+    }
+  </style>
+
+  <div class="categories-container categories-container-- modifier">
+    <h2 class="categories-container__heading">browse Categories</h2>
+    <div class="categories-carousel">
+      <a class="category-tile__link" href="/dresses">
+        <div class="category-tile">
+          <img class="category-tile__image lazyload" data-src="http://media.missguided.co.uk/image/upload/v1537174439/dresses_wfzzp6.jpg">
+          <h3 class="category-tile__heading">dresses</h3>
+        </div>
+      </a>
+      <a class="category-tile__link" href="/clothing/knitwear">
+        <div class="category-tile">
+          <img class="category-tile__image lazyload" data-src="http://media.missguided.co.uk/image/upload/v1536752982/knitwear_biusnk.jpg">
+          <h3 class="category-tile__heading">knitwear</h3>
+        </div>
+      </a>
+      <a class="category-tile__link" href="/shoes/boots">
+        <div class="category-tile">
+          <img class="category-tile__image lazyload" data-src="http://media.missguided.co.uk/image/upload/v1537174543/boots_k4hotw.jpg">
+          <h3 class="category-tile__heading">boots</h3>
+        </div>
+      </a>
+
+      <a class="category-tile__link" href="/clothing/trousers">
+        <div class="category-tile">
+          <img class="category-tile__image lazyload" data-src="http://media.missguided.co.uk/image/upload/v1537174439/outerwear_jgj8j5.jpg">
+          <h3 class="category-tile__heading">outwear</h3>
+        </div>
+      </a>
+      <a class="category-tile__link" href="/clothing/tops">
+        <div class="category-tile">
+          <img class="category-tile__image lazyload" data-src="http://media.missguided.co.uk/image/upload/v1537174438/tops_n9tpwv.jpg">
+          <h3 class="category-tile__heading">tops</h3>
+        </div>
+      </a>
+
+
     </div>
   </div>
+
+  <!-- END CATEGORY CAROUSEL -->
+
   <div class="slick-three">
     <div class="blocker"></div>
     <div>
@@ -173,7 +318,7 @@
             src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70/v1537182418/coats_FR_hnolqz.jpg" alt="backup_img">
         </div>
         <div class="title-below">
-          <h2 class="title3">-30% avec code: GLAGLA30</h2>
+          <h2 class="title3">avec code: GLAGLA30</h2>
           <button class="button">vestes et manteux</button>
         </div>
       </a>
@@ -197,7 +342,7 @@
             src="https://media.missguided.co.uk/image/upload/c_scale,w_600,q_70//v1537196917/-50_FR_ve3rxf.jpg" alt="backup_img">
         </div>
         <div class="title-below">
-          <!-- <h2 class="title3">50% off selected lines</h2> -->
+          <h2 class="title3">Faites vite avant de les regretter</h2>
           <button class="button">sale</button>
         </div>
       </a>
