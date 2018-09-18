@@ -43,7 +43,7 @@ $margtop: 60px;
 .timer {
   max-width: 1200px;
   width: 90%;
-  margin: $margtop auto 0;
+  margin: 25px auto 0;
   padding: 0 5%;
 }
 h1.clock {
@@ -226,6 +226,7 @@ h3.copy {
 @media (max-width: 768px) {
   .logo {
     justify-content: flex-start;
+    min-height: 0;
     h1 {
       font-size: 50px;
     }
@@ -241,7 +242,7 @@ h3.copy {
     max-width: 90%;
   }
   .timer {
-    margin: 50px auto 0;
+    margin: 22px auto 0;
   }
   h1.clock {
     font-size: 50px;
